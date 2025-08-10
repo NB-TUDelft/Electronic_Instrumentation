@@ -9,7 +9,6 @@ parts:
     - file: Intro_to_Jupyter_Notebook.ipynb
     - file: EI_manual_intros.md
       sections:
-      - file: EI_manuals/Intro_Biophysics_to_Jupyter_Notebook
       - file: EI_manuals/intro_testboards.ipynb
       - file: EI_manuals/intro_power_supply_Siglent.ipynb
       - file: EI_manuals/intro_DMM_Siglent+handheld.ipynb
@@ -64,7 +63,7 @@ parts:
         - file: EI_manuals/9B_Digital_Filtering_and_Averaging_STUDENT.ipynb
         - file: EI_manuals/9C_Signal_Denoising_by_Average_STUDENT.ipynb
             
-     - file: EI_octal3.md
+    - file: EI_octal3.md
       sections:   
       - file: EI_manual_week11.md
         sections:
