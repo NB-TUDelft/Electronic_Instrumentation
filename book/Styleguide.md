@@ -1,4 +1,4 @@
-# styleguide (overall)
+# Styleguide (overall)
 
 The overall structure of each experiment is BASIC:
 - Background
@@ -54,7 +54,7 @@ Per section we have an:
 
 
 
-# styleguide (per experiment)
+# Styleguide (per experiment)
 
 ## Layout:
 - accessibility code
@@ -67,7 +67,7 @@ Per section we have an:
 - images
 - fonts
 
-## accessibility code
+## Accessibility code
 For accessibility each will start with a piece of code for the accessibility of the notebook (.ipynb file). You can adjust the width of the text with the function provided below.
 - You can toggle the auto-numbering of the sections in the outline toolbox (sidebar or topbar).
 - You can toggle the code line numbers in the dropdown menu of the "view" button in the topbar. 
@@ -86,7 +86,7 @@ set_width(50)
 
 ```
 
-## title, goal, structure
+## Title, Goal, Structure
 
 The title starts with a single hashtag plus space. Later sub sections go with ##, ###, etc. 
 
@@ -106,7 +106,7 @@ In each assignment the estimated time you will spend per part is given. If you s
 
 
 
-### subsections format
+### Subsections format
 - subsections start with ##
 - per subsection give an estimated time, indented in grey. Example: > <font color='grey'>⏳ Estimated time: 10 min</font>
 - we want as little cookbook recipe following as possible. 
@@ -122,7 +122,7 @@ YouTubeVideo('RSAVxhfckII', width = 600, height = 450)
 ```
 
 <!-- #region -->
-### images
+### Images
 
 Inserting an online image, in our case on an open gitlab repository is done with html code. Have a look at the code of this block, and you see:
 - '<img': start of image
@@ -136,7 +136,7 @@ Inserting an online image, in our case on an open gitlab repository is done with
 
 <!-- #endregion -->
 
-### fonts
+### Fonts
 you can make different color or size fonts:
 - first define the font color 
 - then write the text, or even copy paste an icon
@@ -153,7 +153,7 @@ Example:
 
 
 
-### Inserting student's images
+### Inserting own images
 In some cases an answer can be best illustrated with a picutre, either drawn or a photo taken from the setup, or oscilloscope screen, or screendump of the laptop. Then the following code is most udesfull, which need to be in two consecutive cells:
 
 ```python
