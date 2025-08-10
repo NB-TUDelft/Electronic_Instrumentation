@@ -4,7 +4,7 @@ root: intro.md
 parts:
   - caption: Contents of Teachbook demo
     chapters:
-    
+    - file: intro.md
     - file: Styleguide.md
     - file: Intro_to_Jupyter_Notebook.ipynb
     - file: EI_manual_intros.md
