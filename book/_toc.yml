@@ -108,8 +108,7 @@ parts:
         - file: EI_manuals/19A-CV-Experiments.ipynb
         - file: EI_manuals/19o-Advanced_Voltametric_Experiments.ipynb
          
-    - file: references.md
-    - file: changelog.md
+    
     - file: credits.md
 
 
