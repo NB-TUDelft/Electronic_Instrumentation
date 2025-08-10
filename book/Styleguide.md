@@ -1,4 +1,4 @@
-# Styleguide (overall)
+# How to use the EI manuals
 
 The overall structure of each experiment is BASIC:
 - Background
