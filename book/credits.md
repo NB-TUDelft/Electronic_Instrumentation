@@ -1,4 +1,3 @@
-(credits)=
 # Credits and License
 
 You can refer to this book as:
@@ -32,7 +31,6 @@ The following pages contain content written by others, part of has been reused a
 - Page `[](<relative_link_to_page>)` include text from {cite:t}`jason_moore`. Original content licensed under CC BY. 
 
 
-(editor)=
 ## About the Editors
 
 The practicum manuals are developed by the teachers of Electronic Instrumentation for Nanobiology, NB2214: Jeroen Bastemeijer and Margreet Docter. 
