@@ -1,7 +1,3 @@
-```python
-
-```
-
 <!-- #region -->
 
 # Welcome 
