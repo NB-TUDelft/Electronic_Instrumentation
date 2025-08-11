@@ -2,7 +2,7 @@ format: jb-book
 root: intro.md
 
 parts:
-  - caption: Contents of Teachbook demo
+  - caption: Contents of NB2214 practicum manuals
     chapters:
     - file: intro-Copy1.md
     - file: Styleguide.md
