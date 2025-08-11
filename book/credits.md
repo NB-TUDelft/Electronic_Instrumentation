@@ -43,8 +43,8 @@ The editors thank all TAs who previously contributed to the manuals. Specificall
 
 ### Publications
 Feel free to look up the following articles based on this course: 
-- The Advanced Learning Platform for Analog Circuits and Automation for hybrid electronic practicals - (2024) DOI 10.1088/1742-6596/2727/1/012023
-- A Practical Guide to Build a Raspberry Pi Pico Based Potentiostat for Educational Electrochemistry and Electronic Instrumentation (2024) 10.1021/acs.jchemed.4c00624
-- A Colorimeter as a Final Project for a Non-Major Electronic Instrumentation Course - (2024) DOI 10.63620/MKJESER.2024.1005
+- The Advanced Learning Platform for Analog Circuits and Automation for hybrid electronic practicals - (2024) DOI `10.1088/1742-6596/2727/1/012023`
+- A Practical Guide to Build a Raspberry Pi Pico Based Potentiostat for Educational Electrochemistry and Electronic Instrumentation (2024) `10.1021/acs.jchemed.4c00624`
+- A Colorimeter as a Final Project for a Non-Major Electronic Instrumentation Course - (2024) DOI `10.63620/MKJESER.2024.1005`
 
 
