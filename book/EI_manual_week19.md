@@ -13,4 +13,6 @@ Build and evaluate a voltammetry setup to measure:
 - 19A: Cyclic Voltammetry - Experiments with paracetamol
 - _19B: Advanced Experiments (optional)_
 - _19C: Advanced characterization of circuit (optional, taken from 17ABC)_
+
+** note: these manuals are work in progress for 2025, you see the 2024 version now
 <!-- #endregion -->
