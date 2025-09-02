@@ -1,4 +1,3 @@
-<!-- #region -->
 # EI manuals week 19
 
 ## Each week's goal:
@@ -15,4 +14,4 @@ Build and evaluate a voltammetry setup to measure:
 - _19C: Advanced characterization of circuit (optional, taken from 17ABC)_
 
 ** note: these manuals are work in progress for 2025, you see the 2024 version now
-<!-- #endregion -->
+
