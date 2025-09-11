@@ -1,0 +1,7 @@
+conda config --add channels conda-forge --add channels nb_tudelft
+conda create -n NB2214 --file " DRAG FILE HERE"
+conda activate NB2214
+python -m alpaca_kernel install
+python -m ipykernel install
+
+
