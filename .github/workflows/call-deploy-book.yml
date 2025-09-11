@@ -1,25 +1,30 @@
 name: call-deploy-book
 
+# Deploys the Jupyter Book using a reusable workflow when changes are pushed to main.
+# Limited to relevant paths to avoid unnecessary runs; can also be triggered manually.
 on:
   push:
     branches:
-    - '**'
-    # If your git repository has the Jupyter Book within some-subfolder next to
-    # unrelated files, you can make this run only if a file within that specific
-    # folder (or the workflow file itself) has been modified.
-    #
+    - main
+    # Only run when book or dependency files change (or this workflow itself)
     paths:
     - book/**
     - requirements.txt
     - .github/workflows/call-deploy-book.yml
+  # Allow manual runs from the GitHub UI
   workflow_dispatch:
 
 jobs: 
   call-workflow:
+    # Reuse the standard TeachBooks deploy workflow to build and publish the book
     uses: TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@main
+    # Pass repository secrets through to the called workflow
     secrets: inherit
     permissions:
+      # Required to read repository content (e.g., during checkout)
       contents: read
+      # Required to publish to GitHub Pages
       pages: write
+      # Required for OIDC authentication during Pages deployment
       id-token: write
 
