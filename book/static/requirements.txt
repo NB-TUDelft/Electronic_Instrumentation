@@ -1,23 +1,19 @@
-## Minimal runtime deps to run notebooks in VS Code
-# VS Code uses its own notebook UI; you do NOT need 'jupyter', 'notebook', or 'jupyterlab'.
-# Keep these two so the Python kernel works and widgets render in VS Code.
+alpaca_kernel_2
 ipykernel
 ipywidgets
-alpaca_kernel_2    # For ALPACA-specific kernel usage
-
-## Scientific stack used throughout the notebooks (keep)
-numpy
-scipy
+jupyter
+jupytext
+jupyterlab
+notebook
+markdown
 matplotlib
-
-## Instrumentation/IO used by exercises (keep)
-pyvisa
+numpy
+nbclient
+nbconvert
+nbconvert-core
+nbconvert-pandoc
+nbformat
+nbgrader
 nidaqmx-python
-
-## Optional/advanced tools — NOT required to run in VS Code
-# Uncomment only if you need the specific workflow locally.
-# nbconvert         # For exporting notebooks (e.g., to HTML/PDF)
-# nbclient          # For programmatic notebook execution
-# nbgrader          # For grading workflows; not needed for runtime
-# jupytext          # For syncing .ipynb <-> .md/.py paired files
-# markdown          # For programmatic Markdown-to-HTML rendering
+pyvisa
+scipy
