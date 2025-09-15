@@ -1,0 +1,14 @@
+# please install these packages if u want to run the notebooks quiclky
+# without installing full alpaca setup not build book (only for debuging reasons)
+
+ipykernel
+ipywidgets
+jupyter
+jupytext
+jupyterlab
+notebook
+markdown
+matplotlib
+numpy
+pyvisa
+scipy
