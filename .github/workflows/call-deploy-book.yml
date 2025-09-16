@@ -27,7 +27,7 @@ jobs:
     
     - name: Create EI manuals archive
       run: |
-        zip -r -Z bzip2 -9 ./book/static/EI_manuals.zip ./book/EI_manuals/
+        zip -r -Z bzip2 -9 ./book/static/EI_manuals.zip ./book/EI_manuals/*
         
         echo "Archive created successfully!"
         ls -lh ./book/static/

@@ -5,6 +5,7 @@ parts:
   - caption: Contents of NB2214 practicum manuals
     chapters:
     - file: intro1.md
+      title: Introduction
     - file: Styleguide.md
     - file: Intro_to_Jupyter_Notebook.ipynb
     - file: EI_manual_intros.md
