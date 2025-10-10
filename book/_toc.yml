@@ -109,7 +109,7 @@ parts:
         sections:
         - file: EI_manuals/19A-CV-Experiments.ipynb
         - file: EI_manuals/19o-Advanced_Voltametric_Experiments.ipynb
-         
+      - file: ALPACA-Xmax_special_buzzer.ipynb
     
     - file: credits.md
 
