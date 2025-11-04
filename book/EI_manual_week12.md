@@ -5,8 +5,8 @@ Apply opamps to amplify and/or convert your signal
 
 ## Topic of experiments
 
-- 11A: non-inverting opamp
-- 11B: inverting opamp
-- 11C: current to voltage converter
+- 12A: non-inverting opamp
+- 12B: inverting opamp
+- 12C: current to voltage converter
 
 
