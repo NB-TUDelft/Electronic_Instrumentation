@@ -1,6 +1,7 @@
 # Welcome to the Online Manuals of the NB2214 practicum
 
-This Teachbook is meant to be able to open all NB2214 Practicum manuals without having to open the jupyter notebook on your laptop. If you want to, you can still download this notebook and work offline, which is mainly needed when connecting to equipment such as the ALPACA, or NIDAQ.
+This TeachBook allows you to open all NB2214 Practicum manuals without opening the Jupyter notebook on your laptop. 
+If you prefer, you can still download notebooks to work offline. This is mainly needed when connecting to equipment such as the ALPACA or NIDAQ.
 
 ## Expected of you
 
