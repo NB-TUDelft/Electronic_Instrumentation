@@ -11,3 +11,6 @@ jupyter-book build .
 
 #under github, Go to Settings → Pages
 #Under Build and deployment, set Source to GitHub Actions
+
+# Running build locally
+jupyter-book build . && python -m http.server -b 127.0.0.1
