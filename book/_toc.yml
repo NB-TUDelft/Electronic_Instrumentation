@@ -96,6 +96,7 @@ parts:
         - file: EI_manuals/16A_Simulation_STUDENT.ipynb
         - file: EI_manuals/16B_Simple_Oscillator_STUDENT.ipynb
         - file: EI_manuals/16C_Light_Sensor_STUDENT.ipynb
+        - file: EI_manuals/ALPACA-Xmax_special_buzzer.ipynb
       - file: EI_manual_week17.md
         sections:
         - file: EI_manuals/17A-Design_and_Limitations.ipynb
