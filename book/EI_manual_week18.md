@@ -11,4 +11,4 @@ Build and evaluate a voltammetry setup to measure:
 - 18B: Cyclic Voltammetry - Data Evaluation
 - _18C: Advanced Voltammetric Techniques (optional)_
 
-** note: these manuals are work in progress for 2025, you see the 2024 version now
+
