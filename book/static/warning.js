@@ -44,7 +44,7 @@
     // ASCII art warning
     console.log('%c' + `
     ╔══════════════════════════════════════╗
-    ║           🚨 ALERT! ALERT! 🚨        ║
+    ║             ALERT! ALERT!            ║
     ║                                      ║
     ║   YOU ARE NOT SUPPOSED TO BE HERE!   ║
     ║                                      ║
@@ -57,40 +57,14 @@
         'font-size: 16px; font-weight: bold; color: #8B0000; background: #FFE4B5; padding: 5px;'
     );
 }
-  function enhance(){
-    console.log('dw_fix.js: running');
+  function startWarnings(){
     warning();
     setInterval(warning, 180000);
-    // header buttons: look for anchor elements that link to .ipynb or .md in _sources or root
-    const anchors = Array.from(document.querySelectorAll('a[href$=".ipynb"], a[href$=".md"], a.reference.download.internal'));
-    anchors.forEach(a => {
-      // skip if already has download attribute
-      if(a.hasAttribute('download')) return;
-      const href = a.getAttribute('href');
-      if(!href) return;
-      // heuristics: typical source links contain '_sources' OR end with .ipynb/.md and are not external (no ://)
-      if(/:\/\//.test(href)) return; // external
-      if(href.endsWith('.ipynb') || href.endsWith('.md')){
-        // derive filename from URL path segment
-        try {
-          const urlParts = href.split('#')[0].split('/');
-          const fileName = urlParts[urlParts.length - 1];
-          a.setAttribute('download', fileName);
-          // For accessibility provide title
-          if(!a.getAttribute('title')){
-            a.setAttribute('title', 'Download ' + fileName);
-          }
-        } catch(e){
-          console.debug('force-download.js: could not set download attr for', href, e);
-        }
-      }
-    });
   }
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', enhance);
+    document.addEventListener('DOMContentLoaded', startWarnings);
   } else {
-    enhance();
+    startWarnings();
   }
-  // also re-run when Sphinx theme triggers navigation events (for the search or version switchers)
-  document.addEventListener('pjax:complete', enhance);
+  document.addEventListener('pjax:complete', startWarnings);
 })();
