@@ -1,0 +1,19 @@
+[project]
+name = "electronic-instrumentation"
+version = "1.0.0"
+description = "EI manuals"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "download-link-replacer>=1.0.6",
+    "jupyterbook-patches>=1.13.4",
+    "sphinx-exercise>=1.2.1",
+    "sphinx-iframes>=1.2.0",
+    "sphinx-image-inverter>=1.1.11",
+    "sphinx-thebe",
+    "teachbooks>=0.2.4",
+    "teachbooks-sphinx-tippy>=1.0.15",
+]
+
+[tool.uv.sources]
+sphinx-thebe = { git = "https://github.com/TeachBooks/Sphinx-Thebe" }
