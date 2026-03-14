@@ -19,7 +19,12 @@ parts:
       - file: manuals/intros/intro_LTSpice.ipynb
       - file: manuals/intros/intro_ALPACA.ipynb
 
+    - file: manuals/week1/_summary.ipynb
+      sections:
+      - file: manuals/week1/1.1_voltage_divider.ipynb
+
     - file: credits.md
+    - file: admonitions.md
 
 
 

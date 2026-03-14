@@ -64,4 +64,3 @@ Students are encouraged to answer the questions and then write what they learned
 2. Which troubleshooting skills do you want to remember for next sessions,
 3. Which code do you copy for use in next sessions,
 4. How do think this notebook could be improved
-<!-- #endregion -->
