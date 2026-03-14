@@ -2,11 +2,11 @@
 
 You can refer to this book as:
 
-> `<M.W.Docter & J. Bastemeijer>` (`<2025>`) _`NB2214 practicum manuals`_. `https://nb-tudelft.github.io/Electronic_Instrumentation/`. Source files at `https://github.com/NB-TUDelft/Electronic_Instrumentation/`. CC BY 4.0.
+> `<M.W.Docter & J. Bastemeijer>` (`<2025>`) _`NB2420 practicum manuals`_. `https://nb-tudelft.github.io/Electronic_Instrumentation/`. Source files at `https://github.com/NB-TUDelft/Electronic_Instrumentation/`. CC BY 4.0.
 
 You can refer to individual chapters or pages within this book as:
 
-> `<Title of Chapter or Page>`. In `<M.W.Docter & J. Bastemeijer>` (`<2025>`) _`NB2214 practicum manuals`_. `<url to specific page on book website>`. Source files at `https://github.com/NB-TUDelft/Electronic_Instrumentation/`. CC BY 4.0.
+> `<Title of Chapter or Page>`. In `<M.W.Docter & J. Bastemeijer>` (`<2025>`) _`NB2420 practicum manuals`_. `<url to specific page on book website>`. Source files at `https://github.com/NB-TUDelft/Electronic_Instrumentation/`. CC BY 4.0.
 
 We anticipate that the content of this book will change significantly. Therefore, we recommend using the source code directly with the citation above that refers to the GitHub repository and lists the date and name of the file. Although content will be added over time, chapter titles and URL's in this book are expected to remain relatively static. However, we make no guarantee, so if it is important for you to reference a specific location/commit within the book.
 

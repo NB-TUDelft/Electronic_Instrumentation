@@ -2,7 +2,7 @@ format: jb-book
 root: intro.md
 
 parts:
-  - caption: Contents of NB2214 practicum manuals
+  - caption: Contents of NB2420 practicum manuals
     chapters:
     - file: intro1.md
       title: Introduction
