@@ -18,6 +18,7 @@ parts:
       - file: manuals/intros/intro_scope_Siglent.ipynb
       - file: manuals/intros/intro_LTSpice.ipynb
       - file: manuals/intros/intro_ALPACA.ipynb
+      - file: manuals/intros/breadboard.ipynb
 
     - file: manuals/week1/_summary.ipynb
       sections:
