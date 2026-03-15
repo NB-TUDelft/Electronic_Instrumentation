@@ -1,5 +1,3 @@
-// Inject download attribute to source download links for .ipynb and .md so browsers download instead of display JSON/Markdown.
-// Workaround for: https://github.com/jupyter-book/jupyter-book/issues/2237 and https://github.com/executablebooks/sphinx-book-theme/issues/863
 (function(){
   function warning() {
     // Clear console first
@@ -37,20 +35,19 @@
         );
         // add green information that they can chech out this channel:https://www.youtube.com/@NB-TUDelft
         console.log('%cIf u are bored, visit: https://www.youtube.com/@NB-TUDelft', 
-            'font-size: 18px; font-weight: bold; color: #00FF00; background: #FFFF00; padding: 3px; margin: 2px;'
+            'font-size: 18px; font-weight: bold; color: #00FF00; background: #00a541; padding: 3px; margin: 2px;'
         );
     }
     
     // ASCII art warning
     console.log('%c' + `
-    ╔══════════════════════════════════════╗
-    ║             ALERT! ALERT!            ║
-    ║                                      ║
-    ║   YOU ARE NOT SUPPOSED TO BE HERE!   ║
-    ║                                      ║
-    ║        CLOSE CONSOLE IMMEDIATELY     ║
-    ╚══════════════════════════════════════╝
-    `, 'font-size: 14px; font-weight: bold; color: #FF0000; background: #FFFF00; font-family: monospace;');
+    ╔══════════════════════════════════════╗    
+    ║             ALERT! ALERT!            ║    
+    ║                                      ║    
+    ║   YOU ARE NOT SUPPOSED TO BE HERE!   ║    
+    ║                                      ║    
+    ║        CLOSE CONSOLE IMMEDIATELY     ║    
+    ╚══════════════════════════════════════╝    `, 'font-size: 14px; font-weight: bold; color: #FF0000; background: #FFFF00; font-family: monospace;');
     
     // Final intimidating message
     console.log('%cThis console is monitored. All activities are logged.', 
