@@ -1,4 +1,4 @@
-<svg viewBox="0 0 520 342" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 630 342" version="1.1" id="prefix__svg60" xmlns="http://www.w3.org/2000/svg">
    <style id="style1">
       .prefix__wire {
          fill: none;
@@ -94,8 +94,8 @@
          visibility: visible
       }
    </style>
-   <path id="prefix__rect1" stroke-width=".891" fill="#fff" stroke="none" d="M0 0h520v342H0z" />
-   <g transform="translate(-10.25 6)" id="prefix__g60">
+   <path id="prefix__rect1" stroke-width=".981" fill="#fff" stroke="none" d="M0 0h630v342H0z" />
+   <g transform="translate(0 12)" id="prefix__g60">
       <g transform="translate(339.25 126)" id="prefix__g4">
          <path d="M0 14h28" class="prefix__kpl0" id="prefix__path1" />
          <path d="M14 14V0" class="prefix__kpl1" id="prefix__path2" />
@@ -119,6 +119,12 @@
          <path d="M14 14V0" class="prefix__kpl1" id="prefix__path14" />
          <path d="M4 20h20" class="prefix__kpl0" id="prefix__path15" />
          <path d="M8 26h12" class="prefix__kpl0" id="prefix__path16" />
+      </g>
+      <g transform="rotate(180 288.75 102.125)" id="prefix__g17">
+         <path d="M26.25 5.25H10.5" class="prefix__kpl1" id="prefix__path17" />
+         <circle r="5.25" cx="5.25" cy="5.25" id="prefix__circle17" fill="none" fill-opacity="1" fill-rule="nonzero"
+            opacity="1" stroke="#000" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="round"
+            stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="3.5" />
       </g>
       <g transform="translate(325.25 22)" id="prefix__g23">
          <circle r="28" cx="28" cy="42" class="prefix__kpl3" id="prefix__circle19" />
@@ -164,9 +170,13 @@
       <path d="M40 22V12h84v114" class="prefix__wire" id="prefix__path42" />
       <path d="M124 189v20" class="prefix__wire" id="prefix__path43" />
       <path d="M124 272v20" class="prefix__wire" id="prefix__path44" />
-      <path d="M126.26 197.845H458.297" class="prefix__wire" id="prefix__path46" />
-      <circle cx="461.25" cy="197.845" r="5" class="prefix__dot" id="prefix__circle46" />
-      <circle cx="124" cy="197.845" r="5" class="prefix__dot" id="prefix__circle47" />
+      <path d="M461.25 189v10h90" class="prefix__wire" id="prefix__path45" />
+      <path d="M124 189v10h390" class="prefix__wire" id="prefix__path46" />
+      <circle cx="461.25" cy="199" r="5" class="prefix__dot" id="prefix__circle46" />
+      <circle cx="124" cy="199" r="5" class="prefix__dot" id="prefix__circle47" />
+      <path
+         d="M589.76 209.6c2 0 3.16-1.08 3.86-2.58.7-1.5.88-3.38.88-4.98 0-3.14-.74-7.44-4.74-7.44-4.06 0-4.74 4.36-4.74 7.46 0 3.2.74 7.54 4.74 7.54zm0-1.8c-1.28 0-2.02-.96-2.42-2.16-.42-1.18-.52-2.6-.52-3.56 0-.94.1-2.34.52-3.54.4-1.18 1.14-2.14 2.42-2.14 2.56 0 2.94 3.8 2.94 5.66 0 1.92-.38 5.74-2.94 5.74zm8.34-12.1v9.5c0 1.3.38 2.44 1.1 3.18.7.76 1.74 1.22 3.1 1.22 2.72 0 4.2-1.74 4.2-4.4v-9.5c0-.62-.28-.9-.9-.9s-.9.28-.9.9v9.5c0 1.54-.74 2.6-2.4 2.6s-2.4-1-2.4-2.6v-9.5c0-.62-.28-.9-.9-.9s-.9.28-.9.9zm14.6.9v12.1c0 .62.28.9.9.9s.9-.28.9-.9v-12.1h3.1c.54 0 .9-.36.9-.9s-.36-.9-.9-.9h-8c-.54 0-.9.36-.9.9s.36.9.9.9z"
+         class="prefix__textpath" id="prefix__path47" />
       <path
          d="M388.75 49.14l3.46 13c.18.64.6.96 1.26.96.7 0 1.08-.32 1.26-.96l3.46-13c.14-.54.02-1.04-.76-1.04-.54 0-.9.24-1.04.7l-2.62 10.4c-.16.62-.44.62-.6 0l-2.62-10.4c-.14-.46-.5-.7-1.04-.7-.78 0-.9.5-.76 1.04zm13.6 13.76h7.6c.62 0 .9-.28.9-.9s-.28-.9-.9-.9h-2.54V49.7c0-1.1-.5-1.6-1.6-1.6-.58 0-1.04.12-1.5.5l-2.2 1.72c-.3.24-.46.54-.46 1.12 0 1 .4 1.26 1.38.48l1.96-1.56c.4-.34.62-.28.62.3V61.1h-3.26c-.62 0-.9.28-.9.9s.28.9.9.9z"
          class="prefix__textpath" id="prefix__path49" />
