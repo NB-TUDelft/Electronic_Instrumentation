@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "mordecai64.notebook-extend-markdown-renderer-myst",
+        "ms-toolsai.jupyter",
+        "executablebookproject.myst-highlight",
+        "davidanson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one"
+    ]
+}
