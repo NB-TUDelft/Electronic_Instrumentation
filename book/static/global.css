@@ -1,0 +1,37 @@
+.hstack-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.hstack-grid > * {
+	flex: 1 1 16rem;
+}
+
+html[data-theme="dark"] img.no-invert,
+html[data-theme="dark"] .no-invert img,
+html[data-theme="dark"] figure.no-invert img {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+    background-color: transparent !important;
+}
+
+.admonition.answer,
+.admonition-answer {
+    border-left: 4px solid oklch(65% 0.14 200) !important;
+}
+
+.admonition.answer .admonition-title,
+.admonition-answer .admonition-title {
+    background-color: oklch(65% 0.14 200 / 0.2261) !important;
+
+}
+
+.admonition.answer .admonition-title::after,
+.admonition-answer .admonition-title::after {
+    content: "\E5A0";
+    font-weight: 900;
+    display: inline-block;
+    color: oklch(65% 0.14 200);
+}
+

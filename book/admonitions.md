@@ -154,18 +154,18 @@ This page contains interactive elements.
 This page contains interactive elements.
 ```
 
-### AI tip (note)
+### Answer (note)
 
 ````markdown
-```{admonition} AI tip
-:class: ai
-Use AI tools to help debug, but verify the results.
+```{admonition} Answer
+:class: answer
+Use this box to show the expected answer or solution.
 ```
 ````
 
-```{admonition} AI tip
-:class: ai
-Use AI tools to help debug, but verify the results.
+```{admonition} Answer
+:class: answer
+Use this box to show the expected answer or solution.
 ```
 
 ### Solution to this exercise (dropdown)

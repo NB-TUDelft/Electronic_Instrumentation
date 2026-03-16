@@ -51,11 +51,12 @@ html:
   home_page_in_navbar: true
   baseurl: "https://nb-tudelft.github.io/Electronic_Instrumentation/"
   comments:
-    hypothesis: true
+    hypothesis: false
     utterances: false
   announcement: "" # Change this parameter (optional)
   use_multitoc_numbering: false
-  extra_css: []
+  extra_css:
+    - global.css
 
 
 #######################################################################################
@@ -100,6 +101,8 @@ sphinx:
     html_js_files: 
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js 
     - warning.js 
+    html_css_files:
+    - global.css
     html_static_path:
     - "static"
     thebe_config: 
@@ -110,6 +113,7 @@ sphinx:
         text: NB2420 practical
         image_light: static/icons/alpaca.svg
         image_dark: static/icons/alpaca.svg
+      show_toc_level: 3
       repository_url: https://github.com/NB-TUDelft/Electronic_Instrumentation
       repository_branch: main
       path_to_docs: "book" 
