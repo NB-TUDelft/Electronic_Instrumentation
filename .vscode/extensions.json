@@ -4,6 +4,7 @@
         "ms-toolsai.jupyter",
         "executablebookproject.myst-highlight",
         "davidanson.vscode-markdownlint",
-        "yzhang.markdown-all-in-one"
+        "yzhang.markdown-all-in-one",
+        "piotrpalarz.vscode-gitignore-generator"
     ]
 }
