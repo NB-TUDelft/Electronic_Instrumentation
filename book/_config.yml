@@ -47,7 +47,8 @@ html:
   use_issues_button: true
   extra_navbar: "" # Change this parameter (optional)
   extra_footer: "" # Change this parameter (optional)
-  google_analytics_id: ""
+  analytics:
+    google_analytics_id: ""
   home_page_in_navbar: true
   baseurl: "https://nb-tudelft.github.io/Electronic_Instrumentation/"
   comments:
@@ -85,6 +86,8 @@ sphinx:
     - sphinx_iframes 
     - sphinx_exercise 
     - teachbooks_sphinx_tippy 
+  local_extensions:
+    estimated_time_admonition: .
 
   recursive_update: false
 

@@ -195,3 +195,15 @@ Guidance on how to navigate the material.
 :class: note, dropdown
 Guidance on how to navigate the material.
 ```
+
+### Estimated time
+
+````markdown
+```{admonition} Estimated time: 10 min
+:class: estimated-time
+```
+````
+
+```{admonition} Estimated time: 10 min
+:class: estimated-time
+```
