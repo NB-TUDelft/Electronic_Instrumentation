@@ -138,7 +138,7 @@ This is a custom admonition using the generic directive.
 
 ## Custom admonitions used in this book
 
-These are built with the generic `admonition` directive plus a custom title and optional classes.
+These are built with the generic `admonition` directive plus a custom title and optional classes. Use `no-content` when you want an admonition with only a title row and no body text.
 
 ### Interactive page (warning + dropdown)
 
@@ -194,4 +194,16 @@ Guidance on how to navigate the material.
 ```{admonition} How to use this book?
 :class: note, dropdown
 Guidance on how to navigate the material.
+```
+
+### Estimated time
+
+````markdown
+```{admonition} Estimated time: 10 min
+:class: estimated-time no-content
+```
+````
+
+```{admonition} Estimated time: 10 min
+:class: estimated-time no-content
 ```
