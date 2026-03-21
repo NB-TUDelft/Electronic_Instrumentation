@@ -39,7 +39,6 @@ html[data-theme="dark"] figure.no-invert img {
 .admonition.estimated_time,
 .admonition-estimated_time {
   border-left: 4px solid oklch(72% 0.14 78) !important;
-  padding-bottom: 0;
 }
 
 .admonition.estimated-time .admonition-title,
@@ -57,4 +56,26 @@ html[data-theme="dark"] figure.no-invert img {
   font-weight: 900;
   display: inline-block;
   color: oklch(72% 0.14 78);
+}
+
+.admonition.no-content,
+.admonition-no-content,
+.admonition.no_content,
+.admonition-no_content {
+  padding-bottom: 0;
+}
+
+.admonition.no-content > p:not(.admonition-title),
+.admonition-no-content > p:not(.admonition-title),
+.admonition.no_content > p:not(.admonition-title),
+.admonition-no_content > p:not(.admonition-title) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  block-size: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  display: none;
 }

@@ -3,21 +3,21 @@ from docutils.parsers.rst import directives as rst_directives
 from docutils.parsers.rst.directives import admonitions
 
 
-ESTIMATED_TIME_CLASSES = {
-    "estimated-time",
-    "estimated_time",
-    "admonition-estimated-time",
-    "admonition-estimated_time",
+NO_CONTENT_CLASSES = {
+    "no-content",
+    "no_content",
+    "admonition-no-content",
+    "admonition-no_content",
 }
 
 
 class EstimatedTimeAdmonition(admonitions.Admonition):
-    """Allow empty generic admonitions only for the estimated-time variant."""
+    """Allow empty generic admonitions when explicitly marked as contentless."""
 
     def run(self):
         admonitions.set_classes(self.options)
         classes = set(self.options.get("classes", []))
-        if self.content or not (classes & ESTIMATED_TIME_CLASSES):
+        if self.content or not (classes & NO_CONTENT_CLASSES):
             return super().run()
 
         admonition_node = self.node_class("", **self.options)
