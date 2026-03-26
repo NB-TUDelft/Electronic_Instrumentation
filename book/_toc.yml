@@ -1,10 +1,13 @@
 format: jb-book
 root: intro.md
 
+options:
+  number_sections: false
+  
 parts:
   - caption: Contents of NB2420 practicum manuals
     numbered: true
-    number_sections: false
+
     chapters:
     - file: intro1.md
       title: Introduction
