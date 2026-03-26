@@ -92,7 +92,7 @@ sphinx:
 
   config:
     numfig: true
-    numfig_secnum_depth: 1
+    numfig_secnum_depth: 2
     iframe_blend:          true # default value
     iframe_saturation:     1.5 # default value
     iframe_h5p_autoresize: true # default value
