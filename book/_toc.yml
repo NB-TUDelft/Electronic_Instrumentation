@@ -9,6 +9,7 @@ options:
 parts:
   - caption: Contents of NB2420 practicum manuals
     numbered: true
+    number_sections: false # Sections do NOT get numbers
     chapters:
     - file: intro1.md
       title: Introduction
