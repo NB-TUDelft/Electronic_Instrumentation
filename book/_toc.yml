@@ -6,11 +6,10 @@ parts:
     chapters:
     - file: intro1.md
       title: Introduction
-
-    - file: Intro_to_Jupyter_Notebook.ipynb
     
     - file: manuals/intros/EI_manual_intros.md
       sections:
+      - file: manuals/intros/Intro_to_Jupyter_Notebook.ipynb
       - file: manuals/intros/intro_testboards.ipynb
       - file: manuals/intros/intro_power_supply_Siglent.ipynb
       - file: manuals/intros/intro_DMM_Siglent+handheld.ipynb
