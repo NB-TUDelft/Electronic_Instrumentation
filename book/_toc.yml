@@ -1,6 +1,11 @@
 format: jb-book
 root: intro.md
 
+options:
+  numbered: true        # chapters get numbers
+  maxdepth: 2           # or whatever you prefer
+  number_sections: false
+  
 parts:
   - caption: Contents of NB2420 practicum manuals
     numbered: true
