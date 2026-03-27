@@ -8,7 +8,7 @@ options:
 
 parts:
   - caption: Contents of NB2420 practicum manuals
-    
+    numbered: true
     chapters:
     - file: intro1.md
       title: Introduction
