@@ -2,8 +2,8 @@ format: jb-book
 root: intro.md
 
 options:
-  numbered: true
-  number_sections: false
+  numbered: true # Chapters get numbers → needed for figure numbering
+  number_sections: false # Sections do NOT get numbers
   
 
 parts:
