@@ -1,39 +1,28 @@
 format: jb-book
 root: intro.md
 
-options:
-  numbered: true # Chapters get numbers → needed for figure numbering
-  number_sections: false # Sections do NOT get numbers
-  
-
 parts:
-  - caption: Contents of NB2420 practicum manuals
-    numbered: true
-    number_sections: false # Sections do NOT get numbers
-    chapters:
-    - file: intro1.md
-      title: Introduction
-
   - caption: Instrument introductions
     chapters:
-    - file: manuals/intros/Intro_to_Jupyter_Notebook.ipynb
-    - file: manuals/intros/intro_testboards.ipynb
-    - file: manuals/intros/intro_power_supply_Siglent.ipynb
-    - file: manuals/intros/intro_DMM_Siglent+handheld.ipynb
-    - file: manuals/intros/intro_function_generator_Siglent.ipynb
-    - file: manuals/intros/intro_scope_Siglent.ipynb
-    - file: manuals/intros/intro_LTSpice.ipynb
-    - file: manuals/intros/intro_ALPACA.ipynb
-    - file: manuals/intros/breadboard.ipynb
+      - file: manuals/intros/Intro_to_Jupyter_Notebook.ipynb
+      - file: manuals/intros/intro_testboards.ipynb
+      - file: manuals/intros/intro_power_supply_Siglent.ipynb
+      - file: manuals/intros/intro_DMM_Siglent+handheld.ipynb
+      - file: manuals/intros/intro_function_generator_Siglent.ipynb
+      - file: manuals/intros/intro_scope_Siglent.ipynb
+      - file: manuals/intros/intro_LTSpice.ipynb
+      - file: manuals/intros/intro_ALPACA.ipynb
+      - file: manuals/intros/breadboard.ipynb
 
-  - caption: Week 1
+  - caption: Lab manuals
+    numbered: 4 #we need to experiment to determine which works best values to try 2,3,4 
     chapters:
-    - file: manuals/week1/1.1_voltage_divider.ipynb
-    - file: manuals/week1/1.2_intro_to_oscilloscope_and_filters.ipynb
+      - file: manuals/week1/_summary.ipynb
+        sections:
+          - file: manuals/week1/1.1_voltage_divider.ipynb
+          - file: manuals/week1/1.2_intro_to_oscilloscope_and_filters.ipynb
 
-  - caption: Reference
+  - caption: Appendix
     chapters:
-    - file: credits.md
-    - file: admonitions.md
-
-
+      - file: credits.md
+      - file: admonitions.md

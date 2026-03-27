@@ -118,6 +118,7 @@ sphinx:
         image_light: static/icons/alpaca.svg
         image_dark: static/icons/alpaca.svg
       show_toc_level: 3
+      show_nav_level: 0
       repository_url: https://github.com/NB-TUDelft/Electronic_Instrumentation
       repository_branch: main
       path_to_docs: "book" 
