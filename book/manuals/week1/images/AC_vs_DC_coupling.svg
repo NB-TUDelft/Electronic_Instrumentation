@@ -1,255 +1,117 @@
-<svg viewBox="0 0 2626 2159" xml:space="preserve" overflow="hidden" version="1.1" id="prefix__svg78"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <path id="prefix__rect120" fill="#fff" fill-opacity="1" stroke="none" stroke-width="3.866" stroke-opacity="1"
-    paint-order="stroke markers fill" d="M0 0h2626v2159H0z" />
-  <g id="prefix__g120" transform="translate(54.587 -12.974)"><text fill="#000" fill-opacity="1"
-      font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal" font-variant="normal" font-weight="400"
-      font-stretch="normal" font-size="50" text-anchor="start" direction="ltr" writing-mode="lr-tb"
-      unicode-bidi="normal" text-decoration="none" id="prefix__text39" style="text-decoration-line:none" x="550.56"
-      y="1229">Oscilloscope AC coupling mode</text>
-    <path d="M1566.62 1682.45v10.31H1426.5v6.879h140.12v10.31l27.5-13.75z" id="prefix__path119" />
-    <path d="M1566.62 548.25v10.31H1426.5v6.879h140.12v10.31l27.5-13.75z" id="prefix__path119-8" />
-    <g id="prefix__g78" transform="translate(0 1134.2)" stroke="#000" stroke-opacity="1">
-      <g clip-path="url(#prefix__clip6)" id="prefix__g47" transform="translate(-1045 -73)">
-        <g clip-path="url(#prefix__clip7)" id="prefix__g46" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g45" stroke="#000" stroke-opacity="1" stroke-width="3.428" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" fill="none" fill-rule="nonzero">
-            <path d="M485.828 471.26V276.936" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path42" />
-            <path d="M485.828 694.755V500.397" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path43" />
-            <path d="M534.435 471.26h-97.179" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path44" />
-            <path d="M437.256 500.397h97.179" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path45" />
-          </g>
-        </g>
+<svg viewBox="0 0 2626 2159" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+   <path fill="#fff" paint-order="stroke markers fill" d="M0 0h2626v2159H0z" /><text
+      font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
+      style="text-decoration-line:none" x="550.56" y="1229" transform="translate(54.587 -12.974)">Oscilloscope AC
+      coupling mode</text>
+   <path
+      d="M1621.207 1669.476v10.31h-140.12v6.879h140.12v10.31l27.5-13.75zm0-1134.2v10.31h-140.12v6.879h140.12v10.31l27.5-13.75z" />
+   <g stroke="#000">
+      <g clip-path="url(#clip6)" transform="translate(-990.413 1048.226)">
+         <g stroke-width="3.428" stroke-miterlimit="10" fill="none" clip-path="url(#clip7)">
+            <path d="M485.828 471.26V276.936m0 417.819V500.397m48.607-29.137h-97.179m0 29.137h97.179"
+               transform="matrix(1.00246 0 0 1 1663.45 156.131)" />
+         </g>
       </g>
-      <g id="prefix__g51" transform="translate(-1045 -73)">
-        <g id="prefix__g50" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g49" stroke="#000" stroke-opacity="1" stroke-width="3.429" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" fill="none" fill-rule="nonzero">
-            <path d="M485.938 427.652V276.998" transform="matrix(1 0 0 1.00012 1422.2 161.605)" id="prefix__path47" />
-            <path d="M485.938 693.532V544.225" transform="matrix(1 0 0 1.00012 1422.2 161.605)" id="prefix__path48" />
-            <path d="M461.664 427.652h48.583v116.573h-48.583z" transform="matrix(1 0 0 1.00012 1422.2 161.605)"
-              id="prefix__path49" />
-          </g>
-        </g>
+      <path d="M485.938 427.652V276.998m0 416.534V544.225m-24.274-116.573h48.583v116.573h-48.583z"
+         transform="matrix(1 0 0 1.00012 431.787 1209.831)" stroke-width="3.429" stroke-miterlimit="10" fill="none" />
+      <g clip-path="url(#clip8)" transform="translate(-990.413 1048.226)">
+         <g stroke-width="3.409" stroke-miterlimit="10" fill="none" clip-path="url(#clip9)">
+            <path d="M483.131 468.643V356.699m0 254.266V497.618m48.337-28.975h-96.64m0 28.975h96.64"
+               transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" />
+         </g>
       </g>
-      <g clip-path="url(#prefix__clip8)" id="prefix__g56" transform="translate(-1045 -73)">
-        <g clip-path="url(#prefix__clip9)" id="prefix__g55" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g54" stroke="#000" stroke-opacity="1" stroke-width="3.409" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" fill="none" fill-rule="nonzero">
-            <path d="M483.131 468.643V275.398" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path51" />
-            <path d="M483.131 690.898v-193.28" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path52" />
-            <path d="M531.468 468.643h-96.64" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path53" />
-            <path d="M434.828 497.618h96.64" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path54" />
-          </g>
-        </g>
+      <path stroke-width="3.438" stroke-miterlimit="8" fill="none"
+         d="M63.087 1325.726h434v709h-434zm854.74 576H497.088m839.999 0H918.084m418.743-414H916.088" />
+      <path stroke-width="6.875" stroke-miterlimit="8" stroke-dasharray="27.5 20.625" fill="none"
+         d="M548.087 1254.726h892v857h-892z" /><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="50" style="text-decoration-line:none" x="761.18" y="587"
+         transform="translate(54.587 1121.226)">R</text><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="34" style="text-decoration-line:none" x="797.095" y="599"
+         transform="translate(54.587 1121.226)">in</text><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="50" style="text-decoration-line:none" x="975.38" y="583"
+         transform="translate(54.587 1121.226)">C</text><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="34" style="text-decoration-line:none" x="1010.32" y="595"
+         transform="translate(54.587 1121.226)">in</text>
+      <path
+         d="M485.264 392.375l-.088-148.825m.088 422.113V517.004m9.69-9.724c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69zm0-105.181c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69zm-13.627 96.347l-38.861-87.274"
+         transform="matrix(0 1.00018 -1 0 1161.737 1002.462)" stroke-width="3.424" stroke-miterlimit="10" fill="none" />
+      <path d="M832.087 1568.779v-81.053m-252 81.553v-81.053" stroke-width="3.438" stroke-miterlimit="8" fill="none" />
+      <text font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
+         style="text-decoration-line:none" x="150.68" y="587" transform="translate(54.587 1121.226)">Circuit</text>
+      <path
+         d="M499.242 447.109V304.591m0 416.684V563.373m58.149-58.149c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
+         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 1179.878)" />
+      <path
+         d="M459.382 547.579c6.29-15.861 21.776-27.04 39.86-27.04s32.988 10.802 39.483 26.186m-27.45-24.477l15.349-23.109"
+         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 1179.878)" />
+      <path d="M529.256 505.6l7.077-21.092-16.683 14.734z" fill="#231f20"
+         transform="matrix(1 0 0 1.00288 837.277 1179.878)" />
+   </g><text font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
+      style="text-decoration-line:none" x="548.387" y="94.8" transform="translate(54.587 -12.974)">Oscilloscope DC
+      coupling mode</text>
+   <g stroke="#000">
+      <g clip-path="url(#clip6)" transform="translate(-990.413 -85.974)">
+         <g stroke-width="3.428" stroke-miterlimit="10" fill="none" clip-path="url(#clip7)">
+            <path d="M485.828 471.26V276.936m0 417.819V500.397m48.607-29.137h-97.179m0 29.137h97.179"
+               transform="matrix(1.00246 0 0 1 1663.45 156.131)" />
+         </g>
       </g>
-      <path stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" fill="none"
-        id="prefix__rect56" d="M8.5 204.5h434v709H8.5z" />
-      <path d="M863.24 780.5H442.501" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path56" />
-      <path d="M1282.5 780.5H863.497" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path57" />
-      <path d="M1282.24 366.5H861.501" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path58" />
-      <path stroke-width="6.875" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8"
-        stroke-dasharray="27.5 20.625" fill="none" id="prefix__rect58" d="M493.5 133.5h892v857h-892z" /><text
-        fill="#000" fill-opacity="1" font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal"
-        font-variant="normal" font-weight="400" font-stretch="normal" font-size="50" text-anchor="start" direction="ltr"
-        writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" id="prefix__text58"
-        style="text-decoration-line:none" x="761.18" y="587">R</text><text fill="#000" fill-opacity="1"
-        font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal" font-variant="normal" font-weight="400"
-        font-stretch="normal" font-size="34" text-anchor="start" direction="ltr" writing-mode="lr-tb"
-        unicode-bidi="normal" text-decoration="none" id="prefix__text59" style="text-decoration-line:none" x="797.095"
-        y="599">in</text><text fill="#000" fill-opacity="1" font-family="Aptos, Aptos_MSFontService, sans-serif"
-        font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="50"
-        text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none"
-        id="prefix__text60" style="text-decoration-line:none" x="975.38" y="583">C</text><text fill="#000"
-        fill-opacity="1" font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal" font-variant="normal"
-        font-weight="400" font-stretch="normal" font-size="34" text-anchor="start" direction="ltr" writing-mode="lr-tb"
-        unicode-bidi="normal" text-decoration="none" id="prefix__text61" style="text-decoration-line:none" x="1010.32"
-        y="595">in</text>
-      <g id="prefix__g65" transform="translate(-1045 -73.5)" clip-path="none" stroke-width="3.424" stroke-linecap="butt"
-        stroke-linejoin="miter" stroke-miterlimit="10" fill="none" fill-rule="nonzero">
-        <path d="M485.264 392.375l-.088-148.825" transform="matrix(0 1.00018 -1 0 2152.15 -45.264)"
-          id="prefix__path61" />
-        <path d="M485.264 665.663V517.004" transform="matrix(0 1.00018 -1 0 2152.15 -45.264)" id="prefix__path62" />
-        <path
-          d="M494.954 507.28c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69z"
-          transform="matrix(0 1.00018 -1 0 2152.15 -45.264)" id="prefix__path63" />
-        <path
-          d="M494.954 402.099c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69z"
-          transform="matrix(0 1.00018 -1 0 2152.15 -45.264)" id="prefix__path64" />
-        <path d="M481.327 498.446l-38.861-87.274" transform="matrix(0 1.00018 -1 0 2152.15 -45.264)"
-          id="prefix__path65" />
+      <path d="M485.938 427.652V276.998m0 416.534V544.225m-24.274-116.573h48.583v116.573h-48.583z"
+         transform="matrix(1 0 0 1.00012 431.787 75.631)" stroke-width="3.429" stroke-miterlimit="10" fill="none" />
+      <g clip-path="url(#clip8)" transform="translate(-990.413 -85.974)">
+         <g stroke-width="3.409" stroke-miterlimit="10" fill="none" clip-path="url(#clip9)">
+            <path d="M483.131 468.643V356.699m0 254.266V497.422m48.337-28.779h-96.64m0 28.975h96.64"
+               transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" />
+         </g>
       </g>
-      <path d="M777.5 447.553V366.5" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path67" />
-      <path d="M525.5 448.053V367" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path68" /><text fill="#000" fill-opacity="1"
-        font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal" font-variant="normal" font-weight="400"
-        font-stretch="normal" font-size="50" text-anchor="start" direction="ltr" writing-mode="lr-tb"
-        unicode-bidi="normal" text-decoration="none" id="prefix__text68" style="text-decoration-line:none" x="150.68"
-        y="587">Circuit</text>
-      <g id="prefix__g76" transform="translate(-1045 -73)">
-        <g id="prefix__g75" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g74" stroke="#000" stroke-opacity="1" fill-rule="nonzero">
-            <path d="M499.242 447.109V304.591" stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter"
-              stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 1827.69 131.652)"
-              id="prefix__path69" />
-            <path d="M499.242 721.275V563.373" stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter"
-              stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 1827.69 131.652)"
-              id="prefix__path70" />
-            <path
-              d="M557.391 505.224c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
-              stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none"
-              transform="matrix(1 0 0 1.00288 1827.69 131.652)" id="prefix__path71" />
-            <path d="M459.382 547.579c6.29-15.861 21.776-27.04 39.86-27.04s32.988 10.802 39.483 26.186"
-              stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none"
-              transform="matrix(1 0 0 1.00288 1827.69 131.652)" id="prefix__path72" />
-            <path d="M511.275 522.248l15.349-23.109" stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter"
-              stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 1827.69 131.652)"
-              id="prefix__path73" />
-            <path d="M529.256 505.6l7.077-21.092-16.683 14.734z" fill="#231f20" fill-opacity="1"
-              transform="matrix(1 0 0 1.00288 1827.69 131.652)" id="prefix__path74" />
-          </g>
-        </g>
+      <path stroke-width="3.438" stroke-miterlimit="8" fill="none"
+         d="M63.087 191.526h434v709h-434zm854.74 576H497.088m839.999 0H918.084m418.743-414H916.088" />
+      <path stroke-width="6.875" stroke-miterlimit="8" stroke-dasharray="27.5 20.625" fill="none"
+         d="M548.087 120.526h892v857h-892z" /><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="50" style="text-decoration-line:none" x="761.18" y="587"
+         transform="translate(54.587 -12.974)">R</text><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="34" style="text-decoration-line:none" x="797.095" y="599"
+         transform="translate(54.587 -12.974)">in</text><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="50" style="text-decoration-line:none" x="975.38" y="583"
+         transform="translate(54.587 -12.974)">C</text><text font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400" font-size="34" style="text-decoration-line:none" x="1010.32" y="595"
+         transform="translate(54.587 -12.974)">in</text>
+      <g stroke-width="3.424" stroke-miterlimit="10">
+         <path d="M485.264 392.375l-.088-148.825m.088 422.113V382.404" fill="none"
+            transform="matrix(0 1.00018 -1 0 1161.737 -131.738)" />
+         <path
+            d="M494.954 507.28c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69zm0-105.181c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69z"
+            fill="#fff" transform="matrix(0 1.00018 -1 0 1161.737 -131.738)" />
       </g>
-    </g><text fill="#000" fill-opacity="1" font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal"
-      font-variant="normal" font-weight="400" font-stretch="normal" font-size="50" text-anchor="start" direction="ltr"
-      writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" id="prefix__text76"
-      style="text-decoration-line:none" x="548.387" y="94.8">Oscilloscope DC coupling mode</text>
-    <g id="prefix__g117" stroke="#000" stroke-opacity="1">
-      <g clip-path="url(#prefix__clip6)" id="prefix__g88" transform="translate(-1045 -73)">
-        <g clip-path="url(#prefix__clip7)" id="prefix__g87" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g86" stroke="#000" stroke-opacity="1" stroke-width="3.428" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" fill="none" fill-rule="nonzero">
-            <path d="M485.828 471.26V276.936" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path83" />
-            <path d="M485.828 694.755V500.397" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path84" />
-            <path d="M534.435 471.26h-97.179" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path85" />
-            <path d="M437.256 500.397h97.179" transform="matrix(1.00246 0 0 1 1663.45 156.131)" id="prefix__path86" />
-          </g>
-        </g>
-      </g>
-      <g id="prefix__g92" transform="translate(-1045 -73)">
-        <g id="prefix__g91" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g90" stroke="#000" stroke-opacity="1" stroke-width="3.429" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" fill="none" fill-rule="nonzero">
-            <path d="M485.938 427.652V276.998" transform="matrix(1 0 0 1.00012 1422.2 161.605)" id="prefix__path88" />
-            <path d="M485.938 693.532V544.225" transform="matrix(1 0 0 1.00012 1422.2 161.605)" id="prefix__path89" />
-            <path d="M461.664 427.652h48.583v116.573h-48.583z" transform="matrix(1 0 0 1.00012 1422.2 161.605)"
-              id="prefix__path90" />
-          </g>
-        </g>
-      </g>
-      <g clip-path="url(#prefix__clip8)" id="prefix__g97" transform="translate(-1045 -73)">
-        <g clip-path="url(#prefix__clip9)" id="prefix__g96" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g95" stroke="#000" stroke-opacity="1" stroke-width="3.409" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" fill="none" fill-rule="nonzero">
-            <path d="M483.131 468.643V275.398" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path92" />
-            <path d="M483.131 690.898v-193.28" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path93" />
-            <path d="M531.468 468.643h-96.64" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path94" />
-            <path d="M434.828 497.618h96.64" transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" id="prefix__path95" />
-          </g>
-        </g>
-      </g>
-      <path stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" fill="none"
-        id="prefix__rect97" d="M8.5 204.5h434v709H8.5z" />
-      <path d="M863.24 780.5H442.501" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path97" />
-      <path d="M1282.5 780.5H863.497" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path98" />
-      <path d="M1282.24 366.5H861.501" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path99" />
-      <path stroke-width="6.875" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8"
-        stroke-dasharray="27.5 20.625" fill="none" id="prefix__rect99" d="M493.5 133.5h892v857h-892z" /><text
-        fill="#000" fill-opacity="1" font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal"
-        font-variant="normal" font-weight="400" font-stretch="normal" font-size="50" text-anchor="start" direction="ltr"
-        writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" id="prefix__text99"
-        style="text-decoration-line:none" x="761.18" y="587">R</text><text fill="#000" fill-opacity="1"
-        font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal" font-variant="normal" font-weight="400"
-        font-stretch="normal" font-size="34" text-anchor="start" direction="ltr" writing-mode="lr-tb"
-        unicode-bidi="normal" text-decoration="none" id="prefix__text100" style="text-decoration-line:none" x="797.095"
-        y="599">in</text><text fill="#000" fill-opacity="1" font-family="Aptos, Aptos_MSFontService, sans-serif"
-        font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="50"
-        text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none"
-        id="prefix__text101" style="text-decoration-line:none" x="975.38" y="583">C</text><text fill="#000"
-        fill-opacity="1" font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal" font-variant="normal"
-        font-weight="400" font-stretch="normal" font-size="34" text-anchor="start" direction="ltr" writing-mode="lr-tb"
-        unicode-bidi="normal" text-decoration="none" id="prefix__text102" style="text-decoration-line:none" x="1010.32"
-        y="595">in</text>
-      <g id="prefix__g106" transform="translate(-1045 -73.5)" clip-path="none" stroke-width="3.424"
-        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill-rule="nonzero">
-        <path d="M485.264 392.375l-.088-148.825" fill="none" transform="matrix(0 1.00018 -1 0 2152.15 -45.264)"
-          id="prefix__path102" />
-        <path d="M485.264 665.663V382.404" fill="none" transform="matrix(0 1.00018 -1 0 2152.15 -45.264)"
-          id="prefix__path103" />
-        <path
-          d="M494.954 507.28c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69z"
-          fill="#fff" transform="matrix(0 1.00018 -1 0 2152.15 -45.264)" id="prefix__path104" fill-opacity="1" />
-        <path
-          d="M494.954 402.099c0 5.351-4.338 9.689-9.69 9.689-5.351 0-9.689-4.338-9.689-9.689 0-5.352 4.338-9.69 9.689-9.69a9.69 9.69 0 019.69 9.69z"
-          fill="#fff" transform="matrix(0 1.00018 -1 0 2152.15 -45.264)" id="prefix__path105" fill-opacity="1" />
-      </g>
-      <path d="M777.5 447.553V366.5" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path107" />
-      <path d="M525.5 448.053V367" stroke-width="3.438" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="prefix__path108" /><text fill="#000" fill-opacity="1"
-        font-family="Aptos, Aptos_MSFontService, sans-serif" font-style="normal" font-variant="normal" font-weight="400"
-        font-stretch="normal" font-size="50" text-anchor="start" direction="ltr" writing-mode="lr-tb"
-        unicode-bidi="normal" text-decoration="none" id="prefix__text108" style="text-decoration-line:none" x="150.68"
-        y="587">Circuit</text>
-      <g id="prefix__g116" transform="translate(-1045 -73)">
-        <g id="prefix__g115" stroke="#000" stroke-opacity="1">
-          <g id="prefix__g114" stroke="#000" stroke-opacity="1" fill-rule="nonzero">
-            <path d="M499.242 447.109V304.591" stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter"
-              stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 1827.69 131.652)"
-              id="prefix__path109" />
-            <path d="M499.242 721.275V563.373" stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter"
-              stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 1827.69 131.652)"
-              id="prefix__path110" />
-            <path
-              d="M557.391 505.224c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
-              stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none"
-              transform="matrix(1 0 0 1.00288 1827.69 131.652)" id="prefix__path111" />
-            <path d="M459.382 547.579c6.29-15.861 21.776-27.04 39.86-27.04s32.988 10.802 39.483 26.186"
-              stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none"
-              transform="matrix(1 0 0 1.00288 1827.69 131.652)" id="prefix__path112" />
-            <path d="M511.275 522.248l15.349-23.109" stroke-width="3.419" stroke-linecap="butt" stroke-linejoin="miter"
-              stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 1827.69 131.652)"
-              id="prefix__path113" />
-            <path d="M529.256 505.6l7.077-21.092-16.683 14.734z" fill="#231f20" fill-opacity="1"
-              transform="matrix(1 0 0 1.00288 1827.69 131.652)" id="prefix__path114" />
-          </g>
-        </g>
-      </g>
-    </g>
-    <g id="prefix__g119" transform="matrix(5.51296 0 0 5.51296 432.044 1337.53)">
-      <g id="prefix__g6">
-        <path id="prefix__polyline4" stroke="#231f20" fill="none" stroke-miterlimit="10"
-          d="M224.4 25.46v64.15h143.67" />
-        <path class="prefix__cls-2" id="prefix__polygon5" d="M221.5 27.45l2.9-10.84 2.91 10.84z" />
-        <path class="prefix__cls-2" id="prefix__polygon6" d="M366.09 92.51l10.84-2.9-10.84-2.91z" />
-      </g>
-      <path d="M368.4 41.49h-10.07-18.09s-12.99.51-21.18 8.87-24.33 39.24-31.35 39.24h-63.32" id="prefix__path9"
-        stroke="#007aa5" fill="none" stroke-miterlimit="10" /><text class="prefix__cls-3" id="prefix__text22"
-        style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'" x="276.479" y="104.572"
-        font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="9.07"
-        font-family="Aptos,Aptos_MSFontService,sans-serif">
-        <tspan x="276.479" y="104.572" id="prefix__tspan20"
-          style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'" font-style="normal"
-          font-variant="normal" font-weight="400" font-stretch="normal" font-size="9.07"
-          font-family="Aptos,Aptos_MSFontService,sans-serif">High-Pass</tspan>
-      </text>
-    </g><text class="prefix__cls-3" id="prefix__text22-4"
+      <path d="M832.087 434.579v-81.053m-252 81.553v-81.053" stroke-width="3.438" stroke-miterlimit="8" fill="none" />
+      <text font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
+         style="text-decoration-line:none" x="150.68" y="587" transform="translate(54.587 -12.974)">Circuit</text>
+      <path
+         d="M499.242 447.109V304.591m0 416.684V563.373m58.149-58.149c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
+         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 45.678)" />
+      <path
+         d="M459.382 547.579c6.29-15.861 21.776-27.04 39.86-27.04s32.988 10.802 39.483 26.186m-27.45-24.477l15.349-23.109"
+         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 45.678)" />
+      <path d="M529.256 505.6l7.077-21.092-16.683 14.734z" fill="#231f20"
+         transform="matrix(1 0 0 1.00288 837.277 45.678)" />
+   </g>
+   <path stroke="#231f20" fill="none" stroke-miterlimit="10" d="M1723.74 1464.916v353.656h792.046"
+      stroke-width="5.513" />
+   <path class="cls-2"
+      d="M1707.752 1475.887l15.987-59.76 16.043 59.76zm797.118 358.673l59.761-15.988-59.76-16.042z" />
+   <path d="M2517.605 1553.289H2362.36s-71.613 2.811-116.764 48.9-134.13 216.328-172.831 216.328h-349.08"
+      stroke="#007aa5" fill="none" stroke-miterlimit="10" stroke-width="5.513" /><text
+      class="cls-3"
+      style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'" x="276.479" y="104.572"
+      font-weight="400" font-size="9.07" font-family="Aptos,Aptos_MSFontService,sans-serif"
+      transform="translate(486.631 1324.556) scale(5.51296)">
+      <tspan x="276.479" y="104.572" style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'">
+         High-Pass</tspan>
+   </text><text class="cls-3"
       style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'" x="1732.621" y="596.898"
-      font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="96"
-      font-family="Aptos,Aptos_MSFontService,sans-serif" fill="#231f20" stroke-width="2" stroke="#ff0101"
-      stroke-opacity="1" stroke-dasharray="none">
-      <tspan x="1732.621" y="596.898" id="prefix__tspan20-5"
-        style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'" font-style="normal"
-        font-variant="normal" font-weight="400" font-stretch="normal" font-size="96"
-        font-family="Aptos,Aptos_MSFontService,sans-serif" stroke-width="2" stroke="#ff0101" stroke-opacity="1"
-        stroke-dasharray="none">NO FILTERING</tspan>
-    </text>
-  </g>
+      font-weight="400" font-size="96" font-family="Aptos,Aptos_MSFontService,sans-serif" fill="#231f20"
+      stroke-width="2" stroke="#ff0101" transform="translate(54.587 -12.974)">
+      <tspan x="1732.621" y="596.898" style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'">NO
+         FILTERING</tspan>
+   </text>
 </svg>
