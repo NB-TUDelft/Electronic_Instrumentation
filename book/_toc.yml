@@ -1,5 +1,5 @@
 format: jb-book
-root: intro.md
+root: appendix/intro.md
 
 parts:
   - caption: Instrument introductions
@@ -24,5 +24,5 @@ parts:
 
   - caption: Appendix
     chapters:
-      - file: credits.md
-      - file: admonitions.md
+      - file: appendix/credits.md
+      - file: appendix/admonitions.md
