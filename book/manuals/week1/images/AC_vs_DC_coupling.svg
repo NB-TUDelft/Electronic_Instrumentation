@@ -1,4 +1,4 @@
-<svg viewBox="0 0 2626 2159" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 2626 2160" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
    <path fill="#fff" paint-order="stroke markers fill" d="M0 0h2626v2159H0z" /><text
       font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
       style="text-decoration-line:none" x="550.56" y="1229" transform="translate(54.587 -12.974)">Oscilloscope AC
@@ -6,16 +6,16 @@
    <path
       d="M1621.207 1669.476v10.31h-140.12v6.879h140.12v10.31l27.5-13.75zm0-1134.2v10.31h-140.12v6.879h140.12v10.31l27.5-13.75z" />
    <g stroke="#000">
-      <g clip-path="url(#clip6)" transform="translate(-990.413 1048.226)">
-         <g stroke-width="3.428" stroke-miterlimit="10" fill="none" clip-path="url(#clip7)">
-            <path d="M485.828 471.26V276.936m0 417.819V500.397m48.607-29.137h-97.179m0 29.137h97.179"
+      <g transform="translate(-990.413 1048.226)">
+         <g stroke-width="3.428" stroke-miterlimit="10" fill="none" >
+            <path d="M485.828 471.26V282.435m0 415.318V500.398m48.607-29.137h-97.179m0 29.137h97.179"
                transform="matrix(1.00246 0 0 1 1663.45 156.131)" />
          </g>
       </g>
       <path d="M485.938 427.652V276.998m0 416.534V544.225m-24.274-116.573h48.583v116.573h-48.583z"
          transform="matrix(1 0 0 1.00012 431.787 1209.831)" stroke-width="3.429" stroke-miterlimit="10" fill="none" />
-      <g clip-path="url(#clip8)" transform="translate(-990.413 1048.226)">
-         <g stroke-width="3.409" stroke-miterlimit="10" fill="none" clip-path="url(#clip9)">
+      <g transform="translate(-990.413 1048.226)">
+         <g stroke-width="3.409" stroke-miterlimit="10" fill="none" >
             <path d="M483.131 468.643V356.699m0 254.266V497.618m48.337-28.975h-96.64m0 28.975h96.64"
                transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" />
          </g>
@@ -38,28 +38,27 @@
       <path d="M832.087 1568.779v-81.053m-252 81.553v-81.053" stroke-width="3.438" stroke-miterlimit="8" fill="none" />
       <text font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
          style="text-decoration-line:none" x="150.68" y="587" transform="translate(54.587 1121.226)">Circuit</text>
-      <path
-         d="M499.242 447.109V304.591m0 416.684V563.373m58.149-58.149c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
-         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 1179.878)" />
-      <path
-         d="M459.382 547.579c6.29-15.861 21.776-27.04 39.86-27.04s32.988 10.802 39.483 26.186m-27.45-24.477l15.349-23.109"
-         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 1179.878)" />
-      <path d="M529.256 505.6l7.077-21.092-16.683 14.734z" fill="#231f20"
-         transform="matrix(1 0 0 1.00288 837.277 1179.878)" />
+      <g fill="none">
+         <path stroke-width="3.424" d="M1296.782 1700.444l39.479-28.2v28.2l39.478-28.2v28.2" color="#000"
+            font-size="13.333" overflow="visible" />
+         <path
+            d="M499.242 447.109v-141.82m0 416.205V563.373m58.149-58.149c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
+            stroke-width="3.419" stroke-miterlimit="10" transform="matrix(1 0 0 1.00288 837.277 1179.878)" />
+      </g>
    </g><text font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
       style="text-decoration-line:none" x="548.387" y="94.8" transform="translate(54.587 -12.974)">Oscilloscope DC
       coupling mode</text>
    <g stroke="#000">
-      <g clip-path="url(#clip6)" transform="translate(-990.413 -85.974)">
-         <g stroke-width="3.428" stroke-miterlimit="10" fill="none" clip-path="url(#clip7)">
-            <path d="M485.828 471.26V276.936m0 417.819V500.397m48.607-29.137h-97.179m0 29.137h97.179"
+      <g transform="translate(-990.413 -85.974)">
+         <g stroke-width="3.428" stroke-miterlimit="10" fill="none" >
+            <path d="M485.828 471.26V282.736m0 414.719V500.397m48.607-29.137h-97.179m0 29.137h97.179"
                transform="matrix(1.00246 0 0 1 1663.45 156.131)" />
          </g>
       </g>
       <path d="M485.938 427.652V276.998m0 416.534V544.225m-24.274-116.573h48.583v116.573h-48.583z"
          transform="matrix(1 0 0 1.00012 431.787 75.631)" stroke-width="3.429" stroke-miterlimit="10" fill="none" />
-      <g clip-path="url(#clip8)" transform="translate(-990.413 -85.974)">
-         <g stroke-width="3.409" stroke-miterlimit="10" fill="none" clip-path="url(#clip9)">
+      <g transform="translate(-990.413 -85.974)">
+         <g stroke-width="3.409" stroke-miterlimit="10" fill="none" >
             <path d="M483.131 468.643V356.699m0 254.266V497.422m48.337-28.779h-96.64m0 28.975h96.64"
                transform="matrix(0 -1 1.00458 0 1210.45 1003.56)" />
          </g>
@@ -86,31 +85,28 @@
       <path d="M832.087 434.579v-81.053m-252 81.553v-81.053" stroke-width="3.438" stroke-miterlimit="8" fill="none" />
       <text font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400" font-size="50"
          style="text-decoration-line:none" x="150.68" y="587" transform="translate(54.587 -12.974)">Circuit</text>
-      <path
-         d="M499.242 447.109V304.591m0 416.684V563.373m58.149-58.149c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
-         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 45.678)" />
-      <path
-         d="M459.382 547.579c6.29-15.861 21.776-27.04 39.86-27.04s32.988 10.802 39.483 26.186m-27.45-24.477l15.349-23.109"
-         stroke-width="3.419" stroke-miterlimit="10" fill="none" transform="matrix(1 0 0 1.00288 837.277 45.678)" />
-      <path d="M529.256 505.6l7.077-21.092-16.683 14.734z" fill="#231f20"
-         transform="matrix(1 0 0 1.00288 837.277 45.678)" />
+      <g fill="none">
+         <path stroke-width="3.424" d="M1296.783 566.243l39.478-28.198v28.198l39.478-28.198v28.198" color="#000"
+            font-size="13.333" overflow="visible" />
+         <path
+            d="M499.242 447.109V305.243m0 416.251V563.373m58.149-58.149c0 32.115-26.035 58.149-58.149 58.149-32.115 0-58.15-26.034-58.15-58.149s26.035-58.149 58.15-58.149c32.114 0 58.149 26.034 58.149 58.149z"
+            stroke-width="3.419" stroke-miterlimit="10" transform="matrix(1 0 0 1.00288 837.278 45.678)" />
+      </g>
    </g>
-   <path stroke="#231f20" fill="none" stroke-miterlimit="10" d="M1723.74 1464.916v353.656h792.046"
+   <path stroke="#000" fill="none" stroke-miterlimit="10" d="M1723.74 1464.916v353.656h792.046"
       stroke-width="5.513" />
    <path class="cls-2"
       d="M1707.752 1475.887l15.987-59.76 16.043 59.76zm797.118 358.673l59.761-15.988-59.76-16.042z" />
    <path d="M2517.605 1553.289H2362.36s-71.613 2.811-116.764 48.9-134.13 216.328-172.831 216.328h-349.08"
-      stroke="#007aa5" fill="none" stroke-miterlimit="10" stroke-width="5.513" /><text
-      class="cls-3"
+      stroke="#07a" fill="none" stroke-miterlimit="10" stroke-width="5.513" /><text class="cls-3"
       style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'" x="276.479" y="104.572"
       font-weight="400" font-size="9.07" font-family="Aptos,Aptos_MSFontService,sans-serif"
       transform="translate(486.631 1324.556) scale(5.51296)">
       <tspan x="276.479" y="104.572" style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'">
          High-Pass</tspan>
-   </text><text class="cls-3"
-      style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'" x="1732.621" y="596.898"
-      font-weight="400" font-size="96" font-family="Aptos,Aptos_MSFontService,sans-serif" fill="#231f20"
-      stroke-width="2" stroke="#ff0101" transform="translate(54.587 -12.974)">
+   </text><text class="cls-3" style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'"
+      x="1732.621" y="596.898" font-weight="400" font-size="96" font-family="Aptos,Aptos_MSFontService,sans-serif"
+      fill="#000" transform="translate(54.587 -12.974)">
       <tspan x="1732.621" y="596.898" style="-inkscape-font-specification:'Aptos, Aptos_MSFontService, sans-serif'">NO
          FILTERING</tspan>
    </text>
