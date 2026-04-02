@@ -108,3 +108,17 @@ html[data-theme="dark"] .admonition {
   line-height: 0;
   display: none;
 }
+
+@font-face {
+  font-family: "ZamIco External Link";
+  src: url(./ZamIcoExternalLink.otf);
+}
+
+a.external::after {
+  content: "\F6973";
+  font-family: "ZamIco External Link";
+  margin-left: 0.25em;
+  font-size: 0.85em;
+  line-height: 1;
+  text-decoration: none !important;
+}
