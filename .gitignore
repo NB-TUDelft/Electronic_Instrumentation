@@ -38,7 +38,8 @@ ipython_config.py
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -301,3 +302,4 @@ _build/
 .conda/
 .conda/*
 .jupyter-kernels/
+.vscode/settings.json
