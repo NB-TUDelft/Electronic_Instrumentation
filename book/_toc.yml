@@ -1,5 +1,5 @@
 format: jb-book
-root: appendix/intro.md
+root: miscellaneous/intro.md
 
 parts:
   - caption: Instrument introductions
@@ -15,14 +15,19 @@ parts:
       - file: manuals/intros/breadboard.ipynb
 
   - caption: Lab manuals
-    numbered: 4 #we need to experiment to determine which works best values to try 2,3,4 
+    numbered: 4 #we need to experiment to determine which works best values to try 2,3,4
     chapters:
       - file: manuals/week1/_summary.ipynb
         sections:
           - file: manuals/week1/1.1_voltage_divider.ipynb
           - file: manuals/week1/1.2_intro_to_oscilloscope_and_filters.ipynb
-
-  - caption: Appendix
+      - file: manuals/week2/_summary.ipynb
+        
+        
+  - caption: Miscellaneous
     chapters:
-      - file: appendix/credits.md
-      - file: appendix/admonitions.md
+      - file: miscellaneous/appendix/_summary.ipynb
+        sections:
+          - file: miscellaneous/appendix/resistance.ipynb
+      - file: miscellaneous/credits.md
+      - file: miscellaneous/admonitions.md

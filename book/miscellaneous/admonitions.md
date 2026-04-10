@@ -207,3 +207,17 @@ Guidance on how to navigate the material.
 ```{admonition} Estimated time: 10 min
 :class: estimated-time no-content
 ```
+
+### Deep dive (optional enrichment)
+
+````markdown
+```{admonition} Deep dive (optional)
+:class: deep-dive
+This section contains extra background and is not required for completing the core task.
+```
+````
+
+```{admonition} Deep dive (optional)
+:class: deep-dive
+This section contains extra background and is not required for completing the core task.
+```

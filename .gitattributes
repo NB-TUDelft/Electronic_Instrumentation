@@ -1,2 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Treat font files as binary
+*.ttf binary
+*.otf binary
+*.ttc binary
+*.otc binary
+*.woff binary
+*.woff2 binary
+*.eot binary
