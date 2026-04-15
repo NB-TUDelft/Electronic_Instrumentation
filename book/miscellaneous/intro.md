@@ -1,66 +1,73 @@
 # Welcome to the Online Manuals of the NB2420 practicum
 
-This TeachBook allows you to open all NB2420 Practicum manuals without opening the Jupyter notebook on your laptop.
-If you prefer, you can still download notebooks to work offline. This is mainly needed when connecting to equipment such as the ALPACA or NIDAQ.
+This TeachBook allows you to access all NB2420 Practicum manuals without opening the Jupyter notebooks on your laptop.
+If you prefer, you can still download the notebooks to work offline. This is mainly needed when connecting to equipment such as the ALPACA.
 
 ## Expected of you
 
-homework = Background+Anticipate + Simulate
-on campus during practical sessions: Implement&Investigate + Compare & Conclude
+Homework consists of:
+- Background
+- Anticipate 
+- Simulate
 
-Each section has some guidelines on how much time to spend. If you add all it will be (far) more than the 4 practical hours we have per week, hence you should prepare on beforehand.
+The practical sessions (on campus) consist of:
+- Implement & Investigate 
+- Compare & Conclude
 
-Each experiment will be evaluated with a teaching assistant (TA), and you can only participate in the intermediate exams after completing all experiments of that octal.
+Each section has some guidelines on how much time to spend. If you add all sections together, the total will be well beyond the 3 practical hours per session, hence you should prepare in advance.
+
+Each experiment will be evaluated with a Teaching Assistant (TA), and you will record your progress within **Scientific Graphical Organizer**, provided on BrightSpace. 
 
 ## Default manual structure
 
-The overall structure of each experiment is BASIC:
+The overall structure of each experiment is the BASIC format:
 
 - Background
 - Anticipate
 - Simulate
 - Implement & Investigate
-- Compare and Conclude.
+- Compare & Conclude.
 
 ### Background
 
-The background is a quick repeat of theory necessary to know before doing the experiment. This is to refreash your mind, and is not study material on its own. We refer you to the textbook for a theoretical, more structured way of gathering knowledge on electronic instrumentation.
+The background is a quick repeat of the theory required before doing the experiment. This is to refresh your mind, and is not intended as standalone study material. We refer you to the textbook for a more structued theoretical explanation on electronic instrumentation.
 
-**This part is done prepatory and alone**
+**This part is completed individually and in preparation**
 
 ### Anticipate
 
-It is better to think before act. During the prediction phase of the experiment you activate knowledge to predict the outcome of a measurement. This already gives you directions of what to expect (and what not to expect).
+It is better to think before you act. During the anticipation phase of the experiment you activate knowledge to predict the outcome of a measurement. This already gives you an idea of what to expect (and what not to expect).
 
-**This part is done prepatory and alone**
+**This part is completed individually and in preparation**
 
 ### Simulate
 
-Before doing measurements, you verify your predictions by running a simulation. If later on your measurement resuts are not in line with the prediction, you cannot deduct the cause of the inconsistency. With simulations, you can.
+Before doing measurements, you verify your predictions by running a simulation. If later on your measurement results are not consistent with the prediction, you cannot determine the cause of the inconsistency. With simulations, you often can.
 
-**This part is done prepatory and alone**
+**This part is completed individually and in preparation**
 
-## Implement & investigate
+## Implement & Investigate
 
-You will do measurements, often starting with running the experiment you predicted and simulated. In further steps you continu to vary parameters and investigate into more depth.
+You will do measurements, often starting with running the experiment you predicted and simulated. In further steps you continue to vary parameters and investigate the circuit in more depth.
+If you need help during this phase, please ask a TA. Make sure to not only explain what you need help with, but also share what was done previously and understood, and what you already attempted to solve. This helps in getting effective feedback
 
-**This part is done in groups of two in the studio classroom**
+**This part is completed in pairs in the studio classroom**
 
 ### Compare & Conclude
 
-After doing the experiments you compare your predictions, simulations and measurement results. If not in agreement, you seek for explanations. If in agreement, you think about further improvements.
+After completing the experiments, you compare your predictions, simulations, and measurement results. If they do not agree, you look for explanations. If they do agree, you think about possible improvements or extensions.
 
-**This part is done in groups of four, so two groups per table, in the studio classroom**
-- Wait till all (4) group members finish their observation
-- Compare your results with your other group members.
+**This part is completed in groups of four (two pairs per table), in the studio classroom**
+
+- Wait until all four group members have completed their observations
+- Wait until both pairs filled in their Scientific Graphic Organizers (SGO)
+- Compare your results with your group members.
 - If your results agree, and are in line with all predictions, then talk to a TA and get checked off
-- Otherwise, so if your results do not agree, or your results are not in line with your predictions, then first discuss amongst your group before getting a TA.
+- If your results do not agree, or your results are not in line with your predictions, first discuss them within your group before consulting a TA.
 
-You answer the evaluating questions (per experiment manual) and then **discuss with a TA**.
+You answer the evaluation questions (per experiment manual) and then **show your SGO to the TA and discuss your results with a TA**.
 
-Students are encouraged to answer the questions and then write what they learned in the following format, which can go into an electronic labjournal:
-
-1. Write a brief abstract on what you learned (conclusion, useful graph),
-2. Which troubleshooting skills do you want to remember for next sessions,
-3. Which code do you copy for use in next sessions,
-4. How do think this notebook could be improved
+You should complete all steps of the SGO, resulting in a reflection on what they learned. You may also record:
+* Which troubleshooting skills you want to remember for future sessions,
+* Which code you want to reuse in later sessions,
+* What would you do differently or additionally if repeating this practicum
