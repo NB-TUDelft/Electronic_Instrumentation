@@ -22,6 +22,8 @@ parts:
           - file: manuals/week1/1.1_voltage_divider.ipynb
           - file: manuals/week1/1.2_intro_to_oscilloscope_and_filters.ipynb
       - file: manuals/week2/_summary.ipynb
+        sections:
+          - file: manuals/week2/2.1_Whack_a_mole.ipynb
         
         
   - caption: Miscellaneous
