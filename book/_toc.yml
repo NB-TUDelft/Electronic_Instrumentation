@@ -24,8 +24,9 @@ parts:
       - file: manuals/week2/_summary.ipynb
         sections:
           - file: manuals/week2/2.1_Whack_a_mole.ipynb
-        
-        
+          - file: manuals/week2/2.2_Timed_acquisitions.ipynb
+
+
   - caption: Miscellaneous
     chapters:
       - file: miscellaneous/appendix/_summary.ipynb

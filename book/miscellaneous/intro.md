@@ -46,7 +46,7 @@ Before doing measurements, you verify your predictions by running a simulation. 
 
 **This part is completed individually and in preparation**
 
-## Implement & Investigate
+### Implement & Investigate
 
 You will do measurements, often starting with running the experiment you predicted and simulated. In further steps you continue to vary parameters and investigate the circuit in more depth.
 If you need help during this phase, please ask a TA. Make sure to not only explain what you need help with, but also share what was done previously and understood, and what you already attempted to solve. This helps in getting effective feedback
