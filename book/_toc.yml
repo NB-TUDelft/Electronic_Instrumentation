@@ -4,7 +4,6 @@ root: miscellaneous/intro.md
 parts:
   - caption: Instrument introductions
     chapters:
-      - file: manuals/intros/Intro_to_Jupyter_Notebook.ipynb
       - file: manuals/intros/intro_testboards.ipynb
       - file: manuals/intros/intro_power_supply_Siglent.ipynb
       - file: manuals/intros/intro_DMM_Siglent+handheld.ipynb
@@ -15,7 +14,7 @@ parts:
       - file: manuals/intros/breadboard.ipynb
 
   - caption: Lab manuals
-    numbered: 4 #we need to experiment to determine which works best values to try 2,3,4
+    numbered: 4
     chapters:
       - file: manuals/week1/_summary.ipynb
         sections:
