@@ -37,7 +37,7 @@ The practicum manuals are developed by the teachers of Electronic Instrumentatio
 
 ### Acknowledgements
 
-The editors thank all TAs who previously contributed to the manuals. Specifically (in chronological order) Tijmen de Wolf, Sonny de Jong, Thijn Hoekstra, Monika Moraczewska, Maciej Topyła, and Tigran Silvis.
+The editors thank all TAs who previously contributed to the manuals. Specifically (in chronological order) Tijmen de Wolf, Sonny de Jong, Thijn Hoekstra, Monika Moraczewska, Maciej Topyła, Tigran Silvis and [Duncan Harry Whyte](https://dwhyte.com).
 
 ### Publications
 Feel free to look up the following articles based on this course: 

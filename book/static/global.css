@@ -53,13 +53,13 @@ html[data-theme="dark"] .admonition {
   border-left: 4px solid var(--pst-color-answer) !important;
 }
 
-.admonition.answer .admonition-title,
-.admonition-answer .admonition-title {
+.admonition.answer > .admonition-title,
+.admonition-answer > .admonition-title {
   background-color: var(--pst-color-answer-bg) !important;
 }
 
-.admonition.answer .admonition-title::after,
-.admonition-answer .admonition-title::after {
+.admonition.answer > .admonition-title::after,
+.admonition-answer > .admonition-title::after {
   content: "\E5A0";
   font-weight: 900;
   display: inline-block;
@@ -73,17 +73,17 @@ html[data-theme="dark"] .admonition {
   border-left: 4px solid var(--pst-color-estimated-time) !important;
 }
 
-.admonition.estimated-time .admonition-title,
-.admonition-estimated-time .admonition-title,
-.admonition.estimated_time .admonition-title,
-.admonition-estimated_time .admonition-title {
+.admonition.estimated-time > .admonition-title,
+.admonition-estimated-time > .admonition-title,
+.admonition.estimated_time > .admonition-title,
+.admonition-estimated_time > .admonition-title {
   background-color: var(--pst-color-estimated-time-bg) !important;
 }
 
-.admonition.estimated-time .admonition-title::after,
-.admonition-estimated-time .admonition-title::after,
-.admonition.estimated_time .admonition-title::after,
-.admonition-estimated_time .admonition-title::after {
+.admonition.estimated-time > .admonition-title::after,
+.admonition-estimated-time > .admonition-title::after,
+.admonition.estimated_time > .admonition-title::after,
+.admonition-estimated_time > .admonition-title::after {
   content: "\F252";
   font-weight: 900;
   display: inline-block;
@@ -97,17 +97,17 @@ html[data-theme="dark"] .admonition {
   border-left: 4px solid var(--pst-color-deep-dive) !important;
 }
 
-.admonition.deep-dive .admonition-title,
-.admonition-deep-dive .admonition-title,
-.admonition.deep_dive .admonition-title,
-.admonition-deep_dive .admonition-title {
+.admonition.deep-dive > .admonition-title,
+.admonition-deep-dive > .admonition-title,
+.admonition.deep_dive > .admonition-title,
+.admonition-deep_dive > .admonition-title {
   background-color: var(--pst-color-deep-dive-bg) !important;
 }
 
-.admonition.deep-dive .admonition-title::after,
-.admonition-deep-dive .admonition-title::after,
-.admonition.deep_dive .admonition-title::after,
-.admonition-deep_dive .admonition-title::after {
+.admonition.deep-dive > .admonition-title::after,
+.admonition-deep-dive > .admonition-title::after,
+.admonition.deep_dive > .admonition-title::after,
+.admonition-deep_dive > .admonition-title::after {
   content: "\F518";
   font-weight: 900;
   display: inline-block;

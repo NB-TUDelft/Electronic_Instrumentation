@@ -4,13 +4,13 @@ root: miscellaneous/intro.md
 parts:
   - caption: Instrument introductions
     chapters:
-      - file: manuals/intros/intro_testboards.ipynb
-      - file: manuals/intros/intro_power_supply_Siglent.ipynb
-      - file: manuals/intros/intro_DMM_Siglent+handheld.ipynb
-      - file: manuals/intros/intro_function_generator_Siglent.ipynb
-      - file: manuals/intros/intro_scope_Siglent.ipynb
-      - file: manuals/intros/intro_LTSpice.ipynb
-      - file: manuals/intros/intro_ALPACA.ipynb
+      - file: manuals/intros/testboards.ipynb
+      - file: manuals/intros/power_supply.ipynb
+      - file: manuals/intros/digital_multimeter.ipynb
+      - file: manuals/intros/function_generator.ipynb
+      - file: manuals/intros/oscilloscope.ipynb
+      - file: manuals/intros/ltspice.ipynb
+      - file: manuals/intros/alpaca.ipynb
       - file: manuals/intros/breadboard.ipynb
 
   - caption: Lab manuals
@@ -24,6 +24,12 @@ parts:
         sections:
           - file: manuals/week2/2.1_Whack_a_mole.ipynb
           - file: manuals/week2/2.2_Timed_acquisitions.ipynb
+      - file: manuals/week3/_summary.ipynb
+      - file: manuals/week4/_summary.ipynb
+      - file: manuals/week5/_summary.ipynb
+      - file: manuals/week6/_summary.ipynb
+      - file: manuals/week7/_summary.ipynb
+      - file: manuals/week8/_summary.ipynb
 
 
   - caption: Miscellaneous

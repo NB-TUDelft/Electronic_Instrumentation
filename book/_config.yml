@@ -1,9 +1,32 @@
 # Book Settings
 title: "NB2420 practical manuals"
-author: Margreet Docter, Jeroen Bastemeijer, Ashley Jacobi, Krzysztof Zabłocki <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
+author: Margreet Docter, Jeroen Bastemeijer <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
 description: "Collection of practical manuals for the NB2420 course"
 copyright: "Delft University of Technology, CC BY 4.0"
-exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .conda/**, .mamba/**, .venv/**]
+exclude_patterns:
+  # Build outputs and editor / OS junk
+  - _build
+  - "**/Thumbs.db"
+  - "**/.DS_Store"
+  - "**/.ipynb_checkpoints"
+  - "**/*.bak"
+  - "**/*.tmp"
+  - "**/*~"
+  - "**/*.swp"
+  - "**/*.swo"
+  # Python helper / extension files (kept on disk for Sphinx, never rendered as content)
+  - "**/__pycache__"
+  - "**/*.pyc"
+  - "**/no_content_admonition.py"
+  # Environment directories
+  - .conda/**
+  - .mamba/**
+  - .venv/**
+  # Legacy material that lives outside book/ but listed here defensively in case build root changes
+  - "../old/**"
+  - "../AGENTS.md"
+  - "../CLAUDE.md"
+  - "../README.md"
 
 # Only build files in the ToC to avoid building README, etc.
 only_build_toc_files: true
@@ -102,7 +125,25 @@ sphinx:
     iframe_background:     "#ffffff" # default value
     iframe_width:          calc(100% - 2.8rem) # default value
     iframe_aspectratio:    auto 2 / 1 # default value
-    exclude_patterns: [.conda/**, .mamba/**, _build/**, "**/.ipynb_checkpoints", .venv/**]
+    exclude_patterns:
+      - .conda/**
+      - .mamba/**
+      - _build/**
+      - "**/.ipynb_checkpoints"
+      - "**/__pycache__"
+      - "**/*.pyc"
+      - "**/*.bak"
+      - "**/*.tmp"
+      - "**/*~"
+      - "**/*.swp"
+      - "**/*.swo"
+      - "**/Thumbs.db"
+      - "**/.DS_Store"
+      - .venv/**
+      - "../old/**"
+      - "../AGENTS.md"
+      - "../CLAUDE.md"
+      - "../README.md"
     html_extra_path: []
     language: en  # To identify the language.
     html_js_files: 
