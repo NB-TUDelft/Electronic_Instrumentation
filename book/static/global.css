@@ -49,17 +49,22 @@ html[data-theme="dark"] .admonition {
 }
 
 .admonition.answer,
-.admonition-answer {
-  border-left: 4px solid var(--pst-color-answer) !important;
+.admonition-answer,
+.admonition_answer {
+  border-left-width: 0.2rem;
+  border-left-style: solid;
+  border-left-color: var(--pst-color-answer) !important;
 }
 
 .admonition.answer > .admonition-title,
-.admonition-answer > .admonition-title {
+.admonition-answer > .admonition-title,
+.admonition_answer > .admonition-title {
   background-color: var(--pst-color-answer-bg) !important;
 }
 
 .admonition.answer > .admonition-title::after,
-.admonition-answer > .admonition-title::after {
+.admonition-answer > .admonition-title::after,
+.admonition_answer > .admonition-title::after {
   content: "\E5A0";
   font-weight: 900;
   display: inline-block;
@@ -70,7 +75,9 @@ html[data-theme="dark"] .admonition {
 .admonition-estimated-time,
 .admonition.estimated_time,
 .admonition-estimated_time {
-  border-left: 4px solid var(--pst-color-estimated-time) !important;
+  border-left-width: 0.2rem;
+  border-left-style: solid;
+  border-left-color: var(--pst-color-estimated-time) !important;
 }
 
 .admonition.estimated-time > .admonition-title,
@@ -94,7 +101,9 @@ html[data-theme="dark"] .admonition {
 .admonition-deep-dive,
 .admonition.deep_dive,
 .admonition-deep_dive {
-  border-left: 4px solid var(--pst-color-deep-dive) !important;
+  border-left-width: 0.2rem;
+  border-left-style: solid;
+  border-left-color: var(--pst-color-deep-dive) !important;
 }
 
 .admonition.deep-dive > .admonition-title,
@@ -112,6 +121,29 @@ html[data-theme="dark"] .admonition {
   font-weight: 900;
   display: inline-block;
   color: var(--pst-color-deep-dive);
+}
+
+.admonition.interactive,
+.admonition-interactive,
+.admonition_interactive {
+  border-left-width: 0.2rem;
+  border-left-style: solid;
+  border-left-color: var(--pst-color-danger) !important;
+}
+
+.admonition.interactive > .admonition-title,
+.admonition-interactive > .admonition-title,
+.admonition_interactive > .admonition-title {
+  background-color: var(--pst-color-danger-bg) !important;
+}
+
+.admonition.interactive > .admonition-title::after,
+.admonition-interactive > .admonition-title::after,
+.admonition_interactive > .admonition-title::after {
+  content: "\F135";
+  font-weight: 900;
+  display: inline-block;
+  color: var(--pst-color-danger);
 }
 
 .admonition.no-content,

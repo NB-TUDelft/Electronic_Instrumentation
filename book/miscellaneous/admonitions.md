@@ -140,18 +140,18 @@ This is a custom admonition using the generic directive.
 
 These are built with the generic `admonition` directive plus a custom title and optional classes. Use `no-content` when you want an admonition with only a title row and no body text.
 
-### Interactive page (warning + dropdown)
+### Interactive page
 
 ````markdown
 ```{admonition} Interactive page
-:class: warning, dropdown
-This page contains interactive elements.
+:class: interactive, dropdown
+This page contains interactive elements. Press the launch button at the top right side in order to use them.
 ```
 ````
 
 ```{admonition} Interactive page
-:class: warning, dropdown
-This page contains interactive elements.
+:class: interactive, dropdown
+This page contains interactive elements. Press the launch button at the top right side in order to use them.
 ```
 
 ### Answer (note)
