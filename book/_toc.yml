@@ -2,6 +2,10 @@ format: jb-book
 root: miscellaneous/intro.md
 
 parts:
+  - caption: Electronic Instrumentation
+    chapters:
+    - file: miscellaneous/intro.md
+      title: Welcome!
   - caption: Instrument introductions
     chapters:
       - file: manuals/intros/testboards.ipynb
@@ -39,3 +43,4 @@ parts:
           - file: miscellaneous/appendix/resistance.ipynb
       - file: miscellaneous/credits.md
       - file: miscellaneous/admonitions.md
+      

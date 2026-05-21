@@ -101,6 +101,7 @@ bibtex_bibfiles:
 # Advanced and power-user settings
 sphinx:
   extra_extensions: 
+    - jupyter_book_duplicate_toc.sphinx
     - jupyterbook_patches 
     - download_link_replacer 
     - sphinx.ext.extlinks 

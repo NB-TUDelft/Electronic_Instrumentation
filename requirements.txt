@@ -11,3 +11,4 @@ sphinx-accessibility
 
 # Now list the packages you want to download directly from GitHub
 git+https://github.com/TeachBooks/Sphinx-Thebe
+git+https://github.com/NB-TUDelft/jupyter-book-duplicate-toc-entry.git
