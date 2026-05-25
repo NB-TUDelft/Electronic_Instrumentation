@@ -30,7 +30,7 @@ parts:
           - file: manuals/week2/2.2_Timed_acquisitions.ipynb
       - file: manuals/week3/_summary.ipynb
         sections:
-          - file: book/manuals/week3/3.1_aliasing_and_anti_aliasing.ipynb
+          - file: manuals/week3/3.1_aliasing_and_anti_aliasing.ipynb
       - file: manuals/week4/_summary.ipynb
       - file: manuals/week5/_summary.ipynb
       - file: manuals/week6/_summary.ipynb
