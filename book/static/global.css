@@ -181,3 +181,9 @@ a.external::after {
   line-height: 1;
   text-decoration: none !important;
 }
+
+/* Navbar logo sizing.*/
+body .bd-sidebar-primary .navbar-brand .logo__image,
+body .bd-sidebar-primary .navbar-brand img {
+  max-width: 75%;
+}
