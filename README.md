@@ -177,6 +177,12 @@ uv run jupyter-book build book
 
 If you use a different environment manager, install the dependencies from `pyproject.toml` or `requirements.txt` and then run the Jupyter Book build command.
 
+You can also use `watchmedo` to build each time you update a file
+
+```bash
+uv run watchmedo tricks-from tricks.yaml
+``` 
+
 ## Maintenance notes
 
 - Keep `book/_toc.yml` aligned with the actual folder structure.
