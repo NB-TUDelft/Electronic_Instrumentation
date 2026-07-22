@@ -1,0 +1,51 @@
+{
+  "Add a Figure": {
+    "prefix": "fig",
+    "body": [
+      "```{figure} images/alpaca/file_name.png",
+      "---",
+      "max-height: 300px",
+      "name: Connect USB-C to energy hub and Micro USB to Student Pico",
+      "class: no-invert",
+      "---",
+      "```"
+    ],
+    "description": "Add a Figure"
+  },
+  "Add a Tip": {
+    "prefix": "tip",
+    "body": [
+      "```{tip}",
+      "This is a tip",
+      "```"
+    ],
+    "description": "Adds a Tip"
+  },
+  "Add Estimated Time": {
+    "prefix": "estimtime",
+    "body": [
+      "```{admonition} Estimated time: 10 min",
+      ":class: estimated-time no-content",
+      "```"
+    ],
+    "description": "Adds Estimated Time"
+  },
+  "Add Deep Dive": {
+    "prefix": "deepdive",
+    "body": [
+      "```{admonition} Deep dive (optional)",
+      ":class: deep-dive, dropdown",
+      "```"
+    ],
+    "description": "Adds Deep Dive"
+  },
+  "Add Answer": {
+    "prefix": "answ",
+    "body": [
+      "```{admonition} Answer",
+      ":class: answer, dropdown",
+      "```"
+    ],
+    "description": "Adds Answer"
+  }
+}

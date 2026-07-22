@@ -19,6 +19,7 @@ dependencies = [
     "watchdog[watchmedo]>=6.0.0",
     "numpy>=2.5.0",
     "matplotlib>=3.11.0",
+    "plotly>=6.9.0",
 ]
 
 [tool.uv.sources]
