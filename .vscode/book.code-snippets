@@ -47,5 +47,12 @@
       "```"
     ],
     "description": "Adds Answer"
+  },
+  "Add TODO": {
+    "prefix": "todo",
+    "body": [
+      "<span style=\"background:#ff1493;color:#fff;padding:2px 8px;border-radius:4px;font-weight:700;font-size:0.85em;box-shadow:0 0 6px rgba(255,20,147,0.6);\">🚩 TODO: </span>"
+    ],
+    "description": "Adds TODO"
   }
 }
