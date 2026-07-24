@@ -22,7 +22,11 @@ exclude_patterns:
   - .conda/**
   - .mamba/**
   - .venv/**
-  # Legacy material that lives outside book/ but listed here defensively in case build root changes
+  # Generated catalogues and repository-only material outside book/
+  - "**/graphify-out/**"
+  - "**/.graphify/**"
+  - "../graphify-out/**"
+  - "../helpers/**"
   - "../old/**"
   - "../AGENTS.md"
   - "../CLAUDE.md"
@@ -141,6 +145,10 @@ sphinx:
       - "**/Thumbs.db"
       - "**/.DS_Store"
       - .venv/**
+      - "**/graphify-out/**"
+      - "**/.graphify/**"
+      - "../graphify-out/**"
+      - "../helpers/**"
       - "../old/**"
       - "../AGENTS.md"
       - "../CLAUDE.md"
