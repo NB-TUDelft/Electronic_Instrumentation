@@ -1,4 +1,4 @@
-# EI Manuals
+# [EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)
 
 This repository contains the Jupyter Book source for the **NB2420 Electronic Instrumentation** manuals. The content is organised as a teaching manual rather than as a generic software template: the book combines introductory equipment guides, week-based practicum manuals, shared assets, and build configuration for publishing the material as a website.
 
