@@ -158,7 +158,15 @@ sphinx:
     thebe_config: 
       use_thebe_lite: true 
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"] 
-    html_theme_options: 
+    html_theme_options:
+      # Keep the search box in the sidebar only, deterministically across theme versions.
+      # pydata-sphinx-theme >= 0.17 force-injects a persistent header "search-button-field"
+      # (desktop and mobile copies) whenever this key is absent from html_theme_options,
+      # which overrides the empty default set by sphinx-book-theme and produces a second and
+      # third search field in a top navbar. Older pydata (<= 0.16) did not, so builds with an
+      # unpinned/cached theme rendered inconsistently. Setting it explicitly to empty removes
+      # the header search on every theme version while the sidebar search is unaffected.
+      navbar_persistent: []
       logo:
         text: NB2420 practical
         image_light: static/icons/alpaca.svg
