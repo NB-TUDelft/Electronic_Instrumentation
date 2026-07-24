@@ -14,7 +14,7 @@
       },
       "_origin": "ast",
       "id": "animations_convert_mp4_to_avif",
-      "community": 26,
+      "community": 28,
       "community_name": "convert_mp4_to_avif.sh",
       "norm_label": "convert_mp4_to_avif.sh"
     },
@@ -29,7 +29,7 @@
       },
       "_origin": "ast",
       "id": "animations_convert_mp4_to_avif_sh__entry",
-      "community": 26,
+      "community": 28,
       "community_name": "convert_mp4_to_avif.sh",
       "norm_label": "convert_mp4_to_avif.sh script"
     },
@@ -40,7 +40,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "book_no_content_admonition",
-      "community": 8,
+      "community": 10,
       "community_name": "EstimatedTimeAdmonition",
       "norm_label": "no_content_admonition.py"
     },
@@ -51,7 +51,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "book_no_content_admonition_estimatedtimeadmonition",
-      "community": 8,
+      "community": 10,
       "community_name": "EstimatedTimeAdmonition",
       "norm_label": "estimatedtimeadmonition"
     },
@@ -62,7 +62,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "book_no_content_admonition_estimatedtimeadmonition_run",
-      "community": 8,
+      "community": 10,
       "community_name": "EstimatedTimeAdmonition",
       "norm_label": ".run()"
     },
@@ -73,7 +73,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "book_no_content_admonition_setup",
-      "community": 8,
+      "community": 10,
       "community_name": "EstimatedTimeAdmonition",
       "norm_label": "setup()"
     },
@@ -84,7 +84,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "book_no_content_admonition_rationale_15",
-      "community": 8,
+      "community": 10,
       "community_name": "EstimatedTimeAdmonition",
       "norm_label": "allow empty generic admonitions when explicitly marked as contentless."
     },
@@ -95,7 +95,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "book_static_warning",
-      "community": 25,
+      "community": 27,
       "community_name": "warning.js",
       "norm_label": "warning.js"
     },
@@ -106,7 +106,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "book_static_warning_warning",
-      "community": 25,
+      "community": 27,
       "community_name": "warning.js",
       "norm_label": "warning()"
     },
@@ -117,7 +117,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "book_static_warning_startwarnings",
-      "community": 25,
+      "community": 27,
       "community_name": "warning.js",
       "norm_label": "startwarnings()"
     },
@@ -131,7 +131,7 @@
       "version": "1.0.0",
       "_origin": "ast",
       "id": "pkg_electronic_instrumentation",
-      "community": 31,
+      "community": 33,
       "community_name": "electronic-instrumentation",
       "norm_label": "electronic-instrumentation"
     },
@@ -142,8 +142,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents",
-      "community": 3,
-      "community_name": "Repository instructions for AI agents",
+      "community": 5,
+      "community_name": "Default manual structure",
       "norm_label": "agents.md"
     },
     {
@@ -153,29 +153,249 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_repository_instructions_for_ai_agents",
-      "community": 3,
+      "community": 0,
       "community_name": "Repository instructions for AI agents",
       "norm_label": "repository instructions for ai agents"
     },
     {
-      "label": "Punctuation: no em or en dashes",
+      "label": "1. What this repository is",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L5",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "agents_punctuation_no_em_or_en_dashes",
-      "community": 3,
+      "id": "agents_1_what_this_repository_is",
+      "community": 0,
       "community_name": "Repository instructions for AI agents",
-      "norm_label": "punctuation: no em or en dashes"
+      "norm_label": "1. what this repository is"
+    },
+    {
+      "label": "Course goals, in priority order",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "agents_course_goals_in_priority_order",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "course goals, in priority order"
+    },
+    {
+      "label": "Audience",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "agents_audience",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "audience"
+    },
+    {
+      "label": "2. Manual structure (the BASIC format)",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "agents_2_manual_structure_the_basic_format",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "2. manual structure (the basic format)"
+    },
+    {
+      "label": "Pair work and group work",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "agents_pair_work_and_group_work",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "pair work and group work"
+    },
+    {
+      "label": "Available task tags (write them in the plan, not in the published task)",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "agents_available_task_tags_write_them_in_the_plan_not_in_the_published_task",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "available task tags (write them in the plan, not in the published task)"
+    },
+    {
+      "label": "3. Repository layout",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "agents_3_repository_layout",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "3. repository layout"
+    },
+    {
+      "label": "Folder responsibilities",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "agents_folder_responsibilities",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "folder responsibilities"
+    },
+    {
+      "label": "High-value items inside `helpers/` worth knowing about",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "agents_high_value_items_inside_helpers_worth_knowing_about",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "high-value items inside `helpers/` worth knowing about"
+    },
+    {
+      "label": "4. Hardware platform",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "agents_4_hardware_platform",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "4. hardware platform"
+    },
+    {
+      "label": "5. Naming conventions",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "agents_5_naming_conventions",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "5. naming conventions"
+    },
+    {
+      "label": "6. Style conventions",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L176",
+      "_origin": "ast",
+      "id": "agents_6_style_conventions",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "6. style conventions"
+    },
+    {
+      "label": "Voice and tone",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "agents_voice_and_tone",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "voice and tone"
+    },
+    {
+      "label": "Math",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "agents_math",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "math"
+    },
+    {
+      "label": "Figures",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L191",
+      "_origin": "ast",
+      "id": "agents_figures",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "figures"
+    },
+    {
+      "label": "Admonitions used in this book",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L206",
+      "_origin": "ast",
+      "id": "agents_admonitions_used_in_this_book",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "admonitions used in this book"
+    },
+    {
+      "label": "Inline TODO flag (vibrant magenta)",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L221",
+      "_origin": "ast",
+      "id": "agents_inline_todo_flag_vibrant_magenta",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "inline todo flag (vibrant magenta)"
+    },
+    {
+      "label": "7. When the textbook covers a concept",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L233",
+      "_origin": "ast",
+      "id": "agents_7_when_the_textbook_covers_a_concept",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "7. when the textbook covers a concept"
+    },
+    {
+      "label": "8. Build and preview",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L241",
+      "_origin": "ast",
+      "id": "agents_8_build_and_preview",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "8. build and preview"
+    },
+    {
+      "label": "9. Cross-cutting reference material",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "agents_9_cross_cutting_reference_material",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "9. cross-cutting reference material"
+    },
+    {
+      "label": "10. Punctuation: no em or en dashes",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "agents_10_punctuation_no_em_or_en_dashes",
+      "community": 0,
+      "community_name": "Repository instructions for AI agents",
+      "norm_label": "10. punctuation: no em or en dashes"
     },
     {
       "label": "Replacements for common dash idioms",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L25",
+      "source_location": "L280",
       "_origin": "ast",
       "id": "agents_replacements_for_common_dash_idioms",
-      "community": 3,
+      "community": 0,
       "community_name": "Repository instructions for AI agents",
       "norm_label": "replacements for common dash idioms"
     },
@@ -183,34 +403,34 @@
       "label": "Quick self-check before saving",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L35",
+      "source_location": "L290",
       "_origin": "ast",
       "id": "agents_quick_self_check_before_saving",
-      "community": 3,
+      "community": 0,
       "community_name": "Repository instructions for AI agents",
       "norm_label": "quick self-check before saving"
     },
     {
-      "label": "Other writing conventions",
+      "label": "11. Other writing conventions",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L39",
+      "source_location": "L294",
       "_origin": "ast",
-      "id": "agents_other_writing_conventions",
-      "community": 3,
+      "id": "agents_11_other_writing_conventions",
+      "community": 0,
       "community_name": "Repository instructions for AI agents",
-      "norm_label": "other writing conventions"
+      "norm_label": "11. other writing conventions"
     },
     {
-      "label": "Scope",
+      "label": "12. Scope",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L46",
+      "source_location": "L301",
       "_origin": "ast",
-      "id": "agents_scope",
-      "community": 3,
+      "id": "agents_12_scope",
+      "community": 0,
       "community_name": "Repository instructions for AI agents",
-      "norm_label": "scope"
+      "norm_label": "12. scope"
     },
     {
       "label": "CLAUDE.md",
@@ -219,8 +439,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "claude",
-      "community": 3,
-      "community_name": "Repository instructions for AI agents",
+      "community": 5,
+      "community_name": "Default manual structure",
       "norm_label": "claude.md"
     },
     {
@@ -230,8 +450,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "claude_claude_md",
-      "community": 3,
-      "community_name": "Repository instructions for AI agents",
+      "community": 5,
+      "community_name": "Default manual structure",
       "norm_label": "claude.md"
     },
     {
@@ -241,7 +461,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "readme.md"
     },
@@ -252,7 +472,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme_ei_manuals_https_nb_tudelft_github_io_electronic_instrumentation_development_q2_2026",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "[ei manuals](https://nb-tudelft.github.io/electronic_instrumentation/development_q2_2026/)"
     },
@@ -263,7 +483,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "readme_purpose",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "purpose"
     },
@@ -274,7 +494,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "readme_project_structure",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "project structure"
     },
@@ -285,7 +505,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "readme_folder_responsibilities",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "folder responsibilities"
     },
@@ -296,7 +516,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "readme_book",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "`book/`"
     },
@@ -307,7 +527,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "readme_book_manuals_intros",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "`book/manuals/intros/`"
     },
@@ -318,7 +538,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "readme_book_manuals_weekx",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "`book/manuals/weekx/`"
     },
@@ -329,7 +549,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "readme_book_static",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "`book/static/`"
     },
@@ -340,7 +560,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "readme_book_images",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "`book/images/`"
     },
@@ -351,7 +571,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "readme_old",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "`old/`"
     },
@@ -362,7 +582,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "readme_file_distribution_guidelines",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "file distribution guidelines"
     },
@@ -373,7 +593,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "readme_writing_and_style_guidelines",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "writing and style guidelines"
     },
@@ -384,7 +604,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "readme_1_organise_each_manual_around_the_learning_workflow",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "1. organise each manual around the learning workflow"
     },
@@ -395,7 +615,7 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "readme_2_write_task_instructions_clearly_and_directly",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "2. write task instructions clearly and directly"
     },
@@ -406,7 +626,7 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "readme_3_match_the_tone_of_manuals",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "3. match the tone of manuals"
     },
@@ -417,7 +637,7 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "readme_4_use_consistent_notebook_structure",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "4. use consistent notebook structure"
     },
@@ -428,7 +648,7 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "readme_5_be_explicit_about_collaboration",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "5. be explicit about collaboration"
     },
@@ -439,7 +659,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "readme_6_prefer_explanation_over_cross_referencing",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "6. prefer explanation over cross-referencing"
     },
@@ -450,7 +670,7 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "readme_7_keep_formatting_and_terminology_consistent",
-      "community": 7,
+      "community": 9,
       "community_name": "Writing and style guidelines",
       "norm_label": "7. keep formatting and terminology consistent"
     },
@@ -461,7 +681,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "readme_adding_or_revising_a_manual",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "adding or revising a manual"
     },
@@ -472,7 +692,7 @@
       "source_location": "L167",
       "_origin": "ast",
       "id": "readme_build_and_development",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "build and development"
     },
@@ -483,9 +703,427 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "readme_maintenance_notes",
-      "community": 1,
+      "community": 4,
       "community_name": "[EI Manuals](https://nb-tudelft.github.io/Electronic_Instrumentation/development_Q2_2026/)",
       "norm_label": "maintenance notes"
+    },
+    {
+      "label": "_plan_2.2_averaging_extension.md",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "_plan_2.2_averaging_extension.md"
+    },
+    {
+      "label": "Week 2 manual plan: 2.2 averaging extension",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "week 2 manual plan: 2.2 averaging extension"
+    },
+    {
+      "label": "1. Why this belongs in Manual 2.2",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_1_why_this_belongs_in_manual_2_2",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "1. why this belongs in manual 2.2"
+    },
+    {
+      "label": "2. Extension scope",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_2_extension_scope",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "2. extension scope"
+    },
+    {
+      "label": "3. Source triage",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_3_source_triage",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "3. source triage"
+    },
+    {
+      "label": "3.1 From 9B",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_3_1_from_9b",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "3.1 from 9b"
+    },
+    {
+      "label": "3.2 From 9C",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_3_2_from_9c",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "3.2 from 9c"
+    },
+    {
+      "label": "4. Proposed Manual 2.2 changes",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "4. proposed manual 2.2 changes"
+    },
+    {
+      "label": "4.1 Background addition",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_4_1_background_addition",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "4.1 background addition"
+    },
+    {
+      "label": "4.2 New Anticipate task",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_4_2_new_anticipate_task",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "4.2 new anticipate task"
+    },
+    {
+      "label": "4.3 New Simulate section",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_4_3_new_simulate_section",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "4.3 new simulate section"
+    },
+    {
+      "label": "4.4 New Implement and Investigate task",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_4_4_new_implement_and_investigate_task",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "4.4 new implement and investigate task"
+    },
+    {
+      "label": "4.5 New Compare and Conclude task",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_4_5_new_compare_and_conclude_task",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "4.5 new compare and conclude task"
+    },
+    {
+      "label": "4.6 Deep dive",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_4_6_deep_dive",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "4.6 deep dive"
+    },
+    {
+      "label": "5. Revised time budget for Manual 2.2",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_5_revised_time_budget_for_manual_2_2",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "5. revised time budget for manual 2.2"
+    },
+    {
+      "label": "6. Artifacts to add when editing the notebook",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_6_artifacts_to_add_when_editing_the_notebook",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "6. artifacts to add when editing the notebook"
+    },
+    {
+      "label": "6.1 Code helpers",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_6_1_code_helpers",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "6.1 code helpers"
+    },
+    {
+      "label": "6.2 Figures",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_6_2_figures",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "6.2 figures"
+    },
+    {
+      "label": "7. Risks and open points",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_7_risks_and_open_points",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "7. risks and open points"
+    },
+    {
+      "label": "8. Cross-walk to Week 3.1",
+      "file_type": "document",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "book_manuals_week2_plan_2_2_averaging_extension_8_cross_walk_to_week_3_1",
+      "community": 1,
+      "community_name": "Week 2 manual plan: 2.2 averaging extension",
+      "norm_label": "8. cross-walk to week 3.1"
+    },
+    {
+      "label": "4.2_presenter_notes.md",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "4.2_presenter_notes.md"
+    },
+    {
+      "label": "4.2 Real opamps: presenter notes",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_4_2_real_opamps_presenter_notes",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "4.2 real opamps: presenter notes"
+    },
+    {
+      "label": "Simulate",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_simulate",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "simulate"
+    },
+    {
+      "label": "Task S1: Simulate the bias / offset test circuit",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_s1_simulate_the_bias_offset_test_circuit",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task s1: simulate the bias / offset test circuit"
+    },
+    {
+      "label": "Task S2: Open-loop and closed-loop frequency response",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_s2_open_loop_and_closed_loop_frequency_response",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task s2: open-loop and closed-loop frequency response"
+    },
+    {
+      "label": "Task S3: The integrator drifts unless you tame it",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_s3_the_integrator_drifts_unless_you_tame_it",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task s3: the integrator drifts unless you tame it"
+    },
+    {
+      "label": "Practicum: Implement and investigate",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_practicum_implement_and_investigate",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "practicum: implement and investigate"
+    },
+    {
+      "label": "Task I1: Measure $V_{offset}$ and $I_{bias}$, then pool the class results",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_i1_measure_v_offset_and_i_bias_then_pool_the_class_results",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task i1: measure $v_{offset}$ and $i_{bias}$, then pool the class results"
+    },
+    {
+      "label": "Task I2: GBW and slew rate from one amplifier",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_i2_gbw_and_slew_rate_from_one_amplifier",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task i2: gbw and slew rate from one amplifier"
+    },
+    {
+      "label": "Task I3: Find the output current limit",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_i3_find_the_output_current_limit",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task i3: find the output current limit"
+    },
+    {
+      "label": "Task I4: Build the integrator, watch it drift, scale its slope",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_i4_build_the_integrator_watch_it_drift_scale_its_slope",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task i4: build the integrator, watch it drift, scale its slope"
+    },
+    {
+      "label": "Task I5: Tame the integrator",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_i5_tame_the_integrator",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task i5: tame the integrator"
+    },
+    {
+      "label": "Compare and Conclude",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_compare_and_conclude",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "compare and conclude"
+    },
+    {
+      "label": "Task C1: Bias and offset, three columns",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_c1_bias_and_offset_three_columns",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task c1: bias and offset, three columns"
+    },
+    {
+      "label": "Task C2: Gain-bandwidth product as a constant",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_c2_gain_bandwidth_product_as_a_constant",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task c2: gain-bandwidth product as a constant"
+    },
+    {
+      "label": "Task C3: Re-state the golden rules as inequalities",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_task_c3_re_state_the_golden_rules_as_inequalities",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "task c3: re-state the golden rules as inequalities"
+    },
+    {
+      "label": "Deep dive (optional)",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_deep_dive_optional",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "deep dive (optional)"
+    },
+    {
+      "label": "Deep dive: a design decision",
+      "file_type": "document",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "book_manuals_week4_4_2_presenter_notes_deep_dive_a_design_decision",
+      "community": 2,
+      "community_name": "Practicum: Implement and investigate",
+      "norm_label": "deep dive: a design decision"
     },
     {
       "label": "admonitions.md",
@@ -494,7 +1132,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "admonitions.md"
     },
@@ -505,7 +1143,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_admonitions",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "admonitions"
     },
@@ -516,7 +1154,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_standard_admonition_types",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "standard admonition types"
     },
@@ -527,7 +1165,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_note",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "note"
     },
@@ -538,7 +1176,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_warning",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "warning"
     },
@@ -549,7 +1187,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_important",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "important"
     },
@@ -560,7 +1198,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_tip",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "tip"
     },
@@ -571,7 +1209,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_caution",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "caution"
     },
@@ -582,7 +1220,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_attention",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "attention"
     },
@@ -593,7 +1231,7 @@
       "source_location": "L79",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_error",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "error"
     },
@@ -604,7 +1242,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_danger",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "danger"
     },
@@ -615,7 +1253,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_see_also",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "see also"
     },
@@ -626,7 +1264,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_hint",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "hint"
     },
@@ -637,7 +1275,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_generic_admonition_custom_title",
-      "community": 2,
+      "community": 6,
       "community_name": "Standard admonition types",
       "norm_label": "generic admonition (custom title)"
     },
@@ -648,7 +1286,7 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_custom_admonitions_used_in_this_book",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "custom admonitions used in this book"
     },
@@ -659,7 +1297,7 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_interactive_page",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "interactive page"
     },
@@ -670,7 +1308,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_answer_note",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "answer (note)"
     },
@@ -681,7 +1319,7 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_solution_to_this_exercise_dropdown",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "solution to this exercise (dropdown)"
     },
@@ -692,7 +1330,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_how_to_use_this_book_note_dropdown",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "how to use this book (note + dropdown)"
     },
@@ -703,7 +1341,7 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_estimated_time",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "estimated time"
     },
@@ -714,7 +1352,7 @@
       "source_location": "L211",
       "_origin": "ast",
       "id": "book_miscellaneous_admonitions_deep_dive_optional_enrichment",
-      "community": 4,
+      "community": 7,
       "community_name": "Custom admonitions used in this book",
       "norm_label": "deep dive (optional enrichment)"
     },
@@ -725,7 +1363,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "book_miscellaneous_credits",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "credits.md"
     },
@@ -736,7 +1374,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "book_miscellaneous_credits_credits_and_license",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "credits and license"
     },
@@ -747,7 +1385,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "book_miscellaneous_credits_how_the_book_is_made",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "how the book is made"
     },
@@ -758,7 +1396,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "book_miscellaneous_credits_license",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "license"
     },
@@ -769,7 +1407,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "book_miscellaneous_credits_external_resources",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "external resources"
     },
@@ -780,7 +1418,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "book_miscellaneous_credits_about_the_editors",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "about the editors"
     },
@@ -791,7 +1429,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "book_miscellaneous_credits_acknowledgements",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "acknowledgements"
     },
@@ -802,7 +1440,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "book_miscellaneous_credits_publications",
-      "community": 6,
+      "community": 8,
       "community_name": "Credits and License",
       "norm_label": "publications"
     },
@@ -912,7 +1550,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week1",
-      "community": 9,
+      "community": 11,
       "community_name": "EI manuals week 1",
       "norm_label": "ei_manual_week1.md"
     },
@@ -923,7 +1561,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week1_ei_manuals_week_1",
-      "community": 9,
+      "community": 11,
       "community_name": "EI manuals week 1",
       "norm_label": "ei manuals week 1"
     },
@@ -934,7 +1572,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week1_this_week_s_goal",
-      "community": 9,
+      "community": 11,
       "community_name": "EI manuals week 1",
       "norm_label": "this week's goal:"
     },
@@ -945,7 +1583,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week1_topic_of_experiments",
-      "community": 9,
+      "community": 11,
       "community_name": "EI manuals week 1",
       "norm_label": "topic of experiments"
     },
@@ -956,7 +1594,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week11",
-      "community": 10,
+      "community": 12,
       "community_name": "EI manuals week 11",
       "norm_label": "ei_manual_week11.md"
     },
@@ -967,7 +1605,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week11_ei_manuals_week_11",
-      "community": 10,
+      "community": 12,
       "community_name": "EI manuals week 11",
       "norm_label": "ei manuals week 11"
     },
@@ -978,7 +1616,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week11_this_week_s_goal",
-      "community": 10,
+      "community": 12,
       "community_name": "EI manuals week 11",
       "norm_label": "this week's goal:"
     },
@@ -989,7 +1627,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week11_topic_of_experiments",
-      "community": 10,
+      "community": 12,
       "community_name": "EI manuals week 11",
       "norm_label": "topic of experiments"
     },
@@ -1000,7 +1638,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week12",
-      "community": 11,
+      "community": 13,
       "community_name": "EI manuals week 12",
       "norm_label": "ei_manual_week12.md"
     },
@@ -1011,7 +1649,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week12_ei_manuals_week_12",
-      "community": 11,
+      "community": 13,
       "community_name": "EI manuals week 12",
       "norm_label": "ei manuals week 12"
     },
@@ -1022,7 +1660,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week12_this_week_s_goal",
-      "community": 11,
+      "community": 13,
       "community_name": "EI manuals week 12",
       "norm_label": "this week's goal:"
     },
@@ -1033,7 +1671,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week12_topic_of_experiments",
-      "community": 11,
+      "community": 13,
       "community_name": "EI manuals week 12",
       "norm_label": "topic of experiments"
     },
@@ -1044,7 +1682,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week13",
-      "community": 12,
+      "community": 14,
       "community_name": "EI manuals week 13",
       "norm_label": "ei_manual_week13.md"
     },
@@ -1055,7 +1693,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week13_ei_manuals_week_13",
-      "community": 12,
+      "community": 14,
       "community_name": "EI manuals week 13",
       "norm_label": "ei manuals week 13"
     },
@@ -1066,7 +1704,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week13_this_week_s_goal",
-      "community": 12,
+      "community": 14,
       "community_name": "EI manuals week 13",
       "norm_label": "this week's goal:"
     },
@@ -1077,7 +1715,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week13_topic_of_experiments",
-      "community": 12,
+      "community": 14,
       "community_name": "EI manuals week 13",
       "norm_label": "topic of experiments"
     },
@@ -1088,7 +1726,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week14",
-      "community": 13,
+      "community": 15,
       "community_name": "EI manuals week 14",
       "norm_label": "ei_manual_week14.md"
     },
@@ -1099,7 +1737,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week14_ei_manuals_week_14",
-      "community": 13,
+      "community": 15,
       "community_name": "EI manuals week 14",
       "norm_label": "ei manuals week 14"
     },
@@ -1110,7 +1748,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week14_this_week_s_goal",
-      "community": 13,
+      "community": 15,
       "community_name": "EI manuals week 14",
       "norm_label": "this week's goal:"
     },
@@ -1121,7 +1759,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week14_topic_of_experiments",
-      "community": 13,
+      "community": 15,
       "community_name": "EI manuals week 14",
       "norm_label": "topic of experiments"
     },
@@ -1132,7 +1770,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week16",
-      "community": 14,
+      "community": 16,
       "community_name": "EI manuals week 16",
       "norm_label": "ei_manual_week16.md"
     },
@@ -1143,7 +1781,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week16_ei_manuals_week_16",
-      "community": 14,
+      "community": 16,
       "community_name": "EI manuals week 16",
       "norm_label": "ei manuals week 16"
     },
@@ -1154,7 +1792,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week16_this_week_s_goal",
-      "community": 14,
+      "community": 16,
       "community_name": "EI manuals week 16",
       "norm_label": "this week's goal:"
     },
@@ -1165,7 +1803,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week16_topic_of_experiments",
-      "community": 14,
+      "community": 16,
       "community_name": "EI manuals week 16",
       "norm_label": "topic of experiments"
     },
@@ -1176,7 +1814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week17",
-      "community": 15,
+      "community": 17,
       "community_name": "EI manuals week 17",
       "norm_label": "ei_manual_week17.md"
     },
@@ -1187,7 +1825,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "old_ei_manual_week17_ei_manuals_week_17",
-      "community": 15,
+      "community": 17,
       "community_name": "EI manuals week 17",
       "norm_label": "ei manuals week 17"
     },
@@ -1198,7 +1836,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "old_ei_manual_week17_each_week_s_goal",
-      "community": 15,
+      "community": 17,
       "community_name": "EI manuals week 17",
       "norm_label": "each week's goal:"
     },
@@ -1209,7 +1847,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "old_ei_manual_week17_topic_of_experiments",
-      "community": 15,
+      "community": 17,
       "community_name": "EI manuals week 17",
       "norm_label": "topic of experiments"
     },
@@ -1220,7 +1858,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week18",
-      "community": 16,
+      "community": 18,
       "community_name": "EI manuals week 18",
       "norm_label": "ei_manual_week18.md"
     },
@@ -1231,7 +1869,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week18_ei_manuals_week_18",
-      "community": 16,
+      "community": 18,
       "community_name": "EI manuals week 18",
       "norm_label": "ei manuals week 18"
     },
@@ -1242,7 +1880,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week18_each_week_s_goal",
-      "community": 16,
+      "community": 18,
       "community_name": "EI manuals week 18",
       "norm_label": "each week's goal:"
     },
@@ -1253,7 +1891,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "old_ei_manual_week18_topic_of_experiments",
-      "community": 16,
+      "community": 18,
       "community_name": "EI manuals week 18",
       "norm_label": "topic of experiments"
     },
@@ -1264,7 +1902,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week19",
-      "community": 17,
+      "community": 19,
       "community_name": "EI manuals week 19",
       "norm_label": "ei_manual_week19.md"
     },
@@ -1275,7 +1913,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week19_ei_manuals_week_19",
-      "community": 17,
+      "community": 19,
       "community_name": "EI manuals week 19",
       "norm_label": "ei manuals week 19"
     },
@@ -1286,7 +1924,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week19_each_week_s_goal",
-      "community": 17,
+      "community": 19,
       "community_name": "EI manuals week 19",
       "norm_label": "each week's goal:"
     },
@@ -1297,7 +1935,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "old_ei_manual_week19_topic_of_experiments",
-      "community": 17,
+      "community": 19,
       "community_name": "EI manuals week 19",
       "norm_label": "topic of experiments"
     },
@@ -1308,7 +1946,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week2",
-      "community": 18,
+      "community": 20,
       "community_name": "EI manuals week 2",
       "norm_label": "ei_manual_week2.md"
     },
@@ -1319,7 +1957,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week2_ei_manuals_week_2",
-      "community": 18,
+      "community": 20,
       "community_name": "EI manuals week 2",
       "norm_label": "ei manuals week 2"
     },
@@ -1330,7 +1968,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week2_this_week_s_goal",
-      "community": 18,
+      "community": 20,
       "community_name": "EI manuals week 2",
       "norm_label": "this week's goal:"
     },
@@ -1341,7 +1979,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week2_topic_of_experiments",
-      "community": 18,
+      "community": 20,
       "community_name": "EI manuals week 2",
       "norm_label": "topic of experiments"
     },
@@ -1352,7 +1990,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week3",
-      "community": 19,
+      "community": 21,
       "community_name": "EI manuals week 3",
       "norm_label": "ei_manual_week3.md"
     },
@@ -1363,7 +2001,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week3_ei_manuals_week_3",
-      "community": 19,
+      "community": 21,
       "community_name": "EI manuals week 3",
       "norm_label": "ei manuals week 3"
     },
@@ -1374,7 +2012,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week3_this_week_s_goal",
-      "community": 19,
+      "community": 21,
       "community_name": "EI manuals week 3",
       "norm_label": "this week's goal:"
     },
@@ -1385,7 +2023,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week3_topic_of_experiments",
-      "community": 19,
+      "community": 21,
       "community_name": "EI manuals week 3",
       "norm_label": "topic of experiments"
     },
@@ -1396,7 +2034,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week4",
-      "community": 20,
+      "community": 22,
       "community_name": "EI manuals week 4",
       "norm_label": "ei_manual_week4.md"
     },
@@ -1407,7 +2045,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week4_ei_manuals_week_4",
-      "community": 20,
+      "community": 22,
       "community_name": "EI manuals week 4",
       "norm_label": "ei manuals week 4"
     },
@@ -1418,7 +2056,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week4_this_week_s_goal",
-      "community": 20,
+      "community": 22,
       "community_name": "EI manuals week 4",
       "norm_label": "this week's goal:"
     },
@@ -1429,7 +2067,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week4_topic_of_experiments",
-      "community": 20,
+      "community": 22,
       "community_name": "EI manuals week 4",
       "norm_label": "topic of experiments"
     },
@@ -1440,7 +2078,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week6",
-      "community": 21,
+      "community": 23,
       "community_name": "EI manuals week 6",
       "norm_label": "ei_manual_week6.md"
     },
@@ -1451,7 +2089,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week6_ei_manuals_week_6",
-      "community": 21,
+      "community": 23,
       "community_name": "EI manuals week 6",
       "norm_label": "ei manuals week 6"
     },
@@ -1462,7 +2100,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week6_this_week_s_goal",
-      "community": 21,
+      "community": 23,
       "community_name": "EI manuals week 6",
       "norm_label": "this week's goal:"
     },
@@ -1473,7 +2111,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week6_topic_of_experiments",
-      "community": 21,
+      "community": 23,
       "community_name": "EI manuals week 6",
       "norm_label": "topic of experiments"
     },
@@ -1484,7 +2122,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week7",
-      "community": 22,
+      "community": 24,
       "community_name": "EI manuals week 7",
       "norm_label": "ei_manual_week7.md"
     },
@@ -1495,7 +2133,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week7_ei_manuals_week_7",
-      "community": 22,
+      "community": 24,
       "community_name": "EI manuals week 7",
       "norm_label": "ei manuals week 7"
     },
@@ -1506,7 +2144,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week7_this_week_s_goal",
-      "community": 22,
+      "community": 24,
       "community_name": "EI manuals week 7",
       "norm_label": "this week's goal:"
     },
@@ -1517,7 +2155,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week7_topic_of_experiments",
-      "community": 22,
+      "community": 24,
       "community_name": "EI manuals week 7",
       "norm_label": "topic of experiments"
     },
@@ -1528,7 +2166,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week8",
-      "community": 23,
+      "community": 25,
       "community_name": "EI manuals week 8",
       "norm_label": "ei_manual_week8.md"
     },
@@ -1539,7 +2177,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week8_ei_manuals_week_8",
-      "community": 23,
+      "community": 25,
       "community_name": "EI manuals week 8",
       "norm_label": "ei manuals week 8"
     },
@@ -1550,7 +2188,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week8_this_week_s_goal",
-      "community": 23,
+      "community": 25,
       "community_name": "EI manuals week 8",
       "norm_label": "this week's goal:"
     },
@@ -1561,7 +2199,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week8_topic_of_experiments",
-      "community": 23,
+      "community": 25,
       "community_name": "EI manuals week 8",
       "norm_label": "topic of experiments"
     },
@@ -1572,7 +2210,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week9",
-      "community": 24,
+      "community": 26,
       "community_name": "EI manuals week 9",
       "norm_label": "ei_manual_week9.md"
     },
@@ -1583,7 +2221,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_manual_week9_ei_manuals_week_9",
-      "community": 24,
+      "community": 26,
       "community_name": "EI manuals week 9",
       "norm_label": "ei manuals week 9"
     },
@@ -1594,7 +2232,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "old_ei_manual_week9_this_week_s_goal",
-      "community": 24,
+      "community": 26,
       "community_name": "EI manuals week 9",
       "norm_label": "this week's goal:"
     },
@@ -1605,7 +2243,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "old_ei_manual_week9_topic_of_experiments",
-      "community": 24,
+      "community": 26,
       "community_name": "EI manuals week 9",
       "norm_label": "topic of experiments"
     },
@@ -1616,7 +2254,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal1",
-      "community": 27,
+      "community": 29,
       "community_name": "EI_octal1.md",
       "norm_label": "ei_octal1.md"
     },
@@ -1627,7 +2265,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal1_ei_octal_1",
-      "community": 27,
+      "community": 29,
       "community_name": "EI_octal1.md",
       "norm_label": "ei octal 1"
     },
@@ -1638,7 +2276,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal2",
-      "community": 28,
+      "community": 30,
       "community_name": "EI_octal2.md",
       "norm_label": "ei_octal2.md"
     },
@@ -1649,7 +2287,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal2_ei_octal_2",
-      "community": 28,
+      "community": 30,
       "community_name": "EI_octal2.md",
       "norm_label": "ei octal 2"
     },
@@ -1660,7 +2298,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal3",
-      "community": 29,
+      "community": 31,
       "community_name": "EI_octal3.md",
       "norm_label": "ei_octal3.md"
     },
@@ -1671,7 +2309,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal3_ei_octal_3",
-      "community": 29,
+      "community": 31,
       "community_name": "EI_octal3.md",
       "norm_label": "ei octal 3"
     },
@@ -1682,7 +2320,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal4",
-      "community": 30,
+      "community": 32,
       "community_name": "EI_octal4.md",
       "norm_label": "ei_octal4.md"
     },
@@ -1693,7 +2331,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_ei_octal4_ei_octal_4",
-      "community": 30,
+      "community": 32,
       "community_name": "EI_octal4.md",
       "norm_label": "ei octal 4"
     },
@@ -1704,7 +2342,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_styleguide",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "styleguide.md"
     },
@@ -1715,7 +2353,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "old_styleguide_how_to_use_the_ei_manuals",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "how to use the ei manuals"
     },
@@ -1726,7 +2364,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "old_styleguide_background",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "background"
     },
@@ -1737,7 +2375,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "old_styleguide_anticipate",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "anticipate"
     },
@@ -1748,7 +2386,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "old_styleguide_simulate",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "simulate"
     },
@@ -1759,7 +2397,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "old_styleguide_implement_investigate",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "implement & investigate"
     },
@@ -1770,7 +2408,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "old_styleguide_compare_conclude",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "compare & conclude"
     },
@@ -1781,7 +2419,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "old_styleguide_styleguide_per_week",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "styleguide (per week)"
     },
@@ -1792,7 +2430,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "old_styleguide_styleguide_per_experiment",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "styleguide (per experiment)"
     },
@@ -1803,7 +2441,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "old_styleguide_layout",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "layout:"
     },
@@ -1814,7 +2452,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "old_styleguide_accessibility_code",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "accessibility code"
     },
@@ -1825,7 +2463,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "old_styleguide_title_goal_structure",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "title, goal, structure"
     },
@@ -1836,7 +2474,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "old_styleguide_example_1a_digital_multimeter_voltage_divider",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "example 1a: digital multimeter + voltage divider"
     },
@@ -1847,7 +2485,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "old_styleguide_subsections_format",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "subsections format"
     },
@@ -1858,7 +2496,7 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "old_styleguide_images",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "images"
     },
@@ -1869,7 +2507,7 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "old_styleguide_fonts",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "fonts"
     },
@@ -1880,7 +2518,7 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "old_styleguide_inserting_own_images",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "inserting own images"
     },
@@ -1891,7 +2529,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "old_styleguide_markdown_versus_html",
-      "community": 0,
+      "community": 3,
       "community_name": "How to use the EI manuals",
       "norm_label": "markdown versus html"
     }
@@ -2012,6 +2650,28 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L208",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents",
+      "target": "book_miscellaneous_admonitions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents",
+      "target": "book_miscellaneous_intro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
@@ -2024,43 +2684,263 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
-      "source_location": "L39",
+      "source_location": "L260",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agents_repository_instructions_for_ai_agents",
-      "target": "agents_other_writing_conventions",
+      "target": "agents_10_punctuation_no_em_or_en_dashes",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
-      "source_location": "L5",
+      "source_location": "L294",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agents_repository_instructions_for_ai_agents",
-      "target": "agents_punctuation_no_em_or_en_dashes",
+      "target": "agents_11_other_writing_conventions",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
-      "source_location": "L46",
+      "source_location": "L301",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agents_repository_instructions_for_ai_agents",
-      "target": "agents_scope",
+      "target": "agents_12_scope",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
-      "source_location": "L35",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "agents_punctuation_no_em_or_en_dashes",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_1_what_this_repository_is",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_2_manual_structure_the_basic_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_3_repository_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_4_hardware_platform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_5_naming_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_6_style_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_7_when_the_textbook_covers_a_concept",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L241",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_8_build_and_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_repository_instructions_for_ai_agents",
+      "target": "agents_9_cross_cutting_reference_material",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_1_what_this_repository_is",
+      "target": "agents_audience",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_1_what_this_repository_is",
+      "target": "agents_course_goals_in_priority_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_2_manual_structure_the_basic_format",
+      "target": "agents_available_task_tags_write_them_in_the_plan_not_in_the_published_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_2_manual_structure_the_basic_format",
+      "target": "agents_pair_work_and_group_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_3_repository_layout",
+      "target": "agents_folder_responsibilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_3_repository_layout",
+      "target": "agents_high_value_items_inside_helpers_worth_knowing_about",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L206",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_6_style_conventions",
+      "target": "agents_admonitions_used_in_this_book",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L191",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_6_style_conventions",
+      "target": "agents_figures",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_6_style_conventions",
+      "target": "agents_inline_todo_flag_vibrant_magenta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L184",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_6_style_conventions",
+      "target": "agents_math",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_6_style_conventions",
+      "target": "agents_voice_and_tone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L290",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_10_punctuation_no_em_or_en_dashes",
       "target": "agents_quick_self_check_before_saving",
       "confidence_score": 1.0
     },
@@ -2068,10 +2948,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
-      "source_location": "L25",
+      "source_location": "L280",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "agents_punctuation_no_em_or_en_dashes",
+      "source": "agents_10_punctuation_no_em_or_en_dashes",
       "target": "agents_replacements_for_common_dash_idioms",
       "confidence_score": 1.0
     },
@@ -2326,6 +3206,402 @@
       "_origin": "ast",
       "source": "readme_writing_and_style_guidelines",
       "target": "readme_7_keep_formatting_and_terminology_consistent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_1_why_this_belongs_in_manual_2_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_2_extension_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_3_source_triage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_5_revised_time_budget_for_manual_2_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_6_artifacts_to_add_when_editing_the_notebook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_7_risks_and_open_points",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_week_2_manual_plan_2_2_averaging_extension",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_8_cross_walk_to_week_3_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_3_source_triage",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_3_1_from_9b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_3_source_triage",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_3_2_from_9c",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_4_1_background_addition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_4_2_new_anticipate_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_4_3_new_simulate_section",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_4_4_new_implement_and_investigate_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_4_5_new_compare_and_conclude_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_4_proposed_manual_2_2_changes",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_4_6_deep_dive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_6_artifacts_to_add_when_editing_the_notebook",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_6_1_code_helpers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week2/_plan_2.2_averaging_extension.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week2_plan_2_2_averaging_extension_6_artifacts_to_add_when_editing_the_notebook",
+      "target": "book_manuals_week2_plan_2_2_averaging_extension_6_2_figures",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes",
+      "target": "book_manuals_week4_4_2_presenter_notes_4_2_real_opamps_presenter_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_4_2_real_opamps_presenter_notes",
+      "target": "book_manuals_week4_4_2_presenter_notes_compare_and_conclude",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_4_2_real_opamps_presenter_notes",
+      "target": "book_manuals_week4_4_2_presenter_notes_deep_dive_optional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_4_2_real_opamps_presenter_notes",
+      "target": "book_manuals_week4_4_2_presenter_notes_practicum_implement_and_investigate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_4_2_real_opamps_presenter_notes",
+      "target": "book_manuals_week4_4_2_presenter_notes_simulate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_simulate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_s1_simulate_the_bias_offset_test_circuit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_simulate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_s2_open_loop_and_closed_loop_frequency_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_simulate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_s3_the_integrator_drifts_unless_you_tame_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_practicum_implement_and_investigate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_i1_measure_v_offset_and_i_bias_then_pool_the_class_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_practicum_implement_and_investigate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_i2_gbw_and_slew_rate_from_one_amplifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_practicum_implement_and_investigate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_i3_find_the_output_current_limit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_practicum_implement_and_investigate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_i4_build_the_integrator_watch_it_drift_scale_its_slope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_practicum_implement_and_investigate",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_i5_tame_the_integrator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_compare_and_conclude",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_c1_bias_and_offset_three_columns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_compare_and_conclude",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_c2_gain_bandwidth_product_as_a_constant",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_compare_and_conclude",
+      "target": "book_manuals_week4_4_2_presenter_notes_task_c3_re_state_the_golden_rules_as_inequalities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "book/manuals/week4/4.2_presenter_notes.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "book_manuals_week4_4_2_presenter_notes_deep_dive_optional",
+      "target": "book_manuals_week4_4_2_presenter_notes_deep_dive_a_design_decision",
       "confidence_score": 1.0
     },
     {
@@ -3474,5 +4750,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "35ec32240899a67a2e2ea862b500df1c5d1a5984"
+  "built_at_commit": "8f7c31d6740a5303f192d503c1cc9ece53436d01"
 }
