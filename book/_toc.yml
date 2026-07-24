@@ -17,8 +17,8 @@ parts:
       - file: manuals/intros/software_installation.ipynb
       - file: manuals/intros/alpaca2/_intro.ipynb
         sections:
-          - file: manuals/intros/alpaca2/signals.ipynb
           - file: manuals/intros/alpaca2/programming.ipynb
+          - file: manuals/intros/alpaca2/signals.ipynb
       - file: manuals/intros/breadboard.ipynb
 
   - caption: Lab manuals
