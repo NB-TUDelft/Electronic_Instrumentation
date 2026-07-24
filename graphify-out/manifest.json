@@ -1,0 +1,562 @@
+{
+  ".vscode/extensions.json": {
+    "mtime": 1784512939.7013152,
+    "ast_hash": "38eaaab6b0f71d46e2a8413cba9806f2",
+    "semantic_hash": ""
+  },
+  "animations/convert_mp4_to_avif.sh": {
+    "mtime": 1784856375.40691,
+    "ast_hash": "e05b4319e9acdd7479d52a63dd0a56b2",
+    "semantic_hash": ""
+  },
+  "book/no_content_admonition.py": {
+    "mtime": 1784512956.3864205,
+    "ast_hash": "39f9ce2a7e477c10d3b9e83832cfad60",
+    "semantic_hash": ""
+  },
+  "book/static/warning.js": {
+    "mtime": 1784512962.240425,
+    "ast_hash": "bd2e2965472e2ab57488467d3a00905a",
+    "semantic_hash": ""
+  },
+  "pyproject.toml": {
+    "mtime": 1784856375.41691,
+    "ast_hash": "ffa494f3003c9565453ebb4ee2a99cc0",
+    "semantic_hash": ""
+  },
+  ".github/workflows/call-deploy-book.yml": {
+    "mtime": 1784512963.347134,
+    "ast_hash": "07ee48b8faa409d945dc9a7ebb479604",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1784512939.677428,
+    "ast_hash": "8ce5a9ca313d79aeaf6d7cf7712c2557",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1784512939.6070569,
+    "ast_hash": "58d49de72008790d093b71a80d111464",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784857634.7954698,
+    "ast_hash": "ac6e9684c5419cf184b57b9994b0d692",
+    "semantic_hash": ""
+  },
+  "book/_config.yml": {
+    "mtime": 1784858768.527292,
+    "ast_hash": "da7dbf5ec6398715e434f2455cc82387",
+    "semantic_hash": ""
+  },
+  "book/_toc.yml": {
+    "mtime": 1784856375.40891,
+    "ast_hash": "6a3f327ab4f454ebae6b733131b340b4",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/admonitions.md": {
+    "mtime": 1784512963.1562686,
+    "ast_hash": "2487dd918b8bd892e5024c7075cb2d23",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/credits.md": {
+    "mtime": 1784512963.1436553,
+    "ast_hash": "621b01f14e4b890d78f5483de13409eb",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/intro.md": {
+    "mtime": 1784512963.1305056,
+    "ast_hash": "c8e5b241824344daf72d964f570b9265",
+    "semantic_hash": ""
+  },
+  "book/static/env.yaml": {
+    "mtime": 1784512962.2168815,
+    "ast_hash": "7436f4c1e43c8c0c1133c03c7e431ef7",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week1.md": {
+    "mtime": 1784512939.7551029,
+    "ast_hash": "f2189cd050b0bda3095d34e8a102df8d",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week11.md": {
+    "mtime": 1784512939.7672563,
+    "ast_hash": "140326e0a6354ab991461ba712c59af1",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week12.md": {
+    "mtime": 1784512939.7791712,
+    "ast_hash": "c894b697ee004e26d3f27d2d839afd25",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week13.md": {
+    "mtime": 1784512939.7913227,
+    "ast_hash": "d1b887f4989c48facbca08babe045251",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week14.md": {
+    "mtime": 1784512939.802705,
+    "ast_hash": "3b8aae7c599ba32859f9ad4bb9cd9fd9",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week16.md": {
+    "mtime": 1784512939.814085,
+    "ast_hash": "f93a47c7498342f4130a4dc03380d541",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week17.md": {
+    "mtime": 1784512939.8267121,
+    "ast_hash": "467dd06b270d98048a2803c8d7b4a8e6",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week18.md": {
+    "mtime": 1784512939.8379128,
+    "ast_hash": "6926a0a722573b75c6c37280b42392c0",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week19.md": {
+    "mtime": 1784512939.8499467,
+    "ast_hash": "cdadda99acabc7d72ccd111b81c5c521",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week2.md": {
+    "mtime": 1784512939.862343,
+    "ast_hash": "d5bf482cd34fc04ebd878db18c4ca2e9",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week3.md": {
+    "mtime": 1784512939.8741987,
+    "ast_hash": "588e7e7c409466c612e52b80d091f990",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week4.md": {
+    "mtime": 1784512939.8863537,
+    "ast_hash": "ff7fd0c254b2b231a4603bd301c9f149",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week6.md": {
+    "mtime": 1784512939.8970175,
+    "ast_hash": "dd7e6e8bfb147cbe10a882d159222de2",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week7.md": {
+    "mtime": 1784512939.9090421,
+    "ast_hash": "71e0b301ebac75e7a208484bfea0b2ec",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week8.md": {
+    "mtime": 1784512939.9222844,
+    "ast_hash": "0d12b51caa015ec70d4882da1a45a18c",
+    "semantic_hash": ""
+  },
+  "old/EI_manual_week9.md": {
+    "mtime": 1784512939.934671,
+    "ast_hash": "8bb13878c522802dc668b72c0752f4c7",
+    "semantic_hash": ""
+  },
+  "old/EI_octal1.md": {
+    "mtime": 1784512939.9459414,
+    "ast_hash": "0bbf82576c4c19db26ec58d18921e8ad",
+    "semantic_hash": ""
+  },
+  "old/EI_octal2.md": {
+    "mtime": 1784512939.9573088,
+    "ast_hash": "9bd3e75c71fbc75a5bcab5e6777b4d8d",
+    "semantic_hash": ""
+  },
+  "old/EI_octal3.md": {
+    "mtime": 1784512939.9685686,
+    "ast_hash": "f057a5f3f6f558453c25899c7e3dd52d",
+    "semantic_hash": ""
+  },
+  "old/EI_octal4.md": {
+    "mtime": 1784512939.9799092,
+    "ast_hash": "d6d1e0f0891252ea6fd0aa925e2b5e8e",
+    "semantic_hash": ""
+  },
+  "old/Styleguide.md": {
+    "mtime": 1784512939.992888,
+    "ast_hash": "c867aed8b7fd908eb7495b1de1870618",
+    "semantic_hash": ""
+  },
+  "old/static/requirements.txt": {
+    "mtime": 1784512956.6943805,
+    "ast_hash": "625990046bab2603fefb5c08c441f914",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1784512939.6317842,
+    "ast_hash": "989f1752edcd3474619eb31ea5bd1f8a",
+    "semantic_hash": ""
+  },
+  "tricks.yaml": {
+    "mtime": 1784856375.41691,
+    "ast_hash": "9fdce76a9d1367c9c2326ea1b8e762ba",
+    "semantic_hash": ""
+  },
+  "book/static/ALPACA_v2_diagrams_A3.pdf": {
+    "mtime": 1779758248.0,
+    "ast_hash": "63cb2446fe78bf1939706644a5214304",
+    "semantic_hash": ""
+  },
+  "old/static/ALPACA_Firmware_Installation_Manual.pdf": {
+    "mtime": 1776619443.0,
+    "ast_hash": "be04f6c2e90c8f1cb53d57166614f871",
+    "semantic_hash": ""
+  },
+  "old/static/Manual_for_installing_Anaconda_NB2214_2024.pdf": {
+    "mtime": 1784512956.6822267,
+    "ast_hash": "4858ca05bfba6628533ccb3449b72082",
+    "semantic_hash": ""
+  },
+  "animations/Images/Alpaca Screens/2.2nF Capacitr.png": {
+    "mtime": 1784856375.3754766,
+    "ast_hash": "9a063bee7290d4ec3bf4f38f1f6f183d",
+    "semantic_hash": ""
+  },
+  "animations/Images/Alpaca Screens/2.5k Resistor.png": {
+    "mtime": 1784856375.3759096,
+    "ast_hash": "77ca10cfc5a625a68d79fe1cdb50c249",
+    "semantic_hash": ""
+  },
+  "animations/Images/Alpaca Screens/Diode.png": {
+    "mtime": 1784856375.3769097,
+    "ast_hash": "b146e2085afbce73ce5f0e351eef31b8",
+    "semantic_hash": ""
+  },
+  "animations/Images/Alpaca Screens/No comp detected.png": {
+    "mtime": 1784856375.3779097,
+    "ast_hash": "fb4013df7d72876bc2572ec57e6aa7a9",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/Capacitor.png": {
+    "mtime": 1784856375.3788989,
+    "ast_hash": "9afbd2253c37d889ecb0ea7b50386e9a",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/GND.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "c5df6a2b36cb3836d1b191c61b00d88e",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/LED_diode.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "40895c7d05d7fc27ba8fc5d3ae4a5806",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/Switch Black.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "cf598fa81db04c16bd5c9d1992a8bdbd",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/Switch Black_Button.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "98fa47fdf4e5280f3b7c87e4b04e5e48",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/led_base.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "a80313796c23bed03f205868aeefd21f",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/led_red.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "831d2261b9b6e5ae6f1c2db150455bff",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/resistor_2.5k.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "f23cbaba5d495c7535abbc19eedf7170",
+    "semantic_hash": ""
+  },
+  "animations/Images/Components/resistor_general.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "83ecb6f6fa7f114534b91fabb2993ac8",
+    "semantic_hash": ""
+  },
+  "animations/Images/alpaca.png": {
+    "mtime": 1784856375.3789303,
+    "ast_hash": "76b3bfa190118de8a8059d74f97b97d6",
+    "semantic_hash": ""
+  },
+  "animations/Images/board.png": {
+    "mtime": 1784856375.3799098,
+    "ast_hash": "4bd14d03dbf8cc9548c79d414b28877c",
+    "semantic_hash": ""
+  },
+  "animations/Images/board_colorful.png": {
+    "mtime": 1784856375.3839097,
+    "ast_hash": "9344a5e8dfaa923eb6ca7500764b1eb9",
+    "semantic_hash": ""
+  },
+  "animations/Images/board_padding.png": {
+    "mtime": 1784856375.38791,
+    "ast_hash": "4f55fb478b5033d6d47276e0454d2ff1",
+    "semantic_hash": ""
+  },
+  "animations/Images/computer.png": {
+    "mtime": 1784856375.3889098,
+    "ast_hash": "904daf0448ed0218b2ad929fced94d58",
+    "semantic_hash": ""
+  },
+  "animations/Images/hand.png": {
+    "mtime": 1784856375.40391,
+    "ast_hash": "9c62de17c0a02bd3bac28bea62a0c563",
+    "semantic_hash": ""
+  },
+  "book/images/scope_annotated.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "747ae70e80c777b27b3ea117b985b2f8",
+    "semantic_hash": ""
+  },
+  "book/images/scope_annotated_dark.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "8724240e1a903086ed47345de063a37c",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/Trigger_falling_slope.png": {
+    "mtime": 1784513035.3544748,
+    "ast_hash": "35d0add77edbcec2ebee8607235e0263",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/Trigger_rising_slope.png": {
+    "mtime": 1776619443.0,
+    "ast_hash": "1ad1e27cc94a2a3ae67ef4ca303b5d22",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/alpaca/adcs.png": {
+    "mtime": 1784856375.40991,
+    "ast_hash": "a423a9a02323ab1fca64354c3bcf9f6f",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/alpaca/code_diagram.webp": {
+    "mtime": 1784856375.41091,
+    "ast_hash": "79bbb28c9db433a836c2460fe7e43726",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/alpaca/connecting.png": {
+    "mtime": 1784856375.41291,
+    "ast_hash": "8ad5658ba2ae652850c0b4ac8aafce81",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/alpaca/digital_analog_pins.png": {
+    "mtime": 1784856375.41391,
+    "ast_hash": "3e921df86768c6a1714dbcb6b7926f9f",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/alpaca/display_custom_text.png": {
+    "mtime": 1784856375.41391,
+    "ast_hash": "5725324673fa308374134a3ee11e8b77",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/alpaca/toolkit.png": {
+    "mtime": 1784856375.41591,
+    "ast_hash": "5953498c9e416159ba6ef13d558940c3",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/breadboard-horizontal-rows.png": {
+    "mtime": 1784513035.3849244,
+    "ast_hash": "2dcbd7f92f7ae86abe31f9533b2988ed",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/breadboard-vertical-power.png": {
+    "mtime": 1784513035.3983734,
+    "ast_hash": "441b9b39ad2be7cba1554ce8aac6d8d3",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/breadboard_ic.png": {
+    "mtime": 1776619443.0,
+    "ast_hash": "d81577028a226b5be4f614b40be9ab73",
+    "semantic_hash": ""
+  },
+  "book/manuals/intros/images/breadboard_resistor_good_bad_bb.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "c581bcb8f6c6fd8cc4b95d80bbc293f5",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/AC_vs_DC_coupling.svg": {
+    "mtime": 1784513035.045629,
+    "ast_hash": "998c8be7f341c5e6273ebfa7306142e9",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/Duty_cycle.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "e8d7a1d37d2eca0949ef2e97b6e334d5",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/RC_filter.svg": {
+    "mtime": 1784513035.0858736,
+    "ast_hash": "7136510845ab912dc896f39f3738cb34",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/Simulate_filter.png": {
+    "mtime": 1776619443.0,
+    "ast_hash": "342bb85caf2c80465ecc882dbe86581a",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/T-splitter.png": {
+    "mtime": 1776619443.0,
+    "ast_hash": "d67b3f2a30ade90d183b8a29e6371eef",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/Trigger_falling_slope.png": {
+    "mtime": 1784513035.1749964,
+    "ast_hash": "35d0add77edbcec2ebee8607235e0263",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/Trigger_rising_slope.png": {
+    "mtime": 1776619443.0,
+    "ast_hash": "1ad1e27cc94a2a3ae67ef4ca303b5d22",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/Vpp_Vp_Vrms.png": {
+    "mtime": 1776619443.0,
+    "ast_hash": "ec0476b87a5cad99ef9571cefc8fc0f3",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/function_generator_load_resistor.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "d9569aa0c8e3be400ad7735a11de4949",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/rotary_switch.svg": {
+    "mtime": 1784513035.2706585,
+    "ast_hash": "a430925f3b000e8749a19b259f00e1f9",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/stacked_dividers.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "770dce5c9696b1a880d0d82a26fb4561",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/two_dividers_thevinen.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "9ad0e1ccb9d55a5d7e2bb75495bb2cb0",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/voltage_divider.svg": {
+    "mtime": 1784513035.311386,
+    "ast_hash": "e4d83ec70bb3e9140bf9772ce14d340d",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/voltage_divider_10k.svg": {
+    "mtime": 1776619443.0,
+    "ast_hash": "5ed90301b87f941882ea47556936b53e",
+    "semantic_hash": ""
+  },
+  "book/manuals/week1/images/voltage_divider_1k_220.svg": {
+    "mtime": 1784513035.3369515,
+    "ast_hash": "a59b0cbcf98cc406ca0516166b8eea5d",
+    "semantic_hash": ""
+  },
+  "book/manuals/week2/images/LED.svg": {
+    "mtime": 1784513034.9145975,
+    "ast_hash": "a6ce28ccf86c6693f76b1f01ea067b79",
+    "semantic_hash": ""
+  },
+  "book/manuals/week2/images/LEDs_ALPACA.png": {
+    "mtime": 1784513034.941286,
+    "ast_hash": "da8c03cdcf8e1a675c61ac4a5c2208b8",
+    "semantic_hash": ""
+  },
+  "book/manuals/week2/images/Pull_down_resistor.svg": {
+    "mtime": 1784513034.9550104,
+    "ast_hash": "e0b45bbaaa608be016acdc12ddc3628b",
+    "semantic_hash": ""
+  },
+  "book/manuals/week2/images/Pull_down_switch_LED_config.svg": {
+    "mtime": 1777850259.0,
+    "ast_hash": "1a4ccee1652be1c6cd31ebff4617dc83",
+    "semantic_hash": ""
+  },
+  "book/manuals/week2/images/Pull_up_resistor.svg": {
+    "mtime": 1784513034.9779866,
+    "ast_hash": "25f060c50d6295d6d551caf7b3317e1d",
+    "semantic_hash": ""
+  },
+  "book/manuals/week2/images/Pull_up_switch_LED_config.svg": {
+    "mtime": 1777850259.0,
+    "ast_hash": "c773007f634a23dced475cad646bca8a",
+    "semantic_hash": ""
+  },
+  "book/manuals/week2/images/switches_ALPACA.png": {
+    "mtime": 1777850259.0,
+    "ast_hash": "1b9f4039be2960ceecdf72dbbb564233",
+    "semantic_hash": ""
+  },
+  "book/manuals/week3/images/Time_vs_freq_domain_sine.png": {
+    "mtime": 1779826709.0,
+    "ast_hash": "04f803c2d2f081b83269a663b75bd2ea",
+    "semantic_hash": ""
+  },
+  "book/manuals/week4/images/OPAMP_with_Bias_and_offset.svg": {
+    "mtime": 1784513035.6632426,
+    "ast_hash": "0efdc328ab5767d6070cbcf2355c9852",
+    "semantic_hash": ""
+  },
+  "book/manuals/week4/images/gbw_bode.svg": {
+    "mtime": 1783309503.0,
+    "ast_hash": "276e9ea023690bddde2fc73d270fb54f",
+    "semantic_hash": ""
+  },
+  "book/manuals/week4/images/non_inverting_amp.svg": {
+    "mtime": 1784513035.6375854,
+    "ast_hash": "43be4af2baa90da8e2bf87aee1d94f7c",
+    "semantic_hash": ""
+  },
+  "book/manuals/week4/images/opamp_DIP8.svg": {
+    "mtime": 1784513035.651365,
+    "ast_hash": "c8f0588f817baba7ca41865cd5575e39",
+    "semantic_hash": ""
+  },
+  "book/manuals/week4/images/slew_rate_square.svg": {
+    "mtime": 1783309503.0,
+    "ast_hash": "494061f908b414188c03eb28314a01be",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/images/current.svg": {
+    "mtime": 1784512998.5792363,
+    "ast_hash": "eab4df2aa4c3d260100edae4c019db43",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/images/paralel.svg": {
+    "mtime": 1784512998.5914853,
+    "ast_hash": "ec3fc97f6cbeb0660601f3926050a25e",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/images/series.svg": {
+    "mtime": 1784512998.6049004,
+    "ast_hash": "b930a338be9d5a7d4211580344d38dfc",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/images/star.svg": {
+    "mtime": 1784512998.6171443,
+    "ast_hash": "83c90b4922df6dd5edd2e94a1ff5c87a",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/images/transform.svg": {
+    "mtime": 1784512998.628632,
+    "ast_hash": "605cb8875e62edac9e733f7ccb2ef801",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/images/triangle.svg": {
+    "mtime": 1784512998.6418726,
+    "ast_hash": "628bcdded17645544eb67c9d11adae89",
+    "semantic_hash": ""
+  },
+  "book/miscellaneous/images/voltage.svg": {
+    "mtime": 1784512998.6551893,
+    "ast_hash": "c9db483558d968c26721991371754ff8",
+    "semantic_hash": ""
+  },
+  "book/static/icons/alpaca.svg": {
+    "mtime": 1784512998.2410233,
+    "ast_hash": "53be8d42655caadb62e6b0c0d00e99ed",
+    "semantic_hash": ""
+  },
+  "book/static/icons/favicon.svg": {
+    "mtime": 1784512998.2281904,
+    "ast_hash": "fa2215165d5ffb574e8f9306db5a3e47",
+    "semantic_hash": ""
+  }
+}
