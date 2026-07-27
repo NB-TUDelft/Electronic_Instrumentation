@@ -40,6 +40,8 @@ parts:
           - file: manuals/week4/4.1_opamp_basics.ipynb
           - file: manuals/week4/4.2_real_opamps.ipynb
       - file: manuals/week5/_summary.ipynb
+        sections:
+          - file: manuals/week5/5.1_diode_circuits.ipynb
       - file: manuals/week6/_summary.ipynb
       - file: manuals/week7/_summary.ipynb
       - file: manuals/week8/_summary.ipynb
