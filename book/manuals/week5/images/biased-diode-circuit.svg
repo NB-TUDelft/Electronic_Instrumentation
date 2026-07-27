@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 395 360.67">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        font-size: 14px;
+      }
+
+      .st0, .st1, .st2, .st3 {
+        isolation: isolate;
+      }
+
+      .st0, .st1, .st3 {
+        font-family: ArialMT, Arial;
+      }
+
+      .st1 {
+        font-size: 18px;
+      }
+
+      .st4 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+
+      .st4, .st5, .st6 {
+        fill: none;
+      }
+
+      .st4, .st7, .st6 {
+        stroke: #231f20;
+      }
+
+      .st8 {
+        fill: #c00;
+      }
+
+      .st5 {
+        stroke: #c00;
+      }
+
+      .st5, .st7, .st6 {
+        stroke-miterlimit: 10;
+      }
+
+      .st3 {
+        font-size: 10.44px;
+      }
+
+      .st7 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <polyline class="st6" points="378.7 196.07 326.75 196.03 172.62 196.17"/>
+  <rect class="st4" x="232.24" y="268.06" width="34" height="14.17" transform="translate(-25.29 525.07) rotate(-90.14)"/>
+  <line class="st6" x1="74.81" y1="339" x2="108.82" y2="339"/>
+  <line class="st6" x1="83.31" y1="344.67" x2="100.32" y2="344.67"/>
+  <line class="st6" x1="87.56" y1="350.34" x2="96.07" y2="350.34"/>
+  <polygon class="st7" points="173.66 196.03 138.6 178.29 138.6 213.77 173.66 196.03"/>
+  <line class="st6" x1="173.66" y1="178.29" x2="173.66" y2="213.77"/>
+  <line class="st6" x1="249.25" y1="259.05" x2="249.25" y2="196.03"/>
+  <line class="st6" x1="249.25" y1="339" x2="249.25" y2="292.44"/>
+  <line class="st6" x1="232.24" y1="339" x2="266.25" y2="339"/>
+  <line class="st6" x1="240.74" y1="344.67" x2="257.75" y2="344.67"/>
+  <line class="st6" x1="244.99" y1="350.34" x2="253.5" y2="350.34"/>
+  <g>
+    <polyline class="st6" points="91.82 339 91.82 204.48 91.82 196.03 138.6 196.03"/>
+    <circle class="st6" cx="91.82" cy="269.34" r="17.01"/>
+  </g>
+  <g>
+    <line class="st5" x1="60.12" y1="256.63" x2="60.12" y2="303.7"/>
+    <polygon class="st8" points="57.22 258.61 60.12 247.77 63.03 258.61 57.22 258.61"/>
+  </g>
+  <g>
+    <line class="st5" x1="375.79" y1="256.63" x2="375.79" y2="303.7"/>
+    <polygon class="st8" points="372.89 258.61 375.79 247.77 378.7 258.61 372.89 258.61"/>
+  </g>
+  <g class="st2">
+    <text class="st0" transform="translate(209.64 278.31)"><tspan x="0" y="0">1 kΩ</tspan></text>
+  </g>
+  <g class="st2">
+    <text class="st1" transform="translate(343.25 274.57)"><tspan x="0" y="0">U</tspan></text>
+  </g>
+  <g class="st2">
+    <text class="st3" transform="translate(356.25 280.57)"><tspan x="0" y="0">out</tspan></text>
+  </g>
+  <g class="st2">
+    <text class="st1" transform="translate(24.01 274.57)"><tspan x="0" y="0" xml:space="preserve"> U</tspan></text>
+  </g>
+  <g class="st2">
+    <text class="st3" transform="translate(47.02 280.57)"><tspan x="0" y="0">in</tspan></text>
+  </g>
+  <line class="st6" x1="185.45" y1="153.59" x2="219.46" y2="153.59"/>
+  <line class="st6" x1="193.95" y1="159.26" x2="210.96" y2="159.26"/>
+  <line class="st6" x1="198.2" y1="164.93" x2="206.71" y2="164.93"/>
+  <g>
+    <polyline class="st6" points="202.46 153.59 202.46 19.07 202.46 10.62 249.24 10.62"/>
+    <circle class="st6" cx="202.46" cy="83.93" r="17.01"/>
+  </g>
+  <g>
+    <line class="st5" x1="170.76" y1="71.22" x2="170.76" y2="118.29"/>
+    <polygon class="st8" points="167.86 73.2 170.76 62.36 173.67 73.2 167.86 73.2"/>
+  </g>
+  <g class="st2">
+    <text class="st1" transform="translate(134.66 89.16)"><tspan x="0" y="0" xml:space="preserve"> 5V</tspan></text>
+  </g>
+  <rect class="st4" x="244.23" y="125.09" width="34" height="14.17" transform="translate(129.69 393.73) rotate(-90.14)"/>
+  <line class="st6" x1="261.23" y1="116.08" x2="261.23" y2="10.62"/>
+  <line class="st6" x1="261.23" y1="196.03" x2="261.23" y2="149.47"/>
+  <g class="st2">
+    <text class="st0" transform="translate(221.62 135.34)"><tspan x="0" y="0">1 kΩ</tspan></text>
+  </g>
+  <line class="st6" x1="261.23" y1="10.62" x2="249.24" y2="10.62"/>
+</svg>
