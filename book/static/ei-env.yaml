@@ -1,0 +1,18 @@
+name: ei-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.14
+  - pip
+  - pandas
+  - matplotlib
+  - seaborn
+  - numpy
+  - scipy
+  - pip:
+    - ipykernel
+    - ipywidgets
+    - alpaca-stubs
+    - micropython-rp2-stubs
+    - belay
