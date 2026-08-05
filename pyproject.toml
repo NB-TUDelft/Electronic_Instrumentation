@@ -15,14 +15,14 @@ dependencies = [
     "teachbooks>=0.2.4",
     "teachbooks-sphinx-tippy>=1.0.15",
     "sphinx-dropdown-toggle>=1.3",
-    "jupyter-book-duplicate-toc-entry",
     "watchdog[watchmedo]>=6.0.0",
     "numpy>=2.5.0",
     "matplotlib>=3.11.0",
     "plotly>=6.9.0",
     "ipywidgets>=8.1.8",
+    "jupyter-book-duplicate-toc-entry",
+    
 ]
 
 [tool.uv.sources]
 sphinx-thebe = { git = "https://github.com/TeachBooks/Sphinx-Thebe" }
-jupyter-book-duplicate-toc-entry = { git = "https://github.com/NB-TUDelft/jupyter-book-duplicate-toc-entry.git" }

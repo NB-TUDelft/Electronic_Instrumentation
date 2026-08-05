@@ -103,7 +103,7 @@ name = "cffi"
 version = "2.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "pycparser", marker = "implementation_name != 'PyPy'" },
+    { name = "pycparser" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/eb/56/b1ba7935a17738ae8453301356628e8147c79dbb825bcbc73dc7401f9846/cffi-2.0.0.tar.gz", hash = "sha256:44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529", size = 523588, upload-time = "2025-09-08T23:24:04.541Z" }
 wheels = [
@@ -353,7 +353,7 @@ dependencies = [
 requires-dist = [
     { name = "download-link-replacer", specifier = ">=1.0.6" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
-    { name = "jupyter-book-duplicate-toc-entry", git = "https://github.com/NB-TUDelft/jupyter-book-duplicate-toc-entry.git" },
+    { name = "jupyter-book-duplicate-toc-entry" },
     { name = "jupyterbook-patches", specifier = ">=1.13.4" },
     { name = "matplotlib", specifier = ">=3.11.0" },
     { name = "numpy", specifier = ">=2.5.0" },
@@ -642,11 +642,15 @@ wheels = [
 
 [[package]]
 name = "jupyter-book-duplicate-toc-entry"
-version = "0.1.0"
-source = { git = "https://github.com/NB-TUDelft/jupyter-book-duplicate-toc-entry.git#abb9254565422adf260573b9d371dac80a970b89" }
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pyyaml" },
     { name = "sphinx-external-toc" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a5/d9/75cfc4343d32d2cf2e2ee8bc19898ec8b54a70f8946033b2f4098875a5fd/jupyter_book_duplicate_toc_entry-0.1.1.tar.gz", hash = "sha256:efa19a35ea2fd8e036a1f1ec6d4a2c84012888bb818b2e262bb642786abd70a7", size = 9074, upload-time = "2026-08-05T13:54:49.155Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c5/6d/2b3b60265afa734ab93f37b569611c703443052733519aa5e391f99bd093/jupyter_book_duplicate_toc_entry-0.1.1-py3-none-any.whl", hash = "sha256:8a1ffb5415262bf66d801b351fb5a487345266e741ad1eed9ca67a9d09750e3a", size = 7927, upload-time = "2026-08-05T13:54:48.298Z" },
 ]
 
 [[package]]
@@ -1099,7 +1103,7 @@ name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "ptyprocess", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "ptyprocess" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/42/92/cc564bf6381ff43ce1f4d06852fc19a2f11d180f23dc32d9588bee2f149d/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f", size = 166450, upload-time = "2023-11-25T09:07:26.339Z" }
 wheels = [
