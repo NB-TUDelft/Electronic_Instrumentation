@@ -189,3 +189,10 @@ body .bd-sidebar-primary .navbar-brand .logo__image,
 body .bd-sidebar-primary .navbar-brand img {
   max-width: 75%;
 }
+
+/* make page scale to 75% for printer screen */
+@media print {
+  html {
+    zoom: 75%;
+  }
+}
