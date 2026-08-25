@@ -303,3 +303,6 @@ _build/
 .conda/*
 .jupyter-kernels/
 .vscode/settings.json
+
+## Rules for book
+_*.md
