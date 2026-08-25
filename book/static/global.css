@@ -46,6 +46,8 @@ html[data-theme="dark"] .admonition {
   --pst-color-answer-bg: oklch(0.3 0.1 200 / 0.8);
   --pst-color-estimated-time-bg: oklch(0.3 0.1 78 / 0.8);
   --pst-color-deep-dive-bg: oklch(0.3 0.1 327.13 / 0.8);
+  --pst-color-on-background: transparent;
+  --pst-color-shadow: oklch(1 0 0 / 0.2);
 }
 
 .admonition.answer,
