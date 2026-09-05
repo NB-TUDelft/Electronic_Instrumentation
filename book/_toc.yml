@@ -54,6 +54,7 @@ parts:
       - file: miscellaneous/appendix/_summary.ipynb
         sections:
           - file: miscellaneous/appendix/resistance.ipynb
+          - file: miscellaneous/appendix/ground_loops.ipynb
       - file: miscellaneous/credits.md
       - file: miscellaneous/admonitions.md
       
