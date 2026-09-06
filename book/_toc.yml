@@ -20,6 +20,7 @@ parts:
           - file: manuals/intros/alpaca2/programming.ipynb
           - file: manuals/intros/alpaca2/signals.ipynb
           - file: manuals/intros/alpaca2/sandbox_playground.ipynb
+          - file: manuals/intros/alpaca2/funcgen.ipynb
           - file: manuals/intros/alpaca2/extras.ipynb
       - file: manuals/intros/breadboard.ipynb
 
