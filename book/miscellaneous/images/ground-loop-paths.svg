@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+<defs><marker id="arrow" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#000"/></marker></defs>
+<rect width="1000" height="540" fill="white"/>
+<title id="title">Two connections between the same instrument grounds form a loop</title>
+<desc id="desc">A signal source and a measuring instrument connect through a signal lead and its return. Their reference nodes also connect through the equipment chassis and protective-earth wiring. Arrows trace a circulating current along the signal return and back through the power-cord earth path.</desc>
+<g fill="none" stroke="black" stroke-width="3" stroke-linejoin="round">
+<rect x="55" y="80" width="205" height="310" rx="10"/>
+<rect x="740" y="80" width="220" height="310" rx="10"/>
+<path d="M260 165 H740 M260 260 H740"/>
+<path d="M260 260 H160 V440 H850 V260 H740"/>
+<path d="M385 260 H510" marker-end="url(#arrow)"/>
+<path d="M600 440 H470" marker-end="url(#arrow)"/>
+</g>
+<g fill="black"><circle cx="260" cy="165" r="5"/><circle cx="740" cy="165" r="5"/><circle cx="260" cy="260" r="5"/><circle cx="740" cy="260" r="5"/></g>
+<g font-family="sans-serif" font-size="20" fill="black">
+<text x="78" y="119" font-size="23">Signal source</text>
+<text x="763" y="119" font-size="23">Instrument</text>
+<text x="400" y="144">Signal lead</text>
+<text x="354" y="231">Cable shield or signal return</text>
+<text x="92" y="233">Reference G_s</text>
+<text x="765" y="233">Reference G_m</text>
+<text x="74" y="345">Chassis</text><text x="74" y="371">earth</text>
+<text x="868" y="345">Chassis</text><text x="868" y="371">earth</text>
+<text x="435" y="300">I_loop</text>
+<text x="268" y="489">Protective-earth path through the power cords</text>
+<text x="308" y="520">Both paths join G_s to G_m.</text>
+</g></svg>
