@@ -23,7 +23,7 @@ Immediately before every push, repeat the fetch and synchronization check. Push 
 
 ## 1. What this repository is
 
-This is the source for the practicum manuals of **NB2420 Electronic Instrumentation**, a second-year course in the **Nanobiology BSc programme** (TU Delft and Erasmus MC). The published artefact is a Jupyter Book ("TeachBook") that students read online and, when they need ALPACA hardware access, also run as notebooks on their laptops.
+This is the source for the practicum manuals of **NB2420 Electronic Instruments**, a second-year course in the **Nanobiology BSc programme** (TU Delft and Erasmus MC). The published artefact is a Jupyter Book ("TeachBook") that students read online and, when they need ALPACA hardware access, also run as notebooks on their laptops.
 
 The book is built into HTML and served from the `book/` folder. Everything you write must build cleanly with `jupyter-book build book/` and render correctly in both light and dark theme.
 
@@ -112,7 +112,7 @@ AGENTS.md                          # this file
 * **`book/manuals/weekX/`** holds one folder per teaching week. Each week folder contains a `_summary.ipynb`, the numbered manuals (`X.1_*.ipynb`, `X.2_*.ipynb`), and an `images/` subfolder for assets that belong to that week only.
 * **`helpers/theory_part/`** is the **textbook source**. Treat it as the canonical theory reference. Lab manuals should refer the student back to it for derivations and proofs, and should not duplicate them. When the textbook covers a concept that students nevertheless trip on (virtual ground, the "+1" in non-inverting gain, dB and decade, BW = GBW / (1 + closed-loop gain) for non-inverting amps), re-explain it briefly in the manual where it is used, and link to the textbook for the full version. Three chapters are still **stubs** (`6_transistor.md`, `9_sensors.md`, `11_noise_interference.md`); if a manual depends on those topics, the manual itself has to carry the theory until the textbook catches up.
 * **`helpers/ei_helpers/`** is legacy bench-side reference: vendor textbooks, schematics for the old test boards, Multisim files, scanned photographs. Use it to understand what the legacy lab looked like; **do not** copy testboard schematics directly into a new manual since the test boards are being phased out.
-* **`helpers/belay/voltammetry/`** is **Krzysztof's' Belay-based voltammetry rig** for an Electronic Instrumentation report on the ALPACA platform. **Belay** ([belay.readthedocs.io](https://belay.readthedocs.io/)) is a third-party Python library by Brian Pugh that lets host code transparently run slices on a MicroPython device via decorators (`@device.setup`, `@device.task`, `@device.teardown`). It is **not** custom firmware and **not** part of the standard ALPACA toolchain. The folder contains a working 3-electrode potentiostat (MCP4822 DAC over SPI1, three Pico ADCs, two TL072 op-amps with transimpedance feedback), a single `voltammetry.py` driver, and a 600-line `CLAUDE.md` documenting hardware pinout, Belay gotchas, and a diagnostic playbook (binary I-V jump = OPAMP1 feedback open; pinned ADC currents = saturation, with formulas; >18 mV DAC-B sag = fault indicator). **Read this when authoring future complex-systems / colorimeter / voltammetry manuals (textbook chapter 10).** The ALPACA standard student stack is just MicroPython on the Pico; Belay is only used when an experiment needs to ship on-device task code from the host.
+* **`helpers/belay/voltammetry/`** is **Krzysztof's' Belay-based voltammetry rig** for an Electronic Instruments report on the ALPACA platform. **Belay** ([belay.readthedocs.io](https://belay.readthedocs.io/)) is a third-party Python library by Brian Pugh that lets host code transparently run slices on a MicroPython device via decorators (`@device.setup`, `@device.task`, `@device.teardown`). It is **not** custom firmware and **not** part of the standard ALPACA toolchain. The folder contains a working 3-electrode potentiostat (MCP4822 DAC over SPI1, three Pico ADCs, two TL072 op-amps with transimpedance feedback), a single `voltammetry.py` driver, and a 600-line `CLAUDE.md` documenting hardware pinout, Belay gotchas, and a diagnostic playbook (binary I-V jump = OPAMP1 feedback open; pinned ADC currents = saturation, with formulas; >18 mV DAC-B sag = fault indicator). **Read this when authoring future complex-systems / colorimeter / voltammetry manuals (textbook chapter 10).** The ALPACA standard student stack is just MicroPython on the Pico; Belay is only used when an experiment needs to ship on-device task code from the host.
 * **`old/`** holds legacy manuals (e.g., `EI_manuals/12A_*.ipynb`) used as source material when authoring the new ones. Do not edit; treat as read-only reference.
 
 ### High-value items inside `helpers/` worth knowing about
@@ -276,6 +276,99 @@ Before writing or committing a file, search your output for the literal characte
 * Prefer short sentences over long ones connected by stacked clauses; this also makes it easier to avoid dashes.
 * In notebooks, keep the existing voice: instructional, second-person ("you"), present tense.
 
-## 12. Scope
+## 12. Log book entries
+
+Every manual ships a **log book entry**: a fillable PDF that students complete as
+they work and hand in via BrightSpace. One entry covers one manual. The
+**Preparation** side is homework (BAS), the **Practicum** side is filled at the
+bench (IC), matching the split in section 2.
+
+### Where things live
+
+| Path | What it is |
+| --- | --- |
+| `book/manuals/logbook_common.typ` | Shared scaffolding: field helpers, the Preparation block, the closing block. |
+| `book/manuals/weekX/<week>.<manual>_<snake>_logbook.typ` | One entry. Holds only the manual-specific middle. |
+| `book/_build/typst-build/` | Compiled output and its cache. Never in the source tree, never committed. |
+
+Entries are compiled at build time by
+[sphinx-typst-render](https://github.com/NB-TUDelft/sphinx-typst-render), enabled
+in `book/_config.yml`. The extension bundles the Typst compiler, so no `typst`
+binary and no Rust toolchain are needed on the build machine.
+
+### How an entry reaches the student
+
+The block renders **nothing** into the page:
+
+````markdown
+```{typst} 1.1_voltage_divider_logbook.typ
+:label: Entry 1.1
+:fillable:
+```
+````
+
+It adds the PDF to the download menu in the article header, under a **Log book**
+heading, beside the page's own `.ipynb` and `.pdf`. Put the block in the same
+cell as the **How To Work** admonition, and reference the entry from inside that
+admonition rather than adding a second admonition for it. Three config values in
+`book/_config.yml` control the menu:
+
+```yaml
+typst_render_source_label: Manual        # heading above the page's own downloads
+typst_render_downloads_label: Log book   # heading above the entries
+typst_render_link_source: true           # also offer the .typ source
+```
+
+### Writing a new entry
+
+1. **Read that manual's Compare and Conclude section first.** The middle of the
+   entry must mirror its tables, because those tables are what the entry exists
+   to collect. Do not paste a generic predicted / simulated / measured grid.
+2. Keep to **2 or 3 A4 sides**. Three is the normal size.
+3. Respect what the manual actually has. Manual 2.1 has no Simulate task, so it
+   has no simulated column, and its C2 is a troubleshooting reflection rather
+   than a data table. Where a manual marks a cell "not built" or "not
+   simulated" (5.1), render fixed text, not a field, so it cannot be filled.
+4. Import the shared scaffolding and supply only the middle:
+
+```typ
+#import "../logbook_common.typ": *
+#show: logbook.with(title: "Log Book Entry X.Y", subtitle: "...")
+#preparation(question: [...], theory: [...], materials: ([...], [...]))
+// manual-specific tables here
+#closing(analysis: [...], conclusion: [...])
+```
+
+### Rules that are easy to get wrong
+
+* **Never size a form field with a percentage.** `capture_field`'s `text_field`
+  sizes its widget with `measure()`, which cannot resolve a relative width, so a
+  `width: 100%` box produces a 20pt interactive area inside a full width
+  outline. Use `line_field` or `area` (both take the `fill_cell` path, which
+  sees the real container width), or give `text_field` an absolute width.
+* **Prompts are content, not strings.** Pass `[...]`, not `"..."`, or inline
+  math renders as a literal `$-3$`.
+* **Never hand-declare the page total.** The template uses `numbering: "1 / 1"`
+  and Typst fills in the real total, so the footer cannot drift from reality.
+* **Field names are a data schema.** Task-prefixed and stable, e.g. `p1_u_pred`,
+  `i4_meas`, `mat0`. Renaming one breaks any later attempt to read submissions
+  back programmatically.
+* **PDF forms have no image field.** AcroForm defines only text, button, choice
+  and signature, so a photo cannot be pasted into a field. Use `sketchbox()`,
+  which pairs a blank drawing area with a "Photo or file reference" line, and
+  let the photo be handed in beside the entry.
+
+### Verifying a change
+
+Incremental builds do not re-read a notebook that has not changed, so an edited
+`.typ` or an extension change can show **stale results** in the download menu.
+Always verify with a clean build:
+
+```bash
+./run_book_server.sh            # full clean rebuild + serve
+rm -rf book/_build && jupyter-book build book/
+```
+
+## 13. Scope
 
 These rules govern *all* prose in the repository. They do require rewriting historical content the user has not asked to keep. If you are already editing a paragraph, fix any dashes you encounter in it. Only leave these untouched if the user strictly requested that.

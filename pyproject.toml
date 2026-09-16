@@ -21,7 +21,7 @@ dependencies = [
     "plotly>=6.9.0",
     "ipywidgets>=8.1.8",
     "jupyter-book-duplicate-toc-entry",
-    
+    "sphinx-typst-render",
 ]
 
 [tool.uv.sources]

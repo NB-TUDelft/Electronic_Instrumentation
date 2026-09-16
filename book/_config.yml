@@ -115,6 +115,7 @@ sphinx:
     - teachbooks_sphinx_tippy 
     - sphinx_accessibility
     - sphinx_dropdown_toggle
+    - sphinx_typst_render
 
   local_extensions:
     no_content_admonition: .
@@ -122,6 +123,9 @@ sphinx:
   recursive_update: false
 
   config:
+    typst_render_source_label: Manual
+    typst_render_link_source: true
+    typst_render_downloads_label: Log book
     numfig: true
     numfig_secnum_depth: 1
     iframe_blend:          true # default value
