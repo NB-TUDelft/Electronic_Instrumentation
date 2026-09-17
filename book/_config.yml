@@ -125,6 +125,9 @@ sphinx:
   config:
     typst_render_source_label: Manual
     typst_render_link_source: true
+    # Characters a log book field accepts. Raise or lower freely; 0 strips
+    # the limit, which some PDF readers mis-handle as zero.
+    typst_render_field_max_length: 10000
     typst_render_downloads_label: Log book
     numfig: true
     numfig_secnum_depth: 1
