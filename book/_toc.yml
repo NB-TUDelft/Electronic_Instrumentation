@@ -2,7 +2,7 @@ format: jb-book
 root: miscellaneous/intro.md
 
 parts:
-  - caption: Electronic Instrumentation
+  - caption: Electronic Instruments
     chapters:
     - file: miscellaneous/intro.md
       title: Welcome!
