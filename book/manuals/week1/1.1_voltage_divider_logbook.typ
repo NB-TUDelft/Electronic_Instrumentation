@@ -10,7 +10,7 @@
   theory: [State the divider relation you will test and what you expect current to do as the resistances rise.],
   theory_height: 112pt,
   materials: (
-    [Breadboard and jumper wires], [ALPACA board], [Bench power supply],
+    [Breadboard, jumper wires and selector jumper], [ALPACA 2 with resistor bank], [Bench power supply],
     [Digital multimeter], [Function generator], [Resistor set],
     [BNC cables, T-splitter, adapters],
   ),
@@ -63,28 +63,41 @@
 #v(3pt)
 #sketchbox("setup", height: 210pt)
 
+#v(8pt)
+*Function generator and resistor checks* #h(6pt) #hint[Tasks I6 and I7]
+#v(3pt)
+#field_row(
+  [I6: waveform, $U_"rms"$, $f$, offset, load setting:], line_field("fgen_set"),
+  [I6 DMM reading (load disconnected):], line_field("fgen_dmm"),
+)
+#v(4pt)
+#prompt[I7: measure the isolated resistor bank at J612 before connecting the generator.]
+#grid(
+  columns: (auto, 1fr, auto, 1fr), column-gutter: 5pt, align: horizon,
+  [1 k#sym.Omega selection:], line_field("i7_r_1k"),
+  [50 #sym.Omega selection:], line_field("i7_r_50"),
+)
 #pagebreak()
 #section("PRACTICUM", note: "Tasks I6, I7, C1 to C4")
 
-*Function generator and loading* #h(6pt) #hint[Tasks I6 and I7]
+*Function generator and loading* #h(6pt) #hint[Task C4]
 #v(3pt)
-#field_row(
-  [Generator setting ($U_"rms"$, $f$):], line_field("fgen_set"),
-  [DMM reading:], line_field("fgen_dmm"),
-)
-#v(4pt)
+#prompt[C4: sine, 2 V RMS displayed, 1 kHz, zero offset in every row. Enter 1 k#sym.Omega in the blank load cell. Disconnected means one resistor-bank lead is removed; the DMM stays connected. No selector jumper gives 1 M#sym.Omega.]
+#v(3pt)
 #table(
-  columns: (1.4fr, 1fr, 1fr, 1.6fr), align: horizon,
-  table.header([*Load*], [*$U_"out"$ expected*], [*$U_"out"$ measured*], [*Why they differ*]),
-  [High impedance (open)], line_field("load_hi_exp"), line_field("load_hi_meas"), line_field("load_hi_note"),
-  [50 #sym.Omega], line_field("load_50_exp"), line_field("load_50_meas"), line_field("load_50_note"),
-  [Other: #text_field("load_x_name", width: 78pt, height: 14pt)],
+  columns: (1fr, 1fr, 1fr, 1fr, 1.3fr), align: horizon,
+  table.header([*Physical load*], [*Generator load setting*], [*$U_"rms"$ expected (V)*], [*$U_"rms"$ measured (V)*], [*Explanation*]),
+  [Disconnected], [HIGH Z], line_field("load_hi_exp"), line_field("load_hi_meas"), line_field("load_hi_note"),
+  text_field("load_x_name", width: 78pt, height: 16pt), [HIGH Z],
     line_field("load_x_exp"), line_field("load_x_meas"), line_field("load_x_note"),
+  [50 #sym.Omega], [HIGH Z], line_field("load_50_exp"), line_field("load_50_meas"), line_field("load_50_note"),
+  [50 #sym.Omega], [50 #sym.Omega], line_field("i7_match_50_exp"), line_field("i7_match_50_meas"), line_field("i7_match_50_note"),
+  [Disconnected], [50 #sym.Omega], line_field("i7_open_50_exp"), line_field("i7_open_50_meas"), line_field("i7_open_50_note"),
 )
 
 #closing(
   graph_prompt: [Plot measured $U_"out"$ or $I$ against resistance. Label both axes with a unit.],
-  graph_height: 140pt,
+  graph_height: 100pt,
   analysis: [Compare predicted, simulated and measured (C1, C2). Where do they diverge, and what does the size of the divergence tell you?],
   conclusion: [Answer your research question. Address loading and combined dividers (C3, C4).],
 )
