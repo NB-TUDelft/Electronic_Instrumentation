@@ -22,6 +22,7 @@ parts:
           - file: manuals/intros/alpaca2/sandbox_playground.ipynb
           - file: manuals/intros/alpaca2/funcgen.ipynb
           - file: manuals/intros/alpaca2/extras.ipynb
+          - file: manuals/intros/alpaca2/troubleshooting.ipynb
       - file: manuals/intros/breadboard.ipynb
 
   - caption: Lab manuals
@@ -45,7 +46,10 @@ parts:
       - file: manuals/week5/_summary.ipynb
         sections:
           - file: manuals/week5/5.1_diode_circuits.ipynb
+          - file: manuals/week5/5.2_differential_measurements.ipynb
       - file: manuals/week6/_summary.ipynb
+        sections:
+          - file: manuals/week6/6.1_oscillators.ipynb
       - file: manuals/week7/_summary.ipynb
       - file: manuals/week8/_summary.ipynb
         sections:

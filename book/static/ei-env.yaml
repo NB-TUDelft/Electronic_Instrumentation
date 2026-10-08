@@ -1,7 +1,7 @@
 name: ei-env
 channels:
+  - nb_tudelft
   - conda-forge
-  - defaults
 dependencies:
   - python>=3.14
   - pip
@@ -10,6 +10,7 @@ dependencies:
   - seaborn
   - numpy
   - scipy
+  - alpaca
   - pip:
     - ipykernel
     - ipywidgets
