@@ -22,6 +22,7 @@ parts:
           - file: manuals/intros/alpaca2/sandbox_playground.ipynb
           - file: manuals/intros/alpaca2/funcgen.ipynb
           - file: manuals/intros/alpaca2/extras.ipynb
+          - file: manuals/intros/alpaca2/troubleshooting.ipynb
       - file: manuals/intros/breadboard.ipynb
 
   - caption: Lab manuals
