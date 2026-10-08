@@ -48,6 +48,9 @@ parts:
       - file: manuals/week6/_summary.ipynb
       - file: manuals/week7/_summary.ipynb
       - file: manuals/week8/_summary.ipynb
+        sections:
+          - file: manuals/week8/8.1_Voltametry_testing.ipynb
+          - file: manuals/week8/8.2_Voltametry_paracetamol.ipynb
 
 
   - caption: Miscellaneous
