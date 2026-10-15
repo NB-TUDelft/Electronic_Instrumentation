@@ -2,7 +2,7 @@
 
 #show: logbook.with(
   title: "Log Book Entry 4.2",
-  subtitle: "NB2420 Electronic Instruments " + sym.dot.c + " Manual 4.2 " + sym.dot.c + " Real opamps",
+  subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 4.2 " + sym.dot.c + " Real opamps",
 )
 
 #preparation(
