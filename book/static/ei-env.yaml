@@ -10,10 +10,9 @@ dependencies:
   - seaborn
   - numpy
   - scipy
-  - alpaca
   - pip:
     - ipykernel
     - ipywidgets
-    - alpaca-stubs
+    - alpaca2
     - micropython-rp2-stubs
     - belay
