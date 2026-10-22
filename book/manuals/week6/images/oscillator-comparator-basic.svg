@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 480 210" role="img" aria-labelledby="title desc">
+<title id="title">Comparator with a grounded reference input</title>
+<desc id="desc">OA2 compares the input voltage, connected through Ra to its positive input, with ground at its negative input.</desc>
+<rect x="0" y="90" width="480" height="210" fill="#fff"/>
+<g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="200,115 310,175 200,235 200,115"/>
+<polyline points="165,145 200,145"/>
+<polyline points="165,205 200,205"/>
+<text x="217" y="151" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">+</text>
+<text x="217" y="211" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">-</text>
+<text x="244" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#000" stroke="none">OA2</text>
+<polyline points="35,145 85,145"/>
+<rect x="85" y="135" width="60" height="20"/>
+<text x="115.0" y="125" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Ra</text>
+<polyline points="145,145 165,145"/>
+<polyline points="165,205 165,265"/>
+<polyline points="149,265 181,265"/>
+<polyline points="155,272 175,272"/>
+<polyline points="161,279 169,279"/>
+<polyline points="310,175 410,175"/>
+<text x="25" y="130" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" text-anchor="start" fill="#000" stroke="none">Uin</text>
+<text x="422" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" text-anchor="start" fill="#000" stroke="none">Uq</text>
+</g>
+</svg>
