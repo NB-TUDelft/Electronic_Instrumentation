@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" role="img" aria-labelledby="title desc">
+<title id="title">Two-stage relaxation oscillator</title>
+<desc id="desc">OA1 is an inverting integrator. OA2 is a non-inverting Schmitt trigger. Ra carries the triangle to OA2, Rb supplies positive feedback, and Rc carries the comparator output to the integrator.</desc>
+<rect width="1100" height="470" fill="#fff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#000"/></marker></defs>
+<g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="260,225 370,285 260,345 260,225"/>
+<polyline points="225,255 260,255"/>
+<polyline points="225,315 260,315"/>
+<text x="277" y="261" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">-</text>
+<text x="277" y="321" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">+</text>
+<text x="304" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#000" stroke="none">OA1</text>
+<polyline points="740,225 850,285 740,345 740,225"/>
+<polyline points="705,255 740,255"/>
+<polyline points="705,315 740,315"/>
+<text x="757" y="261" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">+</text>
+<text x="757" y="321" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">-</text>
+<text x="784" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#000" stroke="none">OA2</text>
+<polyline points="70,255 115,255"/>
+<rect x="115" y="245" width="70" height="20"/>
+<text x="150.0" y="235" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Rc</text>
+<polyline points="185,255 225,255"/>
+<polyline points="370,285 430,285 475,285"/>
+<rect x="475" y="275" width="70" height="20"/>
+<text x="510.0" y="265" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Ra</text>
+<polyline points="545,285 650,285 650,255 705,255"/>
+<polyline points="225,255 225,165 311,165"/>
+<polyline points="311,145 311,185"/>
+<polyline points="329,145 329,185"/>
+<text x="320" y="135" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">C</text>
+<polyline points="329,165 430,165 430,285"/>
+<polyline points="225,315 225,385"/>
+<polyline points="209,385 241,385"/>
+<polyline points="215,392 235,392"/>
+<polyline points="221,399 229,399"/>
+<polyline points="705,315 705,385"/>
+<polyline points="689,385 721,385"/>
+<polyline points="695,392 715,392"/>
+<polyline points="701,399 709,399"/>
+<polyline points="850,285 1050,285"/>
+<polyline points="650,255 650,165 835,165"/>
+<rect x="835" y="155" width="70" height="20"/>
+<text x="870.0" y="145" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Rb</text>
+<polyline points="905,165 1050,165 1050,285"/>
+<polyline points="1050,285 1050,55 70,55 70,255"/>
+<circle cx="225" cy="255" r="3.5" fill="#000" stroke="none"/>
+<circle cx="430" cy="285" r="3.5" fill="#000" stroke="none"/>
+<circle cx="650" cy="255" r="3.5" fill="#000" stroke="none"/>
+<circle cx="1050" cy="165" r="3.5" fill="#000" stroke="none"/>
+<circle cx="1050" cy="285" r="3.5" fill="#000" stroke="none"/>
+<text x="422" y="311" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="end" fill="#000" stroke="none">Utri</text>
+<text x="1040" y="311" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="end" fill="#000" stroke="none">Uq</text>
+<text x="671" y="240" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" text-anchor="start" fill="#000" stroke="none">U+</text>
+<text x="315" y="430" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Integrator: negative feedback</text>
+<text x="845" y="430" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Schmitt trigger: positive feedback</text>
+<text x="550" y="459" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#000" stroke="none">Shared supply pins: pin 8 = +12 V; pin 4 = -12 V. Supply wires are omitted.</text>
+</g>
+</svg>

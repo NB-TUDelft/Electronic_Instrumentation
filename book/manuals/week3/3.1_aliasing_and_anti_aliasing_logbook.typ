@@ -2,7 +2,7 @@
 
 #show: logbook.with(
   title: "Log Book Entry 3.1",
-  subtitle: "NB2420 Electronic Instruments " + sym.dot.c + " Manual 3.1 " + sym.dot.c + " Aliasing and anti-aliasing",
+  subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 3.1 " + sym.dot.c + " Aliasing and anti-aliasing",
 )
 
 #preparation(

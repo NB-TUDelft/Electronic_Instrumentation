@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390" role="img" aria-labelledby="title desc">
+<title id="title">Inverting integrator</title>
+<desc id="desc">An inverting integrator with input resistor Rc, feedback capacitor C, and grounded positive input.</desc>
+<rect width="680" height="390" fill="#fff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#000"/></marker></defs>
+<g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="330,170 440,230 330,290 330,170"/>
+<polyline points="295,200 330,200"/>
+<polyline points="295,260 330,260"/>
+<text x="347" y="206" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">-</text>
+<text x="347" y="266" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">+</text>
+<text x="374" y="236" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#000" stroke="none">OA1</text>
+<polyline points="60,200 105,200"/>
+<rect x="105" y="190" width="70" height="20"/>
+<text x="140.0" y="180" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Rc</text>
+<polyline points="175,200 295,200"/>
+<text x="48" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="start" fill="#000" stroke="none">Uin</text>
+<polyline points="440,230 575,230"/>
+<text x="600" y="237" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Utri</text>
+<polyline points="295,200 295,95 411,95"/>
+<polyline points="411,75 411,115"/>
+<polyline points="429,75 429,115"/>
+<text x="460" y="83" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">C</text>
+<polyline points="429,95 575,95 575,230"/>
+<circle cx="295" cy="200" r="3.5" fill="#000" stroke="none"/>
+<circle cx="575" cy="230" r="3.5" fill="#000" stroke="none"/>
+<polyline points="295,260 295,320"/>
+<polyline points="279,320 311,320"/>
+<polyline points="285,327 305,327"/>
+<polyline points="291,334 299,334"/>
+</g>
+</svg>

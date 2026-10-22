@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+<title id="title">Comparator without and with hysteresis</title>
+<desc id="desc">Two non-inverting comparator circuits. Both negative inputs are grounded. The right circuit adds positive feedback from the output through Rb to the positive input.</desc>
+<rect width="1000" height="330" fill="#fff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#000"/></marker></defs>
+<g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="200,115 310,175 200,235 200,115"/>
+<polyline points="165,145 200,145"/>
+<polyline points="165,205 200,205"/>
+<text x="217" y="151" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">+</text>
+<text x="217" y="211" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">-</text>
+<text x="244" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#000" stroke="none">OA2</text>
+<polyline points="35,145 85,145"/>
+<rect x="85" y="135" width="60" height="20"/>
+<text x="115.0" y="125" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Ra</text>
+<polyline points="145,145 165,145"/>
+<polyline points="165,205 165,265"/>
+<polyline points="149,265 181,265"/>
+<polyline points="155,272 175,272"/>
+<polyline points="161,279 169,279"/>
+<polyline points="310,175 410,175"/>
+<text x="25" y="130" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" text-anchor="start" fill="#000" stroke="none">Uin</text>
+<text x="422" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" text-anchor="start" fill="#000" stroke="none">Uq</text>
+<text x="250" y="315" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="middle" fill="#000" stroke="none">Without hysteresis</text>
+<polyline points="700,115 810,175 700,235 700,115"/>
+<polyline points="665,145 700,145"/>
+<polyline points="665,205 700,205"/>
+<text x="717" y="151" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">+</text>
+<text x="717" y="211" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" text-anchor="middle" fill="#000" stroke="none">-</text>
+<text x="744" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#000" stroke="none">OA2</text>
+<polyline points="535,145 585,145"/>
+<rect x="585" y="135" width="60" height="20"/>
+<text x="615.0" y="125" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Ra</text>
+<polyline points="645,145 665,145"/>
+<polyline points="665,205 665,265"/>
+<polyline points="649,265 681,265"/>
+<polyline points="655,272 675,272"/>
+<polyline points="661,279 669,279"/>
+<polyline points="810,175 910,175"/>
+<text x="525" y="130" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" text-anchor="start" fill="#000" stroke="none">Uin</text>
+<text x="922" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" text-anchor="start" fill="#000" stroke="none">Uq</text>
+<text x="750" y="315" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="middle" fill="#000" stroke="none">With hysteresis</text>
+<polyline points="665,145 665,60 745,60"/>
+<rect x="745" y="50" width="70" height="20"/>
+<text x="780.0" y="40" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle" fill="#000" stroke="none">Rb</text>
+<polyline points="815,60 895,60 895,175"/>
+<circle cx="665" cy="145" r="3.5" fill="#000" stroke="none"/>
+<circle cx="895" cy="175" r="3.5" fill="#000" stroke="none"/>
+<text x="668" y="123" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" text-anchor="start" fill="#000" stroke="none">U+</text>
+</g>
+</svg>
