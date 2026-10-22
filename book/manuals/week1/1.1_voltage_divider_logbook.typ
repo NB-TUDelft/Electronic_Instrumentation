@@ -49,19 +49,27 @@
 #line_field("i2_where")
 
 #v(8pt)
-*Combined dividers* #h(6pt) #hint[Tasks I4 and I5]
+*Combined dividers* #h(6pt) #hint[Tasks I3, I4 and I5]
+#v(3pt)
+#prompt[I3: record each separate divider output relative to the common ground.]
+#grid(
+  columns: (auto, 1fr, auto, 1fr), column-gutter: 5pt, align: horizon,
+  [$R_3$, $R_4$ output (V):], line_field("i3_r34_meas"),
+  [$R_1$, $R_2$ output (V):], line_field("i3_r12_meas"),
+)
 #v(3pt)
 #table(
   columns: (2.2fr, 1fr, 1fr, 1fr), align: horizon,
   table.header([*Configuration*], [*$U_"out"$ predicted*], [*$U_"out"$ simulated*], [*$U_"out"$ measured*]),
   [Two dividers, outputs connected (I4)], line_field("i4_pred"), line_field("i4_sim"), line_field("i4_meas"),
-  [Dividers stacked in series (I5)], line_field("i5_pred"), line_field("i5_sim"), line_field("i5_meas"),
+  [Stacked dividers, left circuit (I5)], line_field("i5_pred"), line_field("i5_sim"), line_field("i5_meas"),
+  [Stacked dividers, right circuit (I5)], line_field("i5_right_pred"), line_field("i5_right_sim"), line_field("i5_right_meas"),
 )
 
 #v(8pt)
 *Setup* #h(6pt) #prompt[Sketch the circuit you built and label the nodes you probed, or name a photo you hand in beside this entry.]
 #v(3pt)
-#sketchbox("setup", height: 210pt)
+#sketchbox("setup", height: 120pt)
 
 #v(8pt)
 *Function generator and resistor checks* #h(6pt) #hint[Tasks I6 and I7]
