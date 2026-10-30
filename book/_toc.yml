@@ -8,7 +8,7 @@ parts:
       title: Welcome!
   - caption: Instrument introductions
     chapters:
-      - file: manuals/intros/testboards.ipynb
+#      - file: manuals/intros/testboards.ipynb
       - file: manuals/intros/power_supply.ipynb
       - file: manuals/intros/digital_multimeter.ipynb
       - file: manuals/intros/function_generator.ipynb
