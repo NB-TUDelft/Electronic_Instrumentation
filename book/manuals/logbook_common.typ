@@ -26,7 +26,6 @@
 #let prompt(body) = text(size: 8pt, fill: rgb("#555555"), style: "italic", body)
 #let hint(body) = text(size: 8pt, fill: rgb("#555555"), body)
 #let rule = line(length: 100%, stroke: 0.6pt + rgb("#333333"))
-#let target_length = "A completed logbook should normally fit within 2 pages."
 
 #let band(title, note: "") = block(
   width: 100%, fill: rgb("#e8eef4"), inset: (x: 6pt, y: 4pt), radius: 2pt,
@@ -44,7 +43,7 @@
   )
 }
 
-#let section(title, note: "") = { v(3pt); band(title, note: note); v(2pt) }
+#let section(title, note: "") = { v(6pt); band(title, note: note); v(4pt) }
 
 #let field_row(..pairs) = grid(
   columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 5pt, align: horizon,
@@ -65,62 +64,101 @@
     ],
     hint[Hand in via BrightSpace],
   )
-  v(2pt); rule; v(2pt)
+  v(2pt); rule; v(4pt)
 
-  #grid(
-  columns: (auto, 3fr, auto, 2fr, auto, 1.5fr),
-  column-gutter: 6pt,
-  align: horizon,
-
-  [Name(s):], line_field("name", height: 15pt),
-  [Partner:], line_field("partner", height: 15pt),
-  [Date:], line_field("date", height: 15pt),
+  field_row(
+    [Name(s):], line_field("name", height: 15pt),
+    [Date:], line_field("date", height: 15pt),
+    [Partner:], line_field("partner", height: 15pt),
+    [Group:], line_field("group", height: 15pt),
   )
   body
 }
 
 // ------------------------------------------------------- standard Preparation
 #let preparation(
-  theory: [What theories, laws, and/or formulas are most important for this experiment? ],
-  goals: [What do you expect to learn?],
-  prediction: [What do you expect to observe, and why?],
-  prep_height: 100pt,
+  question: [What relationship are you testing in this manual?],
+  theory: [State the relation you will test and what you expect to happen.],
+  theory_height: 100pt,
   materials: (),
   steps: 8,
 ) = {
   section("PREPARATION", note: "complete before the practicum")
 
-  prompt[
-    1. #theory \
-    2. #goals \
-    3. #prediction
-  ]
-  area("preparation", height: prep_height)
-  
+  [*Research question* \ ]
+  prompt[One sentence. #question]
+  area("research_question", height: 50pt)
+
+  v(4pt)
+  [*Theory* \ ]
+  prompt[#theory]
+  area("theory", height: theory_height)
+
+  v(4pt)
+  [*Quantities*]
+  field_row(
+    [Independent variable:], line_field("iv"),
+    [Dependent variable:], line_field("dv"),
+    [Controlled variable(s):], line_field("cv"),
+  )
+
+  v(6pt)
+  grid(
+    columns: (1fr, 1fr), column-gutter: 10pt,
+    [
+      *Materials* \
+      #prompt[Tick what you actually used.]
+      #v(3pt)
+      #grid(
+        columns: (auto, 1fr), column-gutter: 5pt, row-gutter: 7pt, align: horizon,
+        ..materials.enumerate().map(((i, m)) => (check("mat" + str(i)), [#m])).flatten(),
+        check("mat_other"), line_field("mat_other_txt", height: 14pt),
+      )
+    ],
+    [
+      *Procedure* \
+      #prompt[The steps you will follow at the bench, in order.]
+      #v(3pt)
+      #grid(
+        columns: (auto, 1fr), column-gutter: 5pt, row-gutter: 7pt, align: horizon,
+        ..range(1, steps + 1).map(i => ([#str(i).], line_field("proc" + str(i), height: 15pt))).flatten(),
+      )
+    ],
+  )
 }
 
 // ----------------------------------------------------------- standard closing
 #let closing(
-  analysis: [Which results matched or differed from your expectations, and why?],
-  conclusion: [What is the most important thing you learned?],
-  do_different: [What would you do differently next time?],
-  reflect_height: 100pt,
+  analysis: [Where do prediction, simulation and measurement diverge, and what does the size of the divergence tell you?],
+  conclusion: [Answer your research question.],
   graph: true,
   graph_prompt: [Plot your measured data. Label both axes with a unit.],
   graph_height: 150pt,
 ) = {
   if graph {
-    v(3pt)
+    v(6pt)
     [*Graph* #h(6pt) #prompt[#graph_prompt]]
-    v(2pt)
+    v(3pt)
     sketchbox("graph", height: graph_height)
   }
-  section("REFLECTION", note: "complete before submission")
-  v(2pt)
-  prompt[
-    1. #analysis \
-    2. #conclusion \
-    3. #do_different
-  ]
-  area("reflection", height: reflect_height)
+
+  v(6pt)
+  [*Analysis and trend* \ ]
+  prompt[#analysis]
+  area("analysis", height: 74pt)
+
+  v(4pt)
+  [*Conclusion(s)* \ ]
+  prompt[#conclusion]
+  area("conclusion", height: 68pt)
+
+  v(4pt)
+  [*What I wanted to say as well* \ ]
+  area("extra", height: 42pt)
+
+  v(5pt); rule; v(3pt)
+  field_row(
+    [#text(size: 8pt)[TA check-off:]], line_field("ta_sign", height: 14pt),
+    [#text(size: 8pt)[Date:]], line_field("ta_date", height: 14pt),
+  )
 }
