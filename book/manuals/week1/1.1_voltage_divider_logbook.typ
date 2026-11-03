@@ -5,19 +5,8 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 1.1 " + sym.dot.c + " Voltage divider",
 )
 
-#preparation(
-  question: [What relationship between resistance, output voltage and current are you testing?],
-  theory: [State the divider relation you will test and what you expect current to do as the resistances rise.],
-  theory_height: 112pt,
-  materials: (
-    [Breadboard, jumper wires and selector jumper], [ALPACA 2 with resistor bank], [Bench power supply],
-    [Digital multimeter], [Function generator], [Resistor set],
-    [BNC cables, T-splitter, adapters],
-  ),
-)
-
 #pagebreak()
-#section("PREDICT, SIMULATE, MEASURE", note: "Tasks A1, A2, S1, I1, I2")
+#section("PREDICT, SIMULATE, MEASURE", note: "Tasks A1, A2, S1, I1, I2, connected to C1 and C2")
 #prompt[Supply is 5 V. Fill the predicted columns as homework, the simulated column after LTspice, and the measured columns at the bench. Leave a cell blank rather than guessing, then say why in the analysis.]
 #v(4pt)
 
@@ -45,11 +34,7 @@
 )
 
 #v(3pt)
-#prompt[Where in the circuit did you break it to measure current, and why there?]
-#line_field("i2_where")
-
-#v(8pt)
-*Combined dividers* #h(6pt) #hint[Tasks I3, I4 and I5]
+*Combined dividers* #h(6pt) #hint[Tasks A4, S2, I3, I4 and I5, leading to C3]
 #v(3pt)
 #prompt[I3: record each separate divider output relative to the common ground.]
 #grid(
@@ -57,7 +42,7 @@
   [$R_3$, $R_4$ output (V):], line_field("i3_r34_meas"),
   [$R_1$, $R_2$ output (V):], line_field("i3_r12_meas"),
 )
-#v(3pt)
+#v(2pt)
 #table(
   columns: (2.2fr, 1fr, 1fr, 1fr), align: horizon,
   table.header([*Configuration*], [*$U_"out"$ predicted*], [*$U_"out"$ simulated*], [*$U_"out"$ measured*]),
@@ -71,24 +56,7 @@
 #v(3pt)
 #sketchbox("setup", height: 120pt)
 
-#v(8pt)
-*Function generator and resistor checks* #h(6pt) #hint[Tasks I6 and I7]
-#v(3pt)
-#field_row(
-  [I6: waveform, $U_"rms"$, $f$, offset, load setting:], line_field("fgen_set"),
-  [I6 DMM reading (load disconnected):], line_field("fgen_dmm"),
-)
-#v(4pt)
-#prompt[I7: measure the isolated resistor bank at J612 before connecting the generator.]
-#grid(
-  columns: (auto, 1fr, auto, 1fr), column-gutter: 5pt, align: horizon,
-  [1 k#sym.Omega selection:], line_field("i7_r_1k"),
-  [50 #sym.Omega selection:], line_field("i7_r_50"),
-)
-#pagebreak()
-#section("PRACTICUM", note: "Tasks I6, I7, C1 to C4")
-
-*Function generator and loading* #h(6pt) #hint[Task C4]
+*Function generator and loading* #h(6pt) #hint[Tasks A3, A5,A6, I6, I7, C1 to C4]
 #v(3pt)
 #prompt[C4: sine, 2 V RMS displayed, 1 kHz, zero offset in every row. Enter 1 k#sym.Omega in the blank load cell. Disconnected means one resistor-bank lead is removed; the DMM stays connected. No selector jumper gives 1 M#sym.Omega.]
 #v(3pt)
