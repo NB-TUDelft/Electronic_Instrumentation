@@ -1,28 +1,98 @@
-<svg viewBox="0 0 895 560" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
-    <path fill="#fff" paint-order="stroke markers fill" d="M0 0h895v560H0z" />
-    <g font-family="Aptos, Aptos_MSFontService, sans-serif" font-weight="400"><text font-size="50"
-            style="text-decoration-line:none" x="887.796" y="964.888" transform="translate(-627 -880)">100kΩ</text><text
-            font-size="50" style="text-decoration-line:none" x="1005.568" y="1192.39"
-            transform="translate(-627 -880)">47</text><text font-size="50" style="text-decoration-line:none"
-            x="1063.018" y="1192.39" transform="translate(-627 -880)">nF</text><text font-size="50"
-            transform="translate(34.625 327)" style="text-decoration-line:none">U</text><text font-size="34"
-            transform="translate(69 339)" style="text-decoration-line:none">in</text><text font-size="50"
-            transform="translate(776.42 334)" style="text-decoration-line:none">U</text><text font-size="34"
-            transform="translate(810.79 346)" style="text-decoration-line:none">ou</text><text font-size="34"
-            style="text-decoration-line:none" x="1477.13" y="1226" transform="translate(-627 -880)">t</text></g>
-    <path d="M752.5 155.506l-13.75 27.5h12.031V487.74h3.438V183.006h12.031z" />
-    <g transform="matrix(3.82422 0 0 3.82422 -11.677 -98.881)" stroke="#000" stroke-width="2">
-        <path stroke-linecap="square" d="M50 160h100M50 60v34" />
-        <circle cx="50" cy="110" r="16" fill="none" />
-        <path stroke-linecap="square" d="M50 126v34" />
-        <path d="M50 100v8m-4-4h8m-8 14h8" stroke-linecap="square" fill="none" />
-        <path stroke-linecap="square" d="M50 60h30M120 60h30" />
-        <path fill="none" d="M80 52h40v16H80z" />
-        <path stroke-linecap="square" d="M150 60v46M150 114v46M136 106h28M136 114h28M150 60h47" />
-        <circle cx="200" cy="60" r="3" fill="none" />
-        <path stroke-linecap="square" d="M150 160h47" />
-        <circle cx="200" cy="160" r="3" fill="none" />
-        <circle cx="150" cy="160" r="2" />
-        <circle cx="150" cy="60" r="2" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 895 671">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5 {
+        stroke: #000;
+      }
+
+      .st0, .st1, .st3, .st5 {
+        stroke-miterlimit: 15.3;
+        stroke-width: 7.65px;
+      }
+
+      .st1, .st2, .st4, .st5 {
+        fill: none;
+      }
+
+      .st6 {
+        font-size: 50px;
+      }
+
+      .st6, .st7 {
+        font-family: ArialMT, Arial;
+      }
+
+      .st6, .st7, .st8 {
+        isolation: isolate;
+      }
+
+      .st9 {
+        fill: #fff;
+      }
+
+      .st2, .st3, .st5 {
+        stroke-linecap: square;
+      }
+
+      .st2, .st4 {
+        stroke-width: 7px;
+      }
+
+      .st7 {
+        font-size: 34px;
+      }
+
+      .st4 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <path class="st9" d="M0,0h895v560H0V0Z"/>
+  <g>
+    <g class="st8">
+      <text class="st6" transform="translate(260.8 84.89)"><tspan x="0" y="0">100kΩ</tspan></text>
     </g>
+    <g class="st8">
+      <text class="st6" transform="translate(378.57 312.39)"><tspan x="0" y="0">47</tspan></text>
+    </g>
+    <g class="st8">
+      <text class="st6" transform="translate(436.02 312.39)"><tspan x="0" y="0">nF</tspan></text>
+    </g>
+    <g class="st8">
+      <text class="st6" transform="translate(34.62 327)"><tspan x="0" y="0">U</tspan></text>
+    </g>
+    <g class="st8">
+      <text class="st7" transform="translate(69 339)"><tspan x="0" y="0">in</tspan></text>
+    </g>
+    <g class="st8">
+      <text class="st6" transform="translate(776.42 334)"><tspan x="0" y="0">U</tspan></text>
+    </g>
+    <g class="st8">
+      <text class="st7" transform="translate(810.79 346)"><tspan x="0" y="0">ou</tspan></text>
+    </g>
+    <g class="st8">
+      <text class="st7" transform="translate(850.13 346)"><tspan x="0" y="0">t</tspan></text>
+    </g>
+  </g>
+  <path d="M752.5,155.51l-13.75,27.5h12.03v304.73h3.44V183.01h12.03l-13.75-27.5h0Z"/>
+  <g>
+    <path class="st3" d="M179.53,512.99h382.42M179.53,130.57v130.02"/>
+    <circle class="st1" cx="179.53" cy="321.78" r="61.19"/>
+    <path class="st3" d="M179.53,382.97v130.02"/>
+    <path class="st5" d="M179.53,283.54v30.59M164.24,298.84h30.59M164.24,352.38h30.59"/>
+    <path class="st3" d="M179.53,130.57h114.73M447.23,130.57h114.73"/>
+    <path class="st1" d="M294.26,99.98h152.97v61.19h-152.97s0-61.19,0-61.19Z"/>
+    <path class="st3" d="M561.96,130.57v175.91M561.96,337.08v175.91M508.42,306.49h107.08M508.42,337.08h107.08M561.96,130.57h179.74"/>
+    <circle class="st1" cx="753.17" cy="130.57" r="11.47"/>
+    <path class="st3" d="M561.96,512.99h179.74"/>
+    <circle class="st1" cx="753.17" cy="512.99" r="11.47"/>
+    <circle class="st0" cx="561.96" cy="512.99" r="7.65"/>
+    <circle class="st0" cx="561.96" cy="130.57" r="7.65"/>
+  </g>
+  <path class="st2" d="M519.96,558.17h84"/>
+  <path class="st4" d="M561.96,558.17v-42"/>
+  <path class="st2" d="M531.96,576.17h60"/>
+  <path class="st2" d="M543.96,594.17h36"/>
 </svg>
