@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="604.8pt" height="388.8pt" viewBox="0 0 604.8 388.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Non-inverting Schmitt trigger hysteresis</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Non-inverting Schmitt trigger hysteresis</dc:title>
+    <dc:date>2026-10-15T00:48:50.163544</dc:date>
+    <dc:description>Output Uq versus input Uin. The rising input switches the output high at UT,up; the falling input switches it low at UT,down. Between the thresholds the previous output state is retained.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 388.8 
+L 604.8 388.8 
+L 604.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36.288 314.928 
+L 586.656 314.928 
+L 586.656 23.328 
+L 36.288 23.328 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 36.288 169.128 
+L 586.656 169.128 
+" clip-path="url(#pcfd041d287)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 311.472 314.928 
+L 311.472 23.328 
+" clip-path="url(#pcfd041d287)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="line2d_3">
+    <path d="M 51.03 257.491636 
+L 409.752 257.491636 
+L 409.752 80.764364 
+L 571.914 80.764364 
+" clip-path="url(#pcfd041d287)" style="fill: none; stroke: #e25a17; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <!-- $U_{in}$ -->
+    <g transform="translate(545.4624 156.130351)">
+     <text>
+      <tspan x="0" y="-0.6875" style="font-style: oblique; font-size: 21px; font-family: 'DejaVu Sans'">U</tspan>
+      <tspan x="15.370605" y="2.46249" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'">i</tspan>
+      <tspan x="19.454736" y="2.46249" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'">n</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- $U_q$ -->
+    <g transform="translate(323.2656 41.410085)">
+     <text>
+      <tspan x="0" y="-0.6875" style="font-style: oblique; font-size: 21px; font-family: 'DejaVu Sans'">U</tspan>
+      <tspan x="15.370605" y="2.46249" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'">q</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_3">
+    <!-- $U_H$ -->
+    <g transform="translate(322.2828 68.727652)">
+     <text>
+      <tspan x="0" y="-0.609375" style="font-style: oblique; font-size: 17px; font-family: 'DejaVu Sans'">U</tspan>
+      <tspan x="12.442871" y="1.940617" style="font-style: oblique; font-size: 11.9px; font-family: 'DejaVu Sans'">H</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- $U_L$ -->
+    <g transform="translate(322.2828 278.360379)">
+     <text>
+      <tspan x="0" y="-0.609375" style="font-style: oblique; font-size: 17px; font-family: 'DejaVu Sans'">U</tspan>
+      <tspan x="12.442871" y="1.940617" style="font-style: oblique; font-size: 11.9px; font-family: 'DejaVu Sans'">L</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_5" fill="#ec4899">
+    <!-- $U_{T,down}$ -->
+    <g transform="translate(150.2896 191.00425)">
+     <text>
+      <tspan x="0" y="-0.328125" style="font-style: oblique; font-size: 16px; font-family: 'DejaVu Sans'">U</tspan>
+      <tspan x="11.710938" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">T</tspan>
+      <tspan x="24.294531" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">d</tspan>
+      <tspan x="31.403906" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">o</tspan>
+      <tspan x="38.25625" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">w</tspan>
+      <tspan x="47.416406" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">n</tspan>
+      <tspan x="18.552344" y="2.071867" style="font-size: 11.2px; font-family: 'DejaVu Sans'">,</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_6" fill="#ec4899">
+    <!-- $U_{T,up}$ -->
+    <g transform="translate(417.6144 191.00425)">
+     <text>
+      <tspan x="0" y="-0.328125" style="font-style: oblique; font-size: 16px; font-family: 'DejaVu Sans'">U</tspan>
+      <tspan x="11.710938" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">T</tspan>
+      <tspan x="24.294531" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">u</tspan>
+      <tspan x="31.392969" y="2.071867" style="font-style: oblique; font-size: 11.2px; font-family: 'DejaVu Sans'">p</tspan>
+      <tspan x="18.552344" y="2.071867" style="font-size: 11.2px; font-family: 'DejaVu Sans'">,</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end" x="301.644" y="186.197915" transform="rotate(-0 301.644 186.197915)">0</text>
+   </g>
+   <g id="line2d_4">
+    <path d="M 571.914 80.764364 
+L 213.192 80.764364 
+L 213.192 257.491636 
+L 51.03 257.491636 
+" clip-path="url(#pcfd041d287)" style="fill: none; stroke: #137fbd; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="hysteresis-threshold-guides">
+    <path d="M 213.192 23.328 L 213.192 314.928 M 409.752 23.328 L 409.752 314.928"
+     clip-path="url(#pcfd041d287)" style="fill: none; stroke: #ec4899; stroke-width: 1.2; stroke-dasharray: 5 4"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 257.418 257.491636 
+Q 311.472 257.491636 363.737146 257.491636 
+" style="fill: none; stroke: #e25a17; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 356.537146 253.891636 
+L 363.737146 257.491636 
+L 356.537146 261.091636 
+z
+" style="fill: #e25a17; stroke: #e25a17; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 365.526 80.764364 
+Q 311.472 80.764364 259.206854 80.764364 
+" style="fill: none; stroke: #137fbd; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 266.406854 84.364364 
+L 259.206854 80.764364 
+L 266.406854 77.164364 
+z
+" style="fill: #137fbd; stroke: #137fbd; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 426.4596 142.618909 
+Q 426.4596 122.737091 426.4596 104.644127 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 422.8596 111.844127 
+L 426.4596 104.644127 
+L 430.0596 111.844127 
+z
+" style="stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 196.4844 102.855273 
+Q 196.4844 122.737091 196.4844 140.830055 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 200.0844 133.630055 
+L 196.4844 140.830055 
+L 192.8844 133.630055 
+z
+" style="stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_5">
+     <path d="M 163.077 343.622 
+L 179.327 343.622 
+L 195.577 343.622 
+" style="fill: none; stroke: #e25a17; stroke-width: 3; stroke-linecap: square"/>
+    </g>
+    <g id="text_8">
+     <!-- Increasing $U_{in}$ -->
+     <g transform="translate(205.977 348.172)">
+      <text>
+       <tspan x="0" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">I</tspan>
+       <tspan x="3.833984" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="12.073242" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">c</tspan>
+       <tspan x="19.220703" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">r</tspan>
+       <tspan x="24.56543" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">e</tspan>
+       <tspan x="32.563477" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">a</tspan>
+       <tspan x="40.529785" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="47.302734" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="50.914551" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="59.153809" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">g</tspan>
+       <tspan x="67.405762" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'"> </tspan>
+       <tspan x="71.538086" y="-0.125" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'">U</tspan>
+       <tspan x="81.053223" y="1.824994" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="83.581494" y="1.824994" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="line2d_6">
+     <path d="M 321.547 343.622 
+L 337.797 343.622 
+L 354.047 343.622 
+" style="fill: none; stroke: #137fbd; stroke-width: 3; stroke-linecap: square"/>
+    </g>
+    <g id="text_9">
+     <!-- Decreasing $U_{in}$ -->
+     <g transform="translate(364.447 348.172)">
+      <text>
+       <tspan x="0" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">D</tspan>
+       <tspan x="10.010254" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">e</tspan>
+       <tspan x="18.008301" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">c</tspan>
+       <tspan x="25.155762" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">r</tspan>
+       <tspan x="30.500488" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">e</tspan>
+       <tspan x="38.498535" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">a</tspan>
+       <tspan x="46.464844" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="53.237793" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="56.849609" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="65.088867" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'">g</tspan>
+       <tspan x="73.34082" y="-0.125" style="font-size: 13px; font-family: 'DejaVu Sans'"> </tspan>
+       <tspan x="77.473145" y="-0.125" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'">U</tspan>
+       <tspan x="86.988281" y="1.824994" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="89.516553" y="1.824994" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcfd041d287">
+   <rect x="36.288" y="23.328" width="550.368" height="291.6"/>
+  </clipPath>
+ </defs>
+</svg>

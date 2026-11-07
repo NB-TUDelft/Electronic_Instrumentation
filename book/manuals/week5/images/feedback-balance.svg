@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-labelledby="title desc">
+<title id="title">Adjustable feedback for the left converter</title>
+<desc id="desc">A 91 kilohm fixed resistor and 20 kilohm potentiometer connect in series from the left converter output to its inverting input. The wiper connects to the right-hand outer terminal of the drawn potentiometer. The total feedback resistance is between 91 and 111 kilohms.</desc>
+<style>
+text {font-family:DejaVu Sans,sans-serif;font-size:21px;fill:#000;}
+.heading {font-size:25px;font-weight:bold;}
+.wire {fill:none;stroke:#000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+.cls-1 {fill:none;stroke:#000;stroke-width:1.25;stroke-miterlimit:10;}
+.cls-2 {fill:#000;}
+</style>
+<rect width="960" height="400" fill="#fff"/>
+<text x="30" y="42" class="heading">Left converter: replace R<tspan baseline-shift="sub" font-size="17">f,L</tspan> with this feedback network</text>
+<g transform="translate(260 220) rotate(-90) scale(2) translate(-141.73 -141.73)"><ns0:line xmlns:ns0="http://www.w3.org/2000/svg" class="cls-1" x1="141.73" y1="124.73" x2="141.73" y2="80.79" />
+  <ns0:line xmlns:ns0="http://www.w3.org/2000/svg" class="cls-1" x1="141.73" y1="202.68" x2="141.73" y2="158.73" />
+  <ns0:rect xmlns:ns0="http://www.w3.org/2000/svg" class="cls-1" x="134.65" y="124.73" width="14.17" height="34" />
+</g>
+<g transform="translate(570 220) rotate(-90) scale(2) translate(-141.73 -141.73)"><ns0:g xmlns:ns0="http://www.w3.org/2000/svg">
+    <ns0:line class="cls-1" x1="141.73" y1="124.73" x2="141.73" y2="80.79" />
+    <ns0:line class="cls-1" x1="141.73" y1="202.68" x2="141.73" y2="158.73" />
+    <ns0:rect class="cls-1" x="134.65" y="124.73" width="14.17" height="34" />
+  </ns0:g>
+  <ns0:g xmlns:ns0="http://www.w3.org/2000/svg">
+    <ns0:line class="cls-1" x1="157.68" y1="141.73" x2="197.5" y2="141.73" />
+    <ns0:polygon class="cls-2" points="159.66 144.64 148.82 141.73 159.66 138.83 159.66 144.64" />
+  </ns0:g>
+</g>
+<path d="M80 220H138.12 M381.9 220H448.12 M691.9 220H870 M570 108.46H691.9V220" class="wire"/>
+<circle cx="80" cy="220" r="5" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<circle cx="870" cy="220" r="5" fill="#fff" stroke="#000" stroke-width="2.5"/>
+<circle cx="691.9" cy="220" r="5" fill="#000"/>
+<text x="260" y="175" text-anchor="middle">91 kΩ fixed</text>
+<text x="570" y="78" text-anchor="middle">Wiper strapped to one outer terminal</text>
+<text x="570" y="279" text-anchor="middle">P: 20 kΩ trimmer</text>
+<text x="35" y="265">U<tspan baseline-shift="sub" font-size="15">L</tspan> output</text>
+<text x="745" y="265">Left inverting</text>
+<text x="745" y="294">input</text>
+<text x="30" y="348">R<tspan baseline-shift="sub" font-size="15">f,L</tspan> = 91 kΩ + P. Nominal range: 91 to 111 kΩ.</text>
+<text x="30" y="383">Keep R<tspan baseline-shift="sub" font-size="15">f,R</tspan> = 100 kΩ. Identify the actual trimmer terminals with the DMM.</text>
+</svg>

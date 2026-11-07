@@ -1,11 +1,9 @@
 name: call-deploy-book
-
-# Deploys the Jupyter Book using a reusable workflow when changes are pushed to main.
-# Limited to relevant paths to avoid unnecessary runs; can also be triggered manually.
+# running deployment on all branhes to include development verions too
 on:
   push:
     branches:
-    - main
+    - "**"
     # Only run when book or dependency files change (or this workflow itself)
     paths:
     - book/**

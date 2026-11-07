@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 500">
+<path fill="#fff" d="M0 0h710v500H0z"/>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6z" fill="#000"/></marker></defs>
+<rect x="333" y="230" width="14" height="190" fill="#000"/>
+<text x="340" y="448" font-family="sans-serif" font-size="16" fill="#000" text-anchor="middle" >card divider</text>
+<circle cx="275" cy="360" r="26" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="275" cy="360" r="4" fill="#000"/>
+<text x="275" y="412" font-family="sans-serif" font-size="17" fill="#000" text-anchor="middle" >D_L</text>
+<circle cx="405" cy="360" r="26" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="405" cy="360" r="4" fill="#000"/>
+<text x="405" y="412" font-family="sans-serif" font-size="17" fill="#000" text-anchor="middle" >D_R</text>
+<text x="340" y="478" font-family="sans-serif" font-size="15" fill="#000" text-anchor="middle" >detector seen from above; the photodiodes look up this page</text>
+<circle cx="140" cy="80" r="20" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M167 80L178 80" stroke="#000" stroke-width="2"/>
+<path d="M159 99L167 107" stroke="#000" stroke-width="2"/>
+<path d="M140 107L140 118" stroke="#000" stroke-width="2"/>
+<path d="M121 99L113 107" stroke="#000" stroke-width="2"/>
+<path d="M113 80L102 80" stroke="#000" stroke-width="2"/>
+<path d="M121 61L113 53" stroke="#000" stroke-width="2"/>
+<path d="M140 53L140 42" stroke="#000" stroke-width="2"/>
+<path d="M159 61L167 53" stroke="#000" stroke-width="2"/>
+<text x="140" y="42" font-family="sans-serif" font-size="16" fill="#000" text-anchor="middle" >torch left</text>
+<path d="M140 108L262 338" stroke="#000" stroke-width="1.2" stroke-dasharray="5 5"/>
+<path d="M140 108L292 342" stroke="#000" stroke-width="1.2" stroke-dasharray="5 5"/>
+<circle cx="340" cy="80" r="20" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M367 80L378 80" stroke="#000" stroke-width="2"/>
+<path d="M359 99L367 107" stroke="#000" stroke-width="2"/>
+<path d="M340 107L340 118" stroke="#000" stroke-width="2"/>
+<path d="M321 99L313 107" stroke="#000" stroke-width="2"/>
+<path d="M313 80L302 80" stroke="#000" stroke-width="2"/>
+<path d="M321 61L313 53" stroke="#000" stroke-width="2"/>
+<path d="M340 53L340 42" stroke="#000" stroke-width="2"/>
+<path d="M359 61L367 53" stroke="#000" stroke-width="2"/>
+<text x="340" y="42" font-family="sans-serif" font-size="16" fill="#000" text-anchor="middle" >torch centred</text>
+<path d="M340 108L288 338" stroke="#000" stroke-width="1.2" stroke-dasharray="5 5"/>
+<path d="M340 108L392 338" stroke="#000" stroke-width="1.2" stroke-dasharray="5 5"/>
+<circle cx="545" cy="80" r="20" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M572 80L583 80" stroke="#000" stroke-width="2"/>
+<path d="M564 99L572 107" stroke="#000" stroke-width="2"/>
+<path d="M545 107L545 118" stroke="#000" stroke-width="2"/>
+<path d="M526 99L518 107" stroke="#000" stroke-width="2"/>
+<path d="M518 80L507 80" stroke="#000" stroke-width="2"/>
+<path d="M526 61L518 53" stroke="#000" stroke-width="2"/>
+<path d="M545 53L545 42" stroke="#000" stroke-width="2"/>
+<path d="M564 61L572 53" stroke="#000" stroke-width="2"/>
+<text x="545" y="42" font-family="sans-serif" font-size="16" fill="#000" text-anchor="middle" >torch right</text>
+<path d="M545 108L392 342" stroke="#000" stroke-width="1.2" stroke-dasharray="5 5"/>
+<path d="M545 108L420 338" stroke="#000" stroke-width="1.2" stroke-dasharray="5 5"/>
+</svg>

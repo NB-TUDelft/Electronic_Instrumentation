@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+<path fill="#fff" d="M0 0h900v500H0z"/>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6z" fill="#000"/></marker></defs>
+<path d="M120 40v400" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 40l-6 14h12z" fill="#000"/>
+<text x="112" y="30" font-family="sans-serif" font-size="17" fill="#000" text-anchor="end" >U_out</text>
+<path d="M112 440h16" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="104" y="446.0" font-family="sans-serif" font-size="15" fill="#000" text-anchor="end" >0 V</text>
+<path d="M112 379h16" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="104" y="385.3939393939394" font-family="sans-serif" font-size="15" fill="#000" text-anchor="end" >0.5 V</text>
+<path d="M112 258h16" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="104" y="264.18181818181813" font-family="sans-serif" font-size="15" fill="#000" text-anchor="end" >U_ref = 1.5 V</text>
+<path d="M112 137h16" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="104" y="142.969696969697" font-family="sans-serif" font-size="15" fill="#000" text-anchor="end" >2.5 V</text>
+<path d="M112 76h16" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="104" y="82.36363636363632" font-family="sans-serif" font-size="15" fill="#000" text-anchor="end" >3.0 V</text>
+<path d="M112 40h16" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="104" y="46.0" font-family="sans-serif" font-size="15" fill="#000" text-anchor="end" >3.3 V</text>
+<rect x="140" y="76" width="330" height="364" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="305" y="64.36363636363632" font-family="sans-serif" font-size="16" fill="#000" text-anchor="middle" >ADC window</text>
+<path d="M140 258h330" stroke="#000" stroke-width="1.4" stroke-dasharray="7 5"/>
+<circle cx="305" cy="136.969696969697" r="4" fill="#000"/>
+<text x="480" y="142.969696969697" font-family="sans-serif" font-size="15" fill="#000" text-anchor="start" >torch fully left: baseline + 1.0 V</text>
+<circle cx="305" cy="258.18181818181813" r="4" fill="#000"/>
+<text x="480" y="264.18181818181813" font-family="sans-serif" font-size="15" fill="#000" text-anchor="start" >equal light: baseline</text>
+<circle cx="305" cy="379.3939393939394" r="4" fill="#000"/>
+<text x="480" y="385.3939393939394" font-family="sans-serif" font-size="15" fill="#000" text-anchor="start" >torch fully right: baseline - 1.0 V</text>
+<text x="305" y="470.0" font-family="sans-serif" font-size="15" fill="#000" text-anchor="middle" >the sign of (reading - baseline) gives the side</text>
+</svg>

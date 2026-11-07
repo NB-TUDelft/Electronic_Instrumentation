@@ -1,52 +1,204 @@
-Title: TeachBooks adapted
-author: it's me for sure, TeachBooks Team, built with <a href="https://teachbooks.io">TeachBooks</a> and <a href="https://jupyterbook.org/">Jupyter Book</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a> #add your own name here
+# Book Settings
+title: "NB2420 practical manuals"
+author: Margreet Docter, Jeroen Bastemeijer <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
+description: "Collection of practical manuals for the NB2420 course"
+copyright: "Delft University of Technology, CC BY 4.0"
+exclude_patterns:
+  # Build outputs and editor / OS junk
+  - _build
+  - "**/Thumbs.db"
+  - "**/.DS_Store"
+  - "**/.ipynb_checkpoints"
+  - "**/*.bak"
+  - "**/*.tmp"
+  - "**/*~"
+  - "**/*.swp"
+  - "**/*.swo"
+  # Python helper / extension files (kept on disk for Sphinx, never rendered as content)
+  - "**/__pycache__"
+  - "**/*.pyc"
+  - "**/no_content_admonition.py"
+  # Environment directories
+  - .conda/**
+  - .mamba/**
+  - .venv/**
+  # Generated catalogues and repository-only material outside book/
+  - "**/graphify-out/**"
+  - "**/.graphify/**"
+  - "../graphify-out/**"
+  - "../helpers/**"
+  - "../old/**"
+  - "../AGENTS.md"
+  - "../CLAUDE.md"
+  - "../README.md"
 
-execute:
-  execute_notebooks: "off"
-
+# Only build files in the ToC to avoid building README, etc.
 only_build_toc_files: true
 
+
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks: off
+  cache: ""
+  timeout: 300
+  run_in_temp: false
+  allow_errors: false
+  stderr_output: show
+
+#######################################################################################
+# Parse and render settings
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence # To allow for ::: instead of ``` blocks.
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+  myst_url_schemes: [ mailto, http, https ]
+  myst_dmath_double_inline: true
+
+
+#######################################################################################
+# HTML-specific settings
 html:
-  favicon : "figures/TB_favicon.ico"
-  baseurl :  "https://teachbooks.io/" #Replace this with your own URL
+  favicon: "static/icons/favicon.svg"
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  extra_navbar: "" # Change this parameter (optional)
+  extra_footer: "" # Change this parameter (optional)
+  analytics:
+    google_analytics_id: ""
+  home_page_in_navbar: true
+  baseurl: "https://nb-tudelft.github.io/Electronic_Instrumentation/"
+  comments:
+    hypothesis: false
+    utterances: false
+  announcement: "" # Change this parameter (optional)
+  use_multitoc_numbering: false
+  extra_css:
+    - global.css
 
-sphinx:
-  config:
-    html_js_files:
-    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
-    - dw_fix.js
-    thebe_config:
-      use_thebe_lite: true
-      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
-    html_theme_options:
-      logo:
-        text: NB2214 practical
-        image_light: alpaca.jpg # Put your logo for the light mode here (can be the same as image_dark)
-        image_dark: alpaca_inverted.jpg # Put your logo for the dark mode here (can be the same as image_light)
-      repository_url: "https://github.com/NB-TUDelft/Electronic_Instrumentation" #add your own repo URL here
-      path_to_docs: "book"
-      repository_branch: "main"
-      use_edit_page_button: false
-      use_repository_button: true
-      use_issues_button : true
-      launch_buttons:
-        thebe: true
-    html_show_copyright: false
-    html_last_updated_fmt: '%B %-d, %Y'
-    html_static_path: ["figures","static"] # add folders that contain files that need to be included, such as the location of the logo(s)
-    mathjax3_config:
-      chtml: {
-        mtextInheritFont: true # To typeset text within math prettier
-      }
-  extra_extensions:
-    - sphinx.ext.imgconverter
-    - jupyterbook_patches
-    - download_link_replacer
-    - sphinx.ext.extlinks
-    - sphinx_image_inverter
-    - sphinx_iframes
-    - sphinx_exercise
-    - teachbooks_sphinx_tippy
 
-bibtex_bibfiles: 
+#######################################################################################
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/NB-TUDelft/Electronic_Instrumentation 
+  path_to_book: "book" 
+  branch: main
+
+
+#######################################################################################
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
   - references.bib
+
+
+#######################################################################################
+# Advanced and power-user settings
+sphinx:
+  extra_extensions: 
+    - jupyter_book_duplicate_toc.sphinx
+    - jupyterbook_patches 
+    - download_link_replacer 
+    - sphinx.ext.extlinks 
+    - sphinx_image_inverter 
+    - sphinx_iframes 
+    - sphinx_exercise 
+    - teachbooks_sphinx_tippy 
+    - sphinx_accessibility
+    - sphinx_dropdown_toggle
+    - sphinx_typst_render
+
+  local_extensions:
+    no_content_admonition: .
+
+  recursive_update: false
+
+  config:
+    typst_render_source_label: Manual
+    typst_render_link_source: true
+    # Characters a log book field accepts. Raise or lower freely; 0 strips
+    # the limit, which some PDF readers mis-handle as zero.
+    typst_render_field_max_length: 10000
+    typst_render_downloads_label: Log book
+    numfig: true
+    numfig_secnum_depth: 1
+    iframe_blend:          true # default value
+    iframe_saturation:     1.5 # default value
+    iframe_h5p_autoresize: true # default value
+    iframe_background:     "#ffffff" # default value
+    iframe_width:          calc(100% - 2.8rem) # default value
+    iframe_aspectratio:    auto 2 / 1 # default value
+    exclude_patterns:
+      - .conda/**
+      - .mamba/**
+      - _build/**
+      - "**/.ipynb_checkpoints"
+      - "**/__pycache__"
+      - "**/*.pyc"
+      - "**/*.bak"
+      - "**/*.tmp"
+      - "**/*~"
+      - "**/*.swp"
+      - "**/*.swo"
+      - "**/Thumbs.db"
+      - "**/.DS_Store"
+      - .venv/**
+      - "**/graphify-out/**"
+      - "**/.graphify/**"
+      - "../graphify-out/**"
+      - "../helpers/**"
+      - "../old/**"
+      - "../AGENTS.md"
+      - "../CLAUDE.md"
+      - "../README.md"
+    html_extra_path: []
+    language: en  # To identify the language.
+    html_js_files: 
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js 
+    - https://cdn.plot.ly/plotly-2.32.0.min.js
+    - warning.js 
+    html_css_files:
+    - global.css
+    html_static_path:
+    - "static"
+    thebe_config: 
+      use_thebe_lite: true 
+      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"] 
+    html_theme_options:
+      # Keep the search box in the sidebar only, deterministically across theme versions.
+      # pydata-sphinx-theme >= 0.17 force-injects a persistent header "search-button-field"
+      # (desktop and mobile copies) whenever this key is absent from html_theme_options,
+      # which overrides the empty default set by sphinx-book-theme and produces a second and
+      # third search field in a top navbar. Older pydata (<= 0.16) did not, so builds with an
+      # unpinned/cached theme rendered inconsistently. Setting it explicitly to empty removes
+      # the header search on every theme version while the sidebar search is unaffected.
+      navbar_persistent: []
+      logo:
+        text: NB2420 practical
+        image_light: static/icons/alpaca.svg
+        image_dark: static/icons/alpaca.svg
+      show_toc_level: 3
+      show_nav_level: 0
+      repository_url: https://github.com/NB-TUDelft/Electronic_Instrumentation
+      repository_branch: main
+      path_to_docs: "book" 
+      use_edit_page_button: false 
+      use_repository_button: true 
+      use_issues_button : true 
+      launch_buttons: 
+        thebe: true 
+    html_show_copyright: true
+    html_last_updated_fmt: '%B %-d, %Y' 
+    mathjax3_config: 
+      chtml: { 
+        mtextInheritFont: true # To typeset text within math prettier 
+      } 

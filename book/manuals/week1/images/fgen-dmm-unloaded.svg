@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 490" role="img" aria-labelledby="title desc">
+<title id="title">I6: measure without the resistor bank</title>
+<desc id="desc">A BNC T-splitter connects the generator output in parallel to an AC voltmeter and ALPACA BNC J601. J602 Signal and Shield are left unconnected. J603 with J604 is an alternative. ALPACA power is off.</desc>
+<style>
+text { font-family: "DejaVu Sans", sans-serif; font-size: 20px; fill: #000; }
+.heading { font-size: 23px; font-weight: 700; }
+.small { font-size: 18px; }
+.wire { fill: none; stroke: #000; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.instrument { fill: #fff; stroke: #000; stroke-width: 2; }
+.boundary { fill: none; stroke: #000; stroke-width: 1.5; stroke-dasharray: 7 5; }
+</style>
+<rect width="960" height="490" fill="#fff"/>
+<defs></defs>
+
+<text x="28" y="40" class="heading">I6: measure without the resistor bank</text>
+<rect x="25" y="100" width="220" height="315" rx="8" class="instrument"/>
+<text x="42" y="133" class="heading">Function</text>
+<text x="42" y="160" class="heading">generator</text>
+<text x="48" y="219">Sine, 1 kHz</text>
+<text x="48" y="250">2 V RMS displayed</text>
+<text x="48" y="281">Zero DC offset</text>
+<text x="48" y="312">HIGH Z load setting</text>
+<text x="48" y="389" class="small">BNC output</text>
+
+<rect x="710" y="100" width="225" height="315" rx="8" class="instrument"/>
+<text x="726" y="133" class="heading">ALPACA 2</text>
+<text x="726" y="169">J601 BNC</text>
+<text x="726" y="200">J602 header</text>
+<text x="726" y="261" class="small">Signal</text>
+<text x="726" y="351" class="small">Shield</text>
+<text x="726" y="383" class="small">Header pins left</text>
+<text x="726" y="406" class="small">unconnected</text>
+
+<path d="M245 180H680V240H710 M245 355H680V330H710" class="wire"/>
+<circle cx="710" cy="240" r="5" class="instrument"/>
+<circle cx="710" cy="330" r="5" class="instrument"/>
+<text x="280" y="160">Signal: BNC centre</text>
+<text x="280" y="388">Shield: BNC outer conductor</text>
+
+<path d="M490 180V230 M490 310V355" class="wire"/>
+<circle cx="490" cy="180" r="5" fill="#000"/>
+<circle cx="490" cy="355" r="5" fill="#000"/>
+<rect x="405" y="230" width="170" height="80" rx="7" class="instrument"/>
+<text x="490" y="261" text-anchor="middle" class="heading">DMM</text>
+<text x="490" y="290" text-anchor="middle">AC voltage</text>
+<text x="507" y="217" class="small">V input</text>
+<text x="507" y="337" class="small">COM</text>
+
+<text x="28" y="452" class="small">BNC T-splitter branches to both instruments. ALPACA power stays off.</text>
+<text x="28" y="479" class="small">Use printed header labels. Alternative connector pair: J603 BNC and J604 header.</text>
+</svg>

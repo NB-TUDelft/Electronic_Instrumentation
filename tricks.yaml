@@ -1,0 +1,6 @@
+tricks:
+  - watchdog.tricks.ShellCommandTrick:
+      patterns: ["*.ipynb"]
+      ignore_patterns: ["*.ipynb_checkpoints*"]
+      shell_command: jupyter-book build book
+      drop_during_process: true

@@ -1,120 +1,68 @@
 format: jb-book
-root: intro.md
+root: miscellaneous/intro.md
 
 parts:
-  - caption: Contents of NB2214 practicum manuals
+  - caption: Electronic Instrumentation
     chapters:
-    - file: intro1.md
-      title: Introduction
-    - file: Styleguide.md
-    - file: Intro_to_Jupyter_Notebook.ipynb
-    - file: EI_manual_intros.md
-      sections:
-      - file: EI_manuals/intro_testboards.ipynb
-      - file: EI_manuals/intro_power_supply_Siglent.ipynb
-      - file: EI_manuals/intro_DMM_Siglent+handheld.ipynb
-      - file: EI_manuals/intro_function_generator_Siglent.ipynb
-      - file: EI_manuals/intro_scope_Siglent.ipynb
-      - file: EI_manuals/intro_LTSpice.ipynb
-      - file: EI_manuals/intro_ALPACA.ipynb
-    
-    - file: EI_octal1.md
-      sections: 
-      - file: EI_manual_week1.md
+    - file: miscellaneous/intro.md
+      title: Welcome!
+  - caption: Instrument introductions
+    chapters:
+#      - file: manuals/intros/testboards.ipynb
+      - file: manuals/intros/power_supply.ipynb
+      - file: manuals/intros/digital_multimeter.ipynb
+      - file: manuals/intros/function_generator.ipynb
+      - file: manuals/intros/oscilloscope.ipynb
+      - file: manuals/intros/ltspice.ipynb
+      - file: manuals/intros/software_installation.ipynb
+      - file: manuals/intros/alpaca2/_intro.ipynb
         sections:
-        - file: EI_manuals/1A_DMM+voltage_divider_STUDENT.ipynb
-        - file: EI_manuals/1B_output_function_generator_STUDENT.ipynb
-        - file: EI_manuals/1C_LTSpice_Intro_STUDENT.ipynb
-      - file: EI_manual_week2.md
+          - file: manuals/intros/alpaca2/programming.ipynb
+          - file: manuals/intros/alpaca2/signals.ipynb
+          - file: manuals/intros/alpaca2/sandbox_playground.ipynb
+          - file: manuals/intros/alpaca2/funcgen.ipynb
+          - file: manuals/intros/alpaca2/extras.ipynb
+          - file: manuals/intros/alpaca2/troubleshooting.ipynb
+      - file: manuals/intros/breadboard.ipynb
+
+  - caption: Lab manuals
+    numbered: 4
+    chapters:
+      - file: manuals/week1/_summary.ipynb
         sections:
-        - file: EI_manuals/2A_using_a_scope_STUDENT.ipynb
-        - file: EI_manuals/2B_triggering_STUDENT.ipynb
-        - file: EI_manuals/2C_Thevenin_equivalent_with_picoPI_STUDENT.ipynb
-      - file: EI_manual_week3.md
+          - file: manuals/week1/1.1_voltage_divider.ipynb
+          - file: manuals/week1/1.2_intro_to_oscilloscope_and_filters.ipynb
+      - file: manuals/week2/_summary.ipynb
         sections:
-        - file: EI_manuals/3A_RC-RL_circuits_STUDENT.ipynb
-        - file: EI_manuals/3B_scope_probes_STUDENT.ipynb
-        - file: EI_manuals/3C_ground_loop_STUDENT.ipynb
-      - file: EI_manual_week4.md
+          - file: manuals/week2/2.1_Whack_a_mole.ipynb
+          - file: manuals/week2/2.2_Timed_acquisitions.ipynb
+      - file: manuals/week3/_summary.ipynb
         sections:
-        - file: EI_manuals/4A_Fourier_Transform_STUDENT.ipynb
-        - file: EI_manuals/4B_RC_STUDENTv2.ipynb
-        - file: EI_manuals/4C_RCCR_STUDENT_v2.ipynb
+          - file: manuals/week3/3.1_aliasing_and_anti_aliasing.ipynb
+      - file: manuals/week4/_summary.ipynb
+        sections:
+          - file: manuals/week4/4.1_opamp_basics.ipynb
+          - file: manuals/week4/4.2_real_opamps.ipynb
+      - file: manuals/week5/_summary.ipynb
+        sections:
+          - file: manuals/week5/5.1_diode_circuits.ipynb
+          - file: manuals/week5/5.2_differential_measurements.ipynb
+      - file: manuals/week6/_summary.ipynb
+        sections:
+          - file: manuals/week6/6.1_oscillators.ipynb
+      - file: manuals/week7/_summary.ipynb
+      - file: manuals/week8/_summary.ipynb
+        sections:
+          - file: manuals/week8/8.1_Voltametry_testing.ipynb
+          - file: manuals/week8/8.2_Voltametry_paracetamol.ipynb
+
+
+  - caption: Miscellaneous
+    chapters:
+      - file: miscellaneous/appendix/_summary.ipynb
+        sections:
+          - file: miscellaneous/appendix/resistance.ipynb
+          - file: miscellaneous/appendix/ground_loops.ipynb
+      - file: miscellaneous/credits.md
+      - file: miscellaneous/admonitions.md
       
-    - file: EI_octal2.md
-      sections: 
-      - file: EI_manual_week6.md
-        sections:
-        - file: EI_manuals/6A_NI-DAQ+Stepper_motor_STUDENT.ipynb
-        - file: EI_manuals/6B_logic+morse_STUDENT.ipynb
-        - file: EI_manuals/6C_Whack-a-mole_STUDENT.ipynb
-      - file: EI_manual_week7.md
-        sections:
-        - file: EI_manuals/7A_Analog_Inputs_STUDENT.ipynb
-        - file: EI_manuals/7B_Fourier_Transform_Python_STUDENT.ipynb
-        - file: EI_manuals/7C_receive_Morse_STUDENT_alternative2
-        - file: EI_manuals/7C_receive_Morse_STUDENT_alternative
-        - file: EI_manuals/7C_receive_Morse_STUDENT.ipynb
-      - file: EI_manual_week8.md
-        sections:
-        - file: EI_manuals/8A_Automated_filter_response_STUDENT.ipynb
-        - file: EI_manuals/8B_Aliasing_a_single_sine_STUDENT.ipynb
-        - file: EI_manuals/8C_Aliasing_multiple_sines_STUDENT.ipynb
-      - file: EI_manual_week9.md
-        sections:
-        - file: EI_manuals/9A_Anti-Aliasing_STUDENT.ipynb
-        - file: EI_manuals/9B_Digital_Filtering_and_Averaging_STUDENT.ipynb
-        - file: EI_manuals/9C_Signal_Denoising_by_Average_STUDENT.ipynb
-            
-    - file: EI_octal3.md
-      sections:   
-      - file: EI_manual_week11.md
-        sections:
-        - file: EI_manuals/11A_Diode_Clippers_STUDENT.ipynb
-        - file: EI_manuals/11B_Diode_rectifier_STUDENT.ipynb
-        - file: EI_manuals/11C_Full_Bridge_Rectifier_STUDENT.ipynb
-      - file: EI_manual_week12.md
-        sections:
-        - file: EI_manuals/12A_non_inverting_OPAMP_STUDENT.ipynb
-        - file: EI_manuals/12B_inverting_opamp_STUDENT.ipynb
-        - file: EI_manuals/12C_OPAMP_current_to_voltage_opamp_converter_STUDENT.ipynb
-      - file: EI_manual_week13.md
-        sections:
-        - file: EI_manuals/13A_bias_and_offset_STUDENT.ipynb
-        - file: EI_manuals/13B_OPAMP_bandwidth_STUDENT.ipynb
-        - file: EI_manuals/13C_integrator_and_differentiator_STUDENT.ipynb
-      - file: EI_manual_week14.md
-        sections:
-        - file: EI_manuals/14A_differential_and_common_mode_STUDENT.ipynb
-        - file: EI_manuals/14B_comparator_with_hysteresis_final_STUDENT.ipynb
-        - file: EI_manuals/14C_magnet_bridge_STUDENT.ipynb
-    
-    - file: EI_octal4.md
-      sections: 
-      - file: EI_manual_week16.md
-        sections:
-        - file: EI_manuals/16A_Simulation_STUDENT.ipynb
-        - file: EI_manuals/16B_Simple_Oscillator_STUDENT.ipynb
-        - file: EI_manuals/16C_Light_Sensor_STUDENT.ipynb
-        - file: EI_manuals/ALPACA-Xmax_special_buzzer.ipynb
-      - file: EI_manual_week17.md
-        sections:
-        - file: EI_manuals/17A-Design_and_Limitations.ipynb
-        - file: EI_manuals/17B-Testing_and_Calibration.ipynb
-        - file: EI_manuals/17C-Modelling_the_Potentiostat.ipynb
-      - file: EI_manual_week18.md
-        sections:
-        - file: EI_manuals/18A-CV-Data_Acquisition.ipynb
-        - file: EI_manuals/18B-CV-Data_Evaluation.ipynb
-        - file: EI_manuals/18o-Advanced_Voltammetric_Techniques.ipynb
-      - file: EI_manual_week19.md
-        sections:
-        - file: EI_manuals/19A-CV-Experiments.ipynb
-        - file: EI_manuals/19o-Advanced_Voltametric_Experiments.ipynb
-        - file: EI_manuals/19f_further_voltammetry_ideas
-      - file: ALPACA-Xmax_special_buzzer.ipynb
-    
-    - file: credits.md
-
-
-

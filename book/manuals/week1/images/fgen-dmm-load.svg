@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 490" role="img" aria-labelledby="title desc">
+<title id="title">I7: measure with the resistor bank connected</title>
+<desc id="desc">The generator is an AC source with a 50 ohm series resistance. The DMM and resistor bank connect in parallel across Signal and Shield. The two J612 terminals connect to those nodes. One jumper at J614 selects 1 kilohm or 50 ohms. Removing a J612 lead disconnects the load.</desc>
+<style>
+text { font-family: "DejaVu Sans", sans-serif; font-size: 20px; fill: #000; }
+.heading { font-size: 23px; font-weight: 700; }
+.small { font-size: 18px; }
+.wire { fill: none; stroke: #000; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.instrument { fill: #fff; stroke: #000; stroke-width: 2; }
+.boundary { fill: none; stroke: #000; stroke-width: 1.5; stroke-dasharray: 7 5; }
+</style>
+<rect width="960" height="490" fill="#fff"/>
+<text x="28" y="40" class="heading">I7: connect the resistor bank across Signal and Shield</text>
+<rect x="25" y="90" width="290" height="315" rx="8" class="boundary"/>
+<text x="42" y="119" class="heading">Generator model</text>
+<text x="173" y="150" class="small">R<tspan baseline-shift="sub" font-size="13">s</tspan> = 50 Ω</text>
+<path d="M100 217V180H175 M238 180H820 M100 273V355H820" class="wire"/>
+<g class="wire" transform="translate(175 173)"><path d="M0 7H14 M49 7H63"/><rect x="14" y="0" width="35" height="14"/></g><g transform="translate(100 245)"><g xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(-28 -42)" id="g7">
+         <circle r="28" cx="28" cy="42" id="circle4" fill="none" fill-opacity="1" fill-rule="nonzero" opacity="1" stroke="#000" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="3.5"/>
+         <path d="M28 70v14" class="wire" id="path5"/>
+         <path d="M28 14V0" class="wire" id="path6"/>
+         <path d="M14 42a7 7 0 1114 0 7 7 0 1014 0" class="wire" id="path7"/>
+      </g>
+      </g>
+<text x="148" y="250" class="small">Ideal AC</text>
+<text x="148" y="277" class="small">source</text>
+<text x="42" y="386" class="small">R<tspan baseline-shift="sub" font-size="13">s</tspan>: fixed internal resistance</text>
+
+<text x="350" y="160">Signal</text>
+<text x="350" y="388">Shield</text>
+<path d="M490 180V230 M490 310V355" class="wire"/>
+<circle cx="490" cy="180" r="5" fill="#000"/>
+<circle cx="490" cy="355" r="5" fill="#000"/>
+<rect x="405" y="230" width="170" height="80" rx="7" class="instrument"/>
+<text x="490" y="261" text-anchor="middle" class="heading">DMM</text>
+<text x="490" y="290" text-anchor="middle">AC voltage</text>
+<text x="507" y="217" class="small">V input</text>
+<text x="507" y="337" class="small">COM</text>
+
+<rect x="650" y="90" width="285" height="315" rx="8" class="boundary"/>
+<text x="667" y="119" class="heading">ALPACA 2</text>
+<text x="667" y="148" class="small">Resistor bank</text>
+<path d="M750 180V217 M750 280V355" class="wire"/>
+<g class="wire" transform="translate(757 217) rotate(90)"><path d="M0 7H14 M49 7H63"/><rect x="14" y="0" width="35" height="14"/></g><circle cx="750" cy="180" r="5" fill="#000"/>
+<circle cx="750" cy="355" r="5" fill="#000"/>
+<circle cx="820" cy="180" r="5" class="instrument"/>
+<circle cx="820" cy="355" r="5" class="instrument"/>
+<text x="836" y="185" class="small">J612</text>
+<text x="836" y="360" class="small">J612</text>
+<text x="784" y="251">R<tspan baseline-shift="sub" font-size="14">L</tspan></text>
+<text x="667" y="386" class="small">J614: select 1 kΩ or 50 Ω</text>
+
+<text x="28" y="452" class="small">Disconnect one J612 lead for the disconnected-load readings. Keep the DMM connected.</text>
+<text x="28" y="479" class="small">No selector jumper gives 1 MΩ. Record each prediction and reading in the Task C4 table.</text>
+</svg>

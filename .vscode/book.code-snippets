@@ -1,0 +1,58 @@
+{
+  "Add a Figure": {
+    "prefix": "fig",
+    "body": [
+      "```{figure} images/alpaca/file_name.png",
+      "---",
+      "max-height: 300px",
+      "name: Connect USB-C to energy hub and Micro USB to Student Pico",
+      "class: no-invert",
+      "---",
+      "```"
+    ],
+    "description": "Add a Figure"
+  },
+  "Add a Tip": {
+    "prefix": "tip",
+    "body": [
+      "```{tip}",
+      "This is a tip",
+      "```"
+    ],
+    "description": "Adds a Tip"
+  },
+  "Add Estimated Time": {
+    "prefix": "estimtime",
+    "body": [
+      "```{admonition} Estimated time: 10 min",
+      ":class: estimated-time no-content",
+      "```"
+    ],
+    "description": "Adds Estimated Time"
+  },
+  "Add Deep Dive": {
+    "prefix": "deepdive",
+    "body": [
+      "```{admonition} Deep dive (optional)",
+      ":class: deep-dive, dropdown",
+      "```"
+    ],
+    "description": "Adds Deep Dive"
+  },
+  "Add Answer": {
+    "prefix": "answ",
+    "body": [
+      "```{admonition} Answer",
+      ":class: answer, dropdown",
+      "```"
+    ],
+    "description": "Adds Answer"
+  },
+  "Add TODO": {
+    "prefix": "todo",
+    "body": [
+      "<span style=\"background:#ff1493;color:#fff;padding:2px 8px;border-radius:4px;font-weight:700;font-size:0.85em;box-shadow:0 0 6px rgba(255,20,147,0.6);\">🚩 TODO: </span>"
+    ],
+    "description": "Adds TODO"
+  }
+}
