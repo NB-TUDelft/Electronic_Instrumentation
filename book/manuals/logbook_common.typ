@@ -70,6 +70,7 @@
 
 // ---------------------------------------------------------------- page frame
 #let logbook(title: "", subtitle: "", body) = {
+  set document(title: title)
   set page(paper: "a4", margin: (x: 14mm, y: 12mm), numbering: "1 / 1")
   set text(font: ("Libertinus Serif", "DejaVu Serif"), size: 9.5pt)
   set par(spacing: 4pt)
