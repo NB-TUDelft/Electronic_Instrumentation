@@ -329,14 +329,16 @@ typst_render_link_source: true           # also offer the .typ source
    has no simulated column, and its C2 is a troubleshooting reflection rather
    than a data table. Where a manual marks a cell "not built" or "not
    simulated" (5.1), render fixed text, not a field, so it cannot be filled.
-4. Import the shared scaffolding and supply only the middle:
+4. Import the shared scaffolding and supply only the middle. The `logbook`
+   wrapper adds the standard Preparation questions and one shared response box
+   below the identity fields. Call `closing` for the standard Reflection
+   questions and one shared response box:
 
 ```typ
 #import "../logbook_common.typ": *
 #show: logbook.with(title: "Log Book Entry X.Y", subtitle: "...")
-#preparation(question: [...], theory: [...], materials: ([...], [...]))
 // manual-specific tables here
-#closing(analysis: [...], conclusion: [...])
+#closing()
 ```
 
 ### Rules that are easy to get wrong

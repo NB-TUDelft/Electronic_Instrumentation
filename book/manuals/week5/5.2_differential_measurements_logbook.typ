@@ -5,22 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 5.2 " + sym.dot.c + " Differential measurements",
 )
 
-#preparation(
-  question: [How do feedback balance and differential amplification affect the direction indication when shared illumination changes?],
-  theory: [State the converter balance condition, the subtractor ratio condition and the five-level decision rule.],
-  theory_height: 100pt,
-  materials: (
-    [ALPACA 2, breadboard and jumper wires],
-    [Two photodiodes and two dual opamp chips],
-    [100 k#sym.Omega and 91 k#sym.Omega resistors, 20 k#sym.Omega trimmer],
-    [Four matched-ratio 10 k#sym.Omega resistors],
-    [Four 100 nF supply decoupling capacitors],
-    [Bench supply, scope, DMM and cables],
-    [Torch and opaque card divider],
-  ),
-)
-
-#pagebreak()
 #section("BALANCE AND COMMON-MODE REJECTION", note: "Tasks I1, I2, I3 and C1")
 #prompt[Keep predictions and simulation traces beside this entry. Record raw readings before calculating gains. Voltages are in V.]
 #v(3pt)
@@ -71,6 +55,7 @@
 )
 
 #v(5pt)
+#pagebreak()
 *Full detector* #h(6pt) #hint[Task I3]
 #v(3pt)
 #table(
@@ -92,7 +77,6 @@
 #prompt[Setup sketch, trace or display file reference; include any deep dive evidence:]
 #line_field("c2_evidence")
 
-#pagebreak()
 #section("FIVE-LEVEL DETECTOR", note: "Tasks I4 and C2")
 #set table(inset: 3pt)
 #field_row(
@@ -126,6 +110,4 @@
 )
 #closing(
   graph: false,
-  analysis: [Explain your trim direction and shared-light drift before and after. Separate sensor balance, subtractor CMRR and software baseline.],
-  conclusion: [State reachable levels, centre stability under shared light, and the limits of interpreting response as an angle.],
 )

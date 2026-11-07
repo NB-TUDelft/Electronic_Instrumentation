@@ -5,18 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 2.1 " + sym.dot.c + " Whack-a-mole",
 )
 
-#preparation(
-  question: [How does the pull configuration decide what a pin reads, and what the LED does?],
-  theory: [State what a pull-up and a pull-down resistor each hold the pin at, and why an LED needs a series resistor.],
-  theory_height: 92pt,
-  materials: (
-    [ALPACA board], [Buttons or switches], [LEDs],
-    [Resistors (series and pull)], [Jumper wires], [USB cable and laptop],
-  ),
-  steps: 6,
-)
-
-#pagebreak()
 #section("BUILD AND INVESTIGATE", note: "Tasks A1, A2, I1 to I5. This manual has no simulate task.")
 
 *Pull configuration* #h(6pt) #hint[Tasks A1, A2 and I1]
@@ -59,11 +47,10 @@
 )
 
 #v(6pt)
+#pagebreak()
 *C1 Pull configuration and LEDs* #h(6pt) #prompt[How must an LED be connected to light? What does a pin read when the button is not pressed, pull-up and pull-down? Why is the resistor necessary? If the LED lights on release rather than press, what does that tell you?]
 #area("c1", height: 74pt)
 
 #closing(
   graph: false,
-  analysis: [Which of your troubleshooting steps would you reuse on a circuit you have never seen before?],
-  conclusion: [Answer your research question, and state the rule you would now give someone wiring a button for the first time.],
 )

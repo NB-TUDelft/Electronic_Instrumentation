@@ -5,7 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 1.1 " + sym.dot.c + " Voltage divider",
 )
 
-#pagebreak()
 #section("PREDICT, SIMULATE, MEASURE", note: "Tasks A1, A2, S1, I1, I2, connected to C1 and C2")
 #prompt[Supply is 5 V. Fill the predicted columns as homework, the simulated column after LTspice, and the measured columns at the bench. Leave a cell blank rather than guessing, then say why in the analysis.]
 #v(4pt)
@@ -51,7 +50,7 @@
   [Stacked dividers, right circuit (I5)], line_field("i5_right_pred"), line_field("i5_right_sim"), line_field("i5_right_meas"),
 )
 
-#v(8pt)
+#pagebreak()
 *Setup* #h(6pt) #prompt[Sketch the circuit you built and label the nodes you probed, or name a photo you hand in beside this entry.]
 #v(3pt)
 #sketchbox("setup", height: 120pt)
@@ -74,6 +73,4 @@
 #closing(
   graph_prompt: [Plot measured $U_"out"$ or $I$ against resistance. Label both axes with a unit.],
   graph_height: 100pt,
-  analysis: [Compare predicted, simulated and measured (C1, C2). Where do they diverge, and what does the size of the divergence tell you?],
-  conclusion: [Answer your research question. Address loading and combined dividers (C3, C4).],
 )

@@ -5,18 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 3.1 " + sym.dot.c + " Aliasing and anti-aliasing",
 )
 
-#preparation(
-  question: [At what point does sampling stop telling you the truth about a signal?],
-  theory: [State the Nyquist frequency for your sampling rate, and where a component above it reappears in the spectrum.],
-  theory_height: 100pt,
-  materials: (
-    [ALPACA board], [Function generator], [BNC cable and adapters],
-    [10 k#sym.Omega resistor], [47 nF capacitor], [100 nF capacitor],
-    [Laptop and USB cable],
-  ),
-)
-
-#pagebreak()
 #section("PREDICT AND MEASURE THE ALIAS", note: "Tasks A1, A2, I1, I2")
 #prompt[Sampling at $f_s = 1000$ Hz, so $f_N = 500$ Hz. Predict each FFT peak as homework, then read the measured peak off your own spectrum.]
 #v(4pt)
@@ -82,6 +70,4 @@
 
 #closing(
   graph: false,
-  analysis: [Where did a measured peak sit somewhere your prediction did not put it, and what explains the difference?],
-  conclusion: [Answer your research question, and state the rule you would now apply before sampling an unknown signal.],
 )

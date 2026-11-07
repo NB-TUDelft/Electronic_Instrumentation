@@ -5,7 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 1.2 " + sym.dot.c + " Oscilloscope and filters",
 )
 
-#pagebreak()
 *Coupling* #h(3pt) #hint[Tasks B1, A1 and I1, leading to C1]
 #prompt[Square wave, 4 $U_"pp"$, 25 Hz, with a $-2$ V DC offset. Predict each average as homework, then measure it at the bench.]
 #v(2pt)
@@ -53,6 +52,4 @@
 #closing(
   graph_prompt: [Plot the measured amplitude ratio against frequency and mark the $-3$ dB point.],
   graph_height: 120pt,
-  analysis: [Compare predicted, simulated and measured filter behaviour (C3). Where do they diverge, and why?],
-  conclusion: [Answer your research question, covering coupling, triggering and the filter.],
 )

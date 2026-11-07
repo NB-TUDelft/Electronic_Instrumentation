@@ -5,19 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 4.2 " + sym.dot.c + " Real opamps",
 )
 
-#preparation(
-  question: [Where do the golden rules from 4.1 stop being true, and by how much?],
-  theory: [State what $V_"offset"$, $I_"bias"$, GBW and slew rate each are, and which golden rule each one breaks.],
-  theory_height: 108pt,
-  materials: (
-    [ALPACA board and breadboard], [TL072CP or LM358P opamp],
-    [Resistor set, including a large $R_a$], [Capacitors for the integrator],
-    [Bench supply, $plus.minus 12$ V], [Function generator], [Oscilloscope],
-    [Digital multimeter], [Datasheet for your chip],
-  ),
-)
-
-#pagebreak()
 #section("BIAS AND OFFSET", note: "Tasks A1, A2, S1, I1, C1")
 #prompt[Your own chip, not the typical one. The class spread column is the point: it tells you whether your number is normal.]
 #v(4pt)
@@ -82,6 +69,4 @@
 
 #closing(
   graph: false,
-  analysis: [Which measured non-ideality would matter most in a real instrument, and at what signal level or frequency does it start to dominate?],
-  conclusion: [Answer your research question, and give the one number you would check on a datasheet first next time.],
 )

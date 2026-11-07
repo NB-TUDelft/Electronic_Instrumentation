@@ -5,19 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 4.1 " + sym.dot.c + " Opamp basics",
 )
 
-#preparation(
-  question: [Does one idea, the virtual short, predict all three amplifier topologies?],
-  theory: [State the virtual short and the no-input-current assumption, and the gain each one gives you.],
-  theory_height: 104pt,
-  materials: (
-    [ALPACA board and breadboard], [TL072CP or LM358P opamp],
-    [Resistors: 3.3 k, 1 k, 220 #sym.Omega, 100 k#sym.Omega],
-    [Bench supply, $plus.minus 12$ V], [Function generator], [Oscilloscope],
-    [Photodiode and LED], [Decoupling capacitors],
-  ),
-)
-
-#pagebreak()
 #section("THREE CONFIGURATIONS", note: "Tasks A1, A3, A5, I1, I4, I5, C1")
 #prompt[The side-by-side view is the point. Each column tells you when to reach for that topology.]
 #v(4pt)
@@ -57,6 +44,7 @@
 )
 
 #v(6pt)
+#pagebreak()
 *Saturation* #h(6pt) #hint[Tasks S1 and S3]
 #v(3pt)
 #field_row(
@@ -65,7 +53,6 @@
   [$I_"in"$ where the transimpedance stage saturated:], line_field("ti_sat"),
 )
 
-#pagebreak()
 #section("CONCLUSIONS", note: "Tasks C3 and C4")
 
 #v(6pt)
@@ -79,6 +66,4 @@
 #closing(
   graph_prompt: [Plot $U_"out"$ against $U_"in"$ for one amplifier, or $U_"out"$ against LED drive for the photodiode, and mark where it stops being a straight line.],
   graph_height: 122pt,
-  analysis: [Compare predicted, simulated and measured gain (C2). Which row has the largest discrepancy, and is it the resistors, the chip, or the measurement?],
-  conclusion: [Answer your research question, and say which topology you would choose for a high impedance sensor and why.],
 )

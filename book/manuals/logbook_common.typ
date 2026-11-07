@@ -3,7 +3,8 @@
 // Each manual's entry imports this, then supplies only the material that is
 // specific to that manual. Keeping the Preparation and closing blocks here
 // means every entry asks the same questions in the same order, which is the
-// point of a log book.
+// point of a log book. logbook adds Preparation below the identity fields;
+// each entry calls closing after its manual-specific tasks.
 
 #import "/_typst_lib/capture_field.typ": capture_field, text_field, textarea_field, checkbox_field
 
@@ -29,31 +30,49 @@
 
 #let band(title, note: "") = block(
   width: 100%, fill: rgb("#e8eef4"), inset: (x: 6pt, y: 4pt), radius: 2pt,
+  above: 0pt, below: 0pt,
   [#text(weight: "bold", size: 10.5pt, title) #h(1fr) #text(size: 8pt, note)],
 )
 
 // A blank area to draw in, with a line naming a photo handed in beside the
 // entry. PDF forms have no image field, so a reference is the robust route.
-#let sketchbox(name, height: 150pt) = {
+#let sketchbox(name, height: 150pt) = block(breakable: false, {
   rect(width: 100%, height: height, stroke: 0.5pt + rgb("#888888"), radius: 2pt)
   v(3pt)
   grid(
     columns: (auto, 1fr), column-gutter: 6pt, align: horizon,
     hint[Photo or file reference:], line_field(name + "_ref", height: 14pt),
   )
-}
+})
 
 #let section(title, note: "") = { v(6pt); band(title, note: note); v(4pt) }
 
-#let field_row(..pairs) = grid(
+#let field_row(..pairs) = block(breakable: false, grid(
   columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 5pt, align: horizon,
   ..pairs,
-)
+))
+
+// ------------------------------------------------------- standard Preparation
+#let preparation(
+  theory: [What theories, laws, and/or formulas are most important for this experiment?],
+  goals: [What do you expect to learn?],
+  prediction: [What do you expect to observe, and why?],
+  prep_height: 150pt,
+) = block(breakable: false)[
+  #section("PREPARATION", note: "complete before the practicum")
+  #prompt[
+    1. #theory \
+    2. #goals \
+    3. #prediction
+  ]
+  #area("preparation", height: prep_height)
+]
 
 // ---------------------------------------------------------------- page frame
 #let logbook(title: "", subtitle: "", body) = {
   set page(paper: "a4", margin: (x: 14mm, y: 12mm), numbering: "1 / 1")
   set text(font: ("Libertinus Serif", "DejaVu Serif"), size: 9.5pt)
+  set par(spacing: 4pt)
   set table(stroke: 0.4pt + rgb("#888888"), inset: 4pt)
 
   grid(
@@ -66,99 +85,53 @@
   )
   v(2pt); rule; v(4pt)
 
-  field_row(
+  grid(
+    columns: (auto, 1fr, auto, 1fr),
+    column-gutter: 6pt, row-gutter: 5pt, align: horizon,
     [Name(s):], line_field("name", height: 15pt),
-    [Date:], line_field("date", height: 15pt),
     [Partner:], line_field("partner", height: 15pt),
+    [Date:], line_field("date", height: 15pt),
     [Group:], line_field("group", height: 15pt),
   )
+  preparation()
   body
-}
-
-// ------------------------------------------------------- standard Preparation
-#let preparation(
-  question: [What relationship are you testing in this manual?],
-  theory: [State the relation you will test and what you expect to happen.],
-  theory_height: 100pt,
-  materials: (),
-  steps: 8,
-) = {
-  section("PREPARATION", note: "complete before the practicum")
-
-  [*Research question* \ ]
-  prompt[One sentence. #question]
-  area("research_question", height: 50pt)
-
-  v(4pt)
-  [*Theory* \ ]
-  prompt[#theory]
-  area("theory", height: theory_height)
-
-  v(4pt)
-  [*Quantities*]
-  field_row(
-    [Independent variable:], line_field("iv"),
-    [Dependent variable:], line_field("dv"),
-    [Controlled variable(s):], line_field("cv"),
-  )
-
-  v(6pt)
-  grid(
-    columns: (1fr, 1fr), column-gutter: 10pt,
-    [
-      *Materials* \
-      #prompt[Tick what you actually used.]
-      #v(3pt)
-      #grid(
-        columns: (auto, 1fr), column-gutter: 5pt, row-gutter: 7pt, align: horizon,
-        ..materials.enumerate().map(((i, m)) => (check("mat" + str(i)), [#m])).flatten(),
-        check("mat_other"), line_field("mat_other_txt", height: 14pt),
-      )
-    ],
-    [
-      *Procedure* \
-      #prompt[The steps you will follow at the bench, in order.]
-      #v(3pt)
-      #grid(
-        columns: (auto, 1fr), column-gutter: 5pt, row-gutter: 7pt, align: horizon,
-        ..range(1, steps + 1).map(i => ([#str(i).], line_field("proc" + str(i), height: 15pt))).flatten(),
-      )
-    ],
-  )
 }
 
 // ----------------------------------------------------------- standard closing
 #let closing(
-  analysis: [Where do prediction, simulation and measurement diverge, and what does the size of the divergence tell you?],
-  conclusion: [Answer your research question.],
+  analysis: [Which results matched or differed from your expectations, and why?],
+  conclusion: [What is the most important thing you learned?],
+  do_different: [What would you do differently next time?],
+  reflect_height: 125pt,
   graph: true,
   graph_prompt: [Plot your measured data. Label both axes with a unit.],
   graph_height: 150pt,
 ) = {
   if graph {
-    v(6pt)
-    [*Graph* #h(6pt) #prompt[#graph_prompt]]
-    v(3pt)
-    sketchbox("graph", height: graph_height)
+    block(breakable: false)[
+      #v(6pt)
+      *Graph* #h(6pt) #prompt[#graph_prompt]
+      #v(3pt)
+      #sketchbox("graph", height: graph_height)
+    ]
   }
 
-  v(6pt)
-  [*Analysis and trend* \ ]
-  prompt[#analysis]
-  area("analysis", height: 74pt)
+  block(breakable: false)[
+    #section("REFLECTION", note: "complete before submission")
+    #prompt[
+      1. #analysis \
+      2. #conclusion \
+      3. #do_different
+    ]
+    #area("reflection", height: reflect_height)
 
-  v(4pt)
-  [*Conclusion(s)* \ ]
-  prompt[#conclusion]
-  area("conclusion", height: 68pt)
-
-  v(4pt)
-  [*What I wanted to say as well* \ ]
-  area("extra", height: 42pt)
-
-  v(5pt); rule; v(3pt)
-  field_row(
-    [#text(size: 8pt)[TA check-off:]], line_field("ta_sign", height: 14pt),
-    [#text(size: 8pt)[Date:]], line_field("ta_date", height: 14pt),
-  )
+    #v(5pt)
+    #rule
+    #v(3pt)
+    #grid(
+      columns: (auto, 1fr, auto, 1fr), column-gutter: 6pt, align: horizon,
+      [#text(size: 8pt)[TA check-off:]], line_field("ta_sign", height: 14pt),
+      [#text(size: 8pt)[Date:]], line_field("ta_date", height: 14pt),
+    )
+  ]
 }

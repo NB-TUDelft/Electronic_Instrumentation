@@ -5,17 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 2.2 " + sym.dot.c + " Timed acquisitions",
 )
 
-#preparation(
-  question: [How well does the ALPACA hold a sampling interval, and what does that cost you?],
-  theory: [State how many samples a given duration and interval give you, and how many samples per period you need to keep a sine's shape.],
-  theory_height: 100pt,
-  materials: (
-    [ALPACA board], [Potentiometer], [Function generator],
-    [Digital multimeter], [Jumper wires], [USB cable and laptop],
-  ),
-)
-
-#pagebreak()
 #section("TIMING ACCURACY", note: "Tasks A1, I1, C1")
 #prompt[A 5 s measurement at a 50 ms target interval. Predict as homework, then fill the measured column from your own timing data.]
 #v(4pt)
@@ -42,7 +31,7 @@
   sig, f, line_field(id + "_req"), line_field(id + "_ach"), line_field(id + "_ok"),
 )
 #table(
-  columns: (1.4fr, auto, 1fr, 1fr, auto), align: horizon,
+  columns: (1.4fr, 0.7fr, 1.2fr, 1.2fr, 0.9fr), align: horizon,
   table.header(
     [*Signal type*], [*Test $f$ [Hz]*],
     [*Minimum required rate [Hz]*], [*Achieved rate [Hz]*], [*Sufficient?*],
@@ -73,6 +62,4 @@
 #closing(
   graph_prompt: [Plot voltage against time for the potentiometer run, or measured amplitude against frequency for the sweep.],
   graph_height: 138pt,
-  analysis: [Which factors in the ALPACA hardware or software explain your jitter, and for which signals would that jitter matter?],
-  conclusion: [Answer your research question, and state the highest frequency you can measure with confidence and why.],
 )

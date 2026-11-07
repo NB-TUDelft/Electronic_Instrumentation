@@ -5,18 +5,6 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 5.1 " + sym.dot.c + " Diode circuits",
 )
 
-#preparation(
-  question: [When is the constant 0.7 V diode model good enough, and when does it mislead you?],
-  theory: [State the rule you use to decide whether a diode conducts, and what the 0.7 V model ignores.],
-  theory_height: 100pt,
-  materials: (
-    [ALPACA board and breadboard], [Silicon diodes], [LEDs],
-    [Resistor set], [Smoothing capacitor], [Bench supply],
-    [Function generator], [Oscilloscope], [Digital multimeter],
-  ),
-)
-
-#pagebreak()
 #section("PREDICTION, SIMULATION, MEASUREMENT MATRIX", note: "Task C1")
 #prompt[Fill the conduction rule first, from Task B2. A row where prediction and measurement disagree is the useful row, so name the cause rather than smoothing it over.]
 #v(4pt)
@@ -57,7 +45,6 @@
 #v(3pt)
 #sketchbox("setup", height: 150pt)
 
-#pagebreak()
 #section("GROUNDS AND CONCLUSIONS", note: "Tasks A5, S3, I5, C1, C2")
 
 *Shared grounds* #h(6pt) #hint[Tasks S3 and I5]
@@ -77,6 +64,4 @@
 
 #closing(
   graph: false,
-  analysis: [Which row in the matrix disagreed most, and was the cause the diode model, the instrument, or the grounding?],
-  conclusion: [Answer your research question, and give the test you would run first on an unfamiliar diode circuit.],
 )
