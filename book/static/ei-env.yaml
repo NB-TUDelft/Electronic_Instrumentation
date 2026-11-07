@@ -13,6 +13,6 @@ dependencies:
   - pip:
     - ipykernel
     - ipywidgets
-    - alpaca2
+    - alpaca2>=1.0.4
     - micropython-rp2-stubs
     - belay
