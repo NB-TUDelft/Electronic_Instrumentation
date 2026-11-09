@@ -11,8 +11,10 @@ dependencies:
   - numpy
   - scipy
   - pip:
-    - ipykernel
-    - ipywidgets
-    - alpaca2>=1.0.4
-    - micropython-rp2-stubs
-    - belay
+      - ipykernel
+      - ipywidgets
+      - myst-nb
+      - alpaca2>=1.0.6
+      - alpaca2-stubs>=1.0.6
+      - micropython-rp2-stubs
+      - belay
