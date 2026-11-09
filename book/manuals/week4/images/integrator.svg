@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300">
+  <g fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 120h42"/>
+    <rect x="90" y="110" width="60" height="20"/>
+    <path d="M150 120h150"/>
+    <path d="M230 120V50h68"/>
+    <path d="M298 34v32M312 34v32"/>
+    <path d="M312 50h118v100"/>
+    <polygon points="300,90 300,210 390,150"/>
+    <path d="M390 150h92"/>
+    <path d="M300 180h-70v55"/>
+    <path d="M212 235h36M218 243h24M224 251h12"/>
+    <path d="M308 112h14M315 165v14M308 172h14" stroke-width="2"/>
+  </g>
+  <g fill="#000">
+    <circle cx="40" cy="120" r="4"/>
+    <circle cx="230" cy="120" r="4.5"/>
+    <circle cx="430" cy="150" r="4.5"/>
+    <circle cx="490" cy="150" r="4"/>
+  </g>
+  <g font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-style="italic" fill="#000">
+    <text x="14" y="100">U<tspan dy="5" font-size="14">in</tspan></text>
+    <text x="108" y="100">R</text>
+    <text x="296" y="24">C</text>
+    <text x="452" y="135">U<tspan dy="5" font-size="14">out</tspan></text>
+  </g>
+</svg>

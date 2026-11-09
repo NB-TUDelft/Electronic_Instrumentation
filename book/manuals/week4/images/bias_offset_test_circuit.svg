@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 310">
+  <g fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 120h70"/>
+    <path d="M230 120V50h45"/>
+    <rect x="275" y="40" width="60" height="20"/>
+    <path d="M335 50h95v100"/>
+    <polygon points="300,90 300,210 390,150"/>
+    <path d="M390 150h92"/>
+    <path d="M230 120v20"/>
+    <rect x="220" y="140" width="20" height="50"/>
+    <path d="M230 190v25"/>
+    <path d="M212 215h36M218 223h24M224 231h12"/>
+    <path d="M300 180h-25v15"/>
+    <rect x="265" y="195" width="20" height="45"/>
+    <path d="M275 240v20"/>
+    <path d="M257 260h36M263 268h24M269 276h12"/>
+    <path d="M308 112h14M315 165v14M308 172h14" stroke-width="2"/>
+  </g>
+  <g fill="#000">
+    <circle cx="230" cy="120" r="4.5"/>
+    <circle cx="430" cy="150" r="4.5"/>
+    <circle cx="490" cy="150" r="4"/>
+  </g>
+  <g font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-style="italic" fill="#000">
+    <text x="252" y="30">R<tspan dy="5" font-size="14">f</tspan><tspan dy="-5" font-size="20"> = 1 MΩ</tspan></text>
+    <text x="188" y="172">R<tspan dy="5" font-size="14">a</tspan></text>
+    <text x="292" y="224">R</text>
+    <text x="452" y="135">U<tspan dy="5" font-size="14">out</tspan></text>
+  </g>
+</svg>
