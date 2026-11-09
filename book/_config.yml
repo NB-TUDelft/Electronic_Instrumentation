@@ -123,6 +123,11 @@ sphinx:
   recursive_update: false
 
   config:
+    # Register heading anchors so cross-page links of the form
+    # [text](other.ipynb#section-slug) resolve instead of warning.
+    # This must live under sphinx.config: jupyter-book does not forward
+    # this key from the parse section.
+    myst_heading_anchors: 6
     typst_render_source_label: Manual
     typst_render_link_source: true
     # Characters a log book field accepts. Raise or lower freely; 0 strips
