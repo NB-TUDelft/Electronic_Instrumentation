@@ -6,18 +6,18 @@
 )
 
 #section("TIMING ACCURACY", note: "Tasks A1, I1, C1")
-#prompt[A 5 s measurement at a 50 ms target interval. Predict as homework, then fill the measured column from your own timing data.]
+#prompt[Predict for 100 readings with a 50 ms target interval. Measure duration from the first reading to the last.]
 #v(4pt)
 
 #table(
   columns: (2fr, 1fr, 1fr, auto), align: horizon,
   table.header([*Parameter*], [*Predicted*], [*Measured*], [*Unit*]),
-  [Total measurement duration], line_field("dur_pred"), line_field("dur_meas"), [s],
+  [First-to-last duration], line_field("dur_pred"), line_field("dur_meas"), [s],
   [Sampling interval (target)], line_field("int_pred"), line_field("int_meas"), [ms],
   [Minimum measured interval], line_field("min_pred"), line_field("min_meas"), [ms],
   [Maximum measured interval], line_field("max_pred"), line_field("max_meas"), [ms],
   [Average measured interval], line_field("avg_pred"), line_field("avg_meas"), [ms],
-  [Jitter (max $-$ min)], line_field("jit_pred"), line_field("jit_meas"), [ms],
+  [Interval range (maximum $-$ minimum)], line_field("jit_pred"), line_field("jit_meas"), [ms],
 )
 #v(3pt)
 #field_row(
@@ -36,19 +36,19 @@
     [*Signal type*], [*Test $f$ [Hz]*],
     [*Minimum required rate [Hz]*], [*Achieved rate [Hz]*], [*Sufficient?*],
   ),
-  ..sr("s_pot", [Potentiometer (slow)], [< 1]),
+  ..sr("s_pot", [Potentiometer (slow)], [Not periodic]),
   ..sr("s_50", [Sine wave], [50]),
   ..sr("s_100", [Sine wave], [100]),
   ..sr("s_300", [Sine wave], [300]),
 )
 #v(3pt)
-#prompt[At which frequency do the fine details of the sine start to disappear, and what is the highest frequency you would trust?]
+#prompt[At which frequency do the fine details of the sine start to disappear? What is the highest measured frequency you would trust?]
 #line_field("limit_note")
 
 #pagebreak()
 #section("SWEEP AND CONCLUSIONS", note: "Tasks A4, I3, C3")
 
-*Frequency sweep* #h(6pt) #hint[1 Hz to 500 Hz, 200 samples per point]
+*Frequency sweep* #h(6pt) #hint[10 Hz to 300 Hz, 1000 samples per point at a 0.2 ms target interval]
 #v(3pt)
 #field_row(
   [Peak voltage constant across the sweep?], line_field("sweep_const"),

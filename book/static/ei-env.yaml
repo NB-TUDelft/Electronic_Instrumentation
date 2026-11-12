@@ -2,6 +2,7 @@ name: ei-env
 channels:
   - nb_tudelft
   - conda-forge
+  - nodefaults
 dependencies:
   - python>=3.14
   - pip
@@ -12,9 +13,7 @@ dependencies:
   - scipy
   - pip:
       - ipykernel
-      - ipywidgets
-      - myst-nb
       - alpaca2>=1.0.6
       - alpaca2-stubs>=1.0.6
-      - micropython-rp2-stubs
+      - micropython-rp2-stubs>=1.28.0.post4,<1.29
       - belay
