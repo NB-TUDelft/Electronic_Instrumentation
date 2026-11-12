@@ -26,7 +26,7 @@
 )
 
 #v(6pt)
-#section("SAMPLING RATE LIMITS", note: "Tasks A2, I2, I3, C2")
+#section("SAMPLING RATE LIMITS", note: "Tasks A2, I2, I4, C2")
 #let sr(id, sig, f) = (
   sig, f, line_field(id + "_req"), line_field(id + "_ach"), line_field(id + "_ok"),
 )
@@ -46,9 +46,16 @@
 #line_field("limit_note")
 
 #pagebreak()
-#section("SWEEP AND CONCLUSIONS", note: "Tasks A4, I3, C3")
+#section("SWEEP AND CONCLUSIONS", note: "Tasks A4, I3, I4, C3")
 
 *Frequency sweep* #h(6pt) #hint[10 Hz to 300 Hz, 1000 samples per point at a 0.2 ms target interval]
+#v(3pt)
+#field_row(
+  [Helper amplitude setting [Vpp]:], line_field("i3_helper_vpp"),
+)
+#v(3pt)
+#prompt[Scope frequency, minimum, maximum and peak-to-peak voltage for each setting:]
+#area("i3_scope_range", height: 62pt)
 #v(3pt)
 #field_row(
   [Peak voltage constant across the sweep?], line_field("sweep_const"),
