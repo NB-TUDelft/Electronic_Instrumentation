@@ -5,6 +5,10 @@
   subtitle: "NB2420 Electronic Instrumentation " + sym.dot.c + " Manual 2.2 " + sym.dot.c + " Timed acquisitions",
 )
 
+#field_row(
+  [Prepared code file (Task S1):], line_field("s1_code_ref"),
+)
+
 #section("TIMING ACCURACY", note: "Tasks A1, I1, C1")
 #prompt[Predict for 100 readings with a 50 ms target interval. Measure duration from the first reading to the last.]
 #v(4pt)
@@ -42,7 +46,7 @@
   ..sr("s_300", [Sine wave], [300]),
 )
 #v(3pt)
-#prompt[At which frequency do the fine details of the sine start to disappear? What is the highest measured frequency you would trust?]
+#prompt[Do the sine-wave measurements meet the timing checks? What is the highest tested frequency whose ADC trace agrees with the scope?]
 #line_field("limit_note")
 
 #pagebreak()
@@ -52,21 +56,22 @@
 #v(3pt)
 #field_row(
   [Helper amplitude setting [Vpp]:], line_field("i3_helper_vpp"),
+  [Scope screenshot file (Task I3):], line_field("i3_scope_capture"),
 )
 #v(3pt)
-#prompt[Scope frequency, minimum, maximum and peak-to-peak voltage for each setting:]
+#prompt[For each setting, record the scope frequency, voltage range and peak-to-peak voltage. Add the ADC positive peak from Task I4:]
 #area("i3_scope_range", height: 62pt)
 #v(3pt)
 #field_row(
-  [Peak voltage constant across the sweep?], line_field("sweep_const"),
-  [Frequencies with the largest deviation:], line_field("sweep_dev"),
-  [Was 0.5 s settling enough?], line_field("sweep_settle"),
+  [Do the ADC and scope peaks agree?], line_field("sweep_const"),
+  [Frequency with the largest ADC/scope difference:], line_field("sweep_dev"),
+  [How would you check the settling time?], line_field("sweep_settle"),
 )
 #v(4pt)
 #prompt[How would you make this sweep more efficient without losing data quality?]
 #area("sweep_opt", height: 44pt)
 
 #closing(
-  graph_prompt: [Plot voltage against time for the potentiometer run, or measured amplitude against frequency for the sweep.],
+  graph_prompt: [Plot ADC and scope peak voltages against frequency, or the potentiometer voltage against time.],
   graph_height: 138pt,
 )
