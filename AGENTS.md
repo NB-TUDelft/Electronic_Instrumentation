@@ -319,6 +319,15 @@ typst_render_downloads_label: Log book   # heading above the entries
 typst_render_link_source: true           # also offer the .typ source
 ```
 
+Students fill in the entry on the logbook site,
+<https://nb-tudelft.github.io/EI_Logbooks/>, which copies every
+`*_logbook.typ` from this repository (and this repository's
+`notify-logbooks.yml` workflow tells it when one changes). So the local
+extension `book/logbook_site.py` rewrites the menu: **Entry X.Y** opens the
+entry on the site, **Entry X.Y (source)** stays the `.typ` file, and
+**Entry X.Y (printable)** is the site's empty fillable PDF. In the manual,
+refer to the menu items by those names.
+
 ### Writing a new entry
 
 1. **Read that manual's Compare and Conclude section first.** The middle of the

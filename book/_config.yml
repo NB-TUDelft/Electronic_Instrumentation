@@ -119,6 +119,7 @@ sphinx:
 
   local_extensions:
     no_content_admonition: .
+    logbook_site: .
 
   recursive_update: false
 
