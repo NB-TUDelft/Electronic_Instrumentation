@@ -56,7 +56,7 @@
 #v(3pt)
 #field_row(
   [Helper amplitude setting [Vpp]:], line_field("i3_helper_vpp"),
-  [Scope screenshot file (Task I3):], line_field("i3_scope_capture"),
+  [Scope picture (Task I3):], line_field("i3_scope_capture"),
 )
 #v(3pt)
 #prompt[For each setting, record the scope frequency, voltage range and peak-to-peak voltage. Add the ADC positive peak from Task I4:]
