@@ -283,6 +283,10 @@ they work and hand in via BrightSpace. One entry covers one manual. The
 **Preparation** side is homework (BAS), the **Practicum** side is filled at the
 bench (IC), matching the split in section 2.
 
+For the working order and a check script that builds an entry the way both
+the book and the logbook site do, use the `logbook-entry` skill in
+`.claude/skills/logbook-entry/`.
+
 ### Where things live
 
 | Path | What it is |
