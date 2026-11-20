@@ -1,31 +1,59 @@
-# Tells the logbook site (NB-TUDelft/EI_Logbooks) that a logbook changed here,
-# so it copies the templates and rebuilds the PDFs within minutes instead of
-# at its next hourly check. It changes nothing in this repository and does not
-# touch the book.
+# Checks the log book entries the way the logbook site (NB-TUDelft/EI_Logbooks)
+# will use them, and on main tells the site that an entry changed, so it copies
+# the entries within minutes instead of at its nightly check. It changes
+# nothing in this repository and does not touch the book.
 #
-# Needs one repository secret, LOGBOOKS_DISPATCH_TOKEN: a fine-grained token
-# for NB-TUDelft with access to EI_Logbooks only, permission
-# "Contents: Read and write". Without the secret it does nothing, and the site
-# still picks up the change at its next hourly check.
-name: tell the logbook site
+# The check runs the site's own script (tools/sync_templates.py --check
+# --compile): each entry's name, week folder and imports, no two entries with
+# one number, and that it compiles the way the site builds it. A pull request
+# that breaks one gets a red check here, before it is merged.
+#
+# The signal needs one repository secret, LOGBOOKS_DISPATCH_TOKEN: a
+# fine-grained token for NB-TUDelft with access to EI_Logbooks only, permission
+# "Contents: Read and write". Without the secret only the signal is skipped,
+# and the site still picks up the change at its nightly check.
+name: log book entries
 on:
   push:
     branches: [main]
     paths:
-      - 'book/manuals/**/*_logbook.typ'
-      - 'book/manuals/logbook_common.typ'
+      - 'book/manuals/**/*.typ'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'book/manuals/**/*.typ'
+      - '.github/workflows/notify-logbooks.yml'
   workflow_dispatch:
-permissions: {}
+permissions:
+  contents: read
 jobs:
-  notify:
+  check:
+    name: Check the entries for the logbook site
     runs-on: ubuntu-latest
     steps:
-      - name: Ask EI_Logbooks to copy the logbooks
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: book/manuals
+      - name: Install the Typst renderer
+        run: python3 -m pip install --quiet "sphinx-typst-render>=0.2.5"
+      - name: Run the logbook site's own check
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/NB-TUDelft/EI_Logbooks/main/tools/sync_templates.py \
+            -o "$RUNNER_TEMP/sync_templates.py"
+          python3 "$RUNNER_TEMP/sync_templates.py" --check --compile .
+
+  notify:
+    name: Tell the logbook site
+    needs: check
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask EI_Logbooks to copy the entries
         env:
           GH_TOKEN: ${{ secrets.LOGBOOKS_DISPATCH_TOKEN }}
         run: |
           if [ -z "$GH_TOKEN" ]; then
-            echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its next hourly check."
+            echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its nightly check."
             exit 0
           fi
           gh api repos/NB-TUDelft/EI_Logbooks/dispatches \
