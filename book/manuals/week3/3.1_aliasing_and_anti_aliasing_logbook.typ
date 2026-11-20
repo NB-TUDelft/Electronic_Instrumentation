@@ -36,6 +36,15 @@
 )
 
 #v(6pt)
+// One block, so the heading and prompt never stay behind on the page before the box.
+#block(breakable: false)[
+  *Square wave spectrum* #h(6pt) #hint[Task I2]
+  #v(3pt)
+  #prompt[Add the frequency-domain plot of your sampled 100 Hz square wave. Label each peak with its frequency and mark $f_N$.]
+  #sketchbox("i2_spectrum", height: 150pt)
+]
+
+#v(6pt)
 *Anti-aliasing filter* #h(6pt) #hint[Tasks A3 and I3: $R = 10$ k#sym.Omega, $f_c = 1 slash (2 pi R C)$]
 #v(3pt)
 #table(
@@ -69,5 +78,6 @@
 #area("c3", height: 50pt)
 
 #closing(
-  graph: false,
+  graph_prompt: [Add the frequency-domain plot of your filtered signal from Task I3, for one capacitor. Mark the 700 and 900 Hz aliases and how much they dropped.],
+  graph_height: 120pt,
 )
