@@ -357,8 +357,13 @@ typst_render_link_source: true           # also offer the .typ source
   back programmatically.
 * **PDF forms have no image field.** AcroForm defines only text, button, choice
   and signature, so a photo cannot be pasted into a field. Use `sketchbox()`,
-  which pairs a blank drawing area with a "Photo or file reference" line, and
-  let the photo be handed in beside the entry.
+  which pairs a blank drawing area with a "Photo or file reference" line. On
+  the logbook site, `sketchbox()` and the closing graph box become image boxes
+  that students insert a picture into. Give every plot, photo or screenshot
+  the manual asks for its own `sketchbox()` with a `prompt` above it, wrap the
+  heading, prompt and box in `block(breakable: false)` so they stay on one
+  page, and do not use `image_slot()` here: only the site's copy of
+  `logbook_common.typ` has it.
 
 ### Verifying a change
 

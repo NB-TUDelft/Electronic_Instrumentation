@@ -1,11 +1,12 @@
 # Tells the logbook site (NB-TUDelft/EI_Logbooks) that a logbook changed here,
 # so it copies the templates and rebuilds the PDFs within minutes instead of
-# overnight. It changes nothing in this repository and does not touch the book.
+# at its next hourly check. It changes nothing in this repository and does not
+# touch the book.
 #
 # Needs one repository secret, LOGBOOKS_DISPATCH_TOKEN: a fine-grained token
 # for NB-TUDelft with access to EI_Logbooks only, permission
 # "Contents: Read and write". Without the secret it does nothing, and the site
-# still picks up the change in its nightly run.
+# still picks up the change at its next hourly check.
 name: tell the logbook site
 on:
   push:
@@ -24,7 +25,7 @@ jobs:
           GH_TOKEN: ${{ secrets.LOGBOOKS_DISPATCH_TOKEN }}
         run: |
           if [ -z "$GH_TOKEN" ]; then
-            echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up in its nightly run."
+            echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its next hourly check."
             exit 0
           fi
           gh api repos/NB-TUDelft/EI_Logbooks/dispatches \
