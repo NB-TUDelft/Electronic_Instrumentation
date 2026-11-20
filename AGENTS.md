@@ -395,7 +395,9 @@ python sync_templates.py --check .
 ```
 
 It checks every entry's name, week folder and imports, and that no two share a
-number. The site builds entries with its own copy of `logbook_common.typ`,
+number. The "log book entries" workflow
+(`.github/workflows/notify-logbooks.yml`) runs the same check on every pull
+request that touches an entry. The site builds entries with its own copy of `logbook_common.typ`,
 which has everything this one has plus image boxes, so an entry that builds
 here builds there too. If something is wrong after a push anyway, the site's
 run fails, keeps its last good version, and says on its summary page what to
