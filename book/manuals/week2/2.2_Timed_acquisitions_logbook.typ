@@ -59,11 +59,11 @@
   [Scope picture (Task I3):], line_field("i3_scope_capture"),
 )
 #v(3pt)
-#prompt[For each setting, record the scope frequency, voltage range and peak-to-peak voltage. Add the ADC positive peak from Task I4:]
+#prompt[For each setting, record the scope frequency, voltage range and peak-to-peak voltage. Do the same for signal measured by the ADC from Task I4:]
 #area("i3_scope_range", height: 62pt)
 #v(3pt)
 #field_row(
-  [Do the ADC and scope peaks agree?], line_field("sweep_const"),
+  [Do the ADC and scope voltages agree?], line_field("sweep_const"),
   [Frequency with the largest ADC/scope difference:], line_field("sweep_dev"),
   [How would you check the settling time?], line_field("sweep_settle"),
 )
