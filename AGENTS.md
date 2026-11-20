@@ -283,10 +283,6 @@ they work and hand in via BrightSpace. One entry covers one manual. The
 **Preparation** side is homework (BAS), the **Practicum** side is filled at the
 bench (IC), matching the split in section 2.
 
-For the working order and a check script that builds an entry the way both
-the book and the logbook site do, use the `logbook-entry` skill in
-`.claude/skills/logbook-entry/`.
-
 ### Where things live
 
 | Path | What it is |
@@ -325,6 +321,11 @@ typst_render_link_source: true           # also offer the .typ source
 
 ### Writing a new entry
 
+Students fill in the entries on the logbook site
+(<https://nb-tudelft.github.io/EI_Logbooks/>), which copies every entry from
+this repository at least once an hour. So an entry has two readers, this book's
+build and the site's build, and both must work.
+
 1. **Read that manual's Compare and Conclude section first.** The middle of the
    entry must mirror its tables, because those tables are what the entry exists
    to collect. Do not paste a generic predicted / simulated / measured grid.
@@ -333,7 +334,15 @@ typst_render_link_source: true           # also offer the .typ source
    has no simulated column, and its C2 is a troubleshooting reflection rather
    than a data table. Where a manual marks a cell "not built" or "not
    simulated" (5.1), render fixed text, not a field, so it cannot be filled.
-4. Import the shared scaffolding and supply only the middle. The `logbook`
+4. List what the manual asks students to record: numbers, short answers,
+   plots, screenshots, photos. Each one needs its own place in the entry.
+5. **Name and place the file exactly.** It is
+   `book/manuals/weekN/<n.m>_<Title_with_underscores>_logbook.typ`, directly in
+   the week folder of its number (3.2 goes in `week3/`), with no spaces, and
+   one file per number. The logbook site refuses anything else, and it finds
+   students' saved work by that number. To renumber an entry that students
+   have already started, ask the EI_Logbooks maintainers to add an alias first.
+6. Import the shared scaffolding and supply only the middle. The `logbook`
    wrapper adds the standard Preparation questions and one shared response box
    below the identity fields. Call `closing` for the standard Reflection
    questions and one shared response box:
@@ -344,6 +353,9 @@ typst_render_link_source: true           # also offer the .typ source
 // manual-specific tables here
 #closing()
 ```
+
+   Import nothing else and read no other files (no `image("...")`): the site
+   only has `logbook_common.typ`.
 
 ### Rules that are easy to get wrong
 
@@ -374,6 +386,20 @@ Always verify with a clean build:
 ./run_book_server.sh            # full clean rebuild + serve
 rm -rf book/_build && jupyter-book build book/
 ```
+
+Then check the entries the way the logbook site will, from the repository root:
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/NB-TUDelft/EI_Logbooks/main/tools/sync_templates.py
+python sync_templates.py --check .
+```
+
+It checks every entry's name, week folder and imports, and that no two share a
+number. The site builds entries with its own copy of `logbook_common.typ`,
+which has everything this one has plus image boxes, so an entry that builds
+here builds there too. If something is wrong after a push anyway, the site's
+run fails, keeps its last good version, and says on its summary page what to
+fix.
 
 ## 13. Scope
 
