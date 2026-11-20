@@ -7,6 +7,7 @@
 
 #section("MEASUREMENTS", note: "Task I1")
 #prompt[Measure something.]
+#nosuchfunction()
 #field_row([Value:], line_field("i1_value"))
 
 #closing(graph: false)
