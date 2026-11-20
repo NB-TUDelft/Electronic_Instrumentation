@@ -1,21 +1,22 @@
 name: call-deploy-book
 # Builds and publishes the book, in three steps that depend on each other:
 #
-#   logbook-check ──> notify-logbooks (main only) ──> call-workflow (build and publish)
+#   logbook-check ──> logbook-site (main only) ──> call-workflow (build and publish)
 #
 # 1. logbook-check runs the logbook site's own check on book/manuals: every log
 #    book entry's name, week folder, imports, no two with one number, and that
-#    it compiles the way the site builds it. The Log book menu links each entry
-#    to the logbook site (NB-TUDelft/EI_Logbooks), which refuses a broken one,
-#    so nothing below runs until the entries are fine.
-# 2. notify-logbooks, on main only, tells the logbook site to copy the entries
-#    now, so a new entry is there before the book's menu links to it. It needs
-#    the repository secret LOGBOOKS_DISPATCH_TOKEN (a fine-grained token with
-#    access to EI_Logbooks only, "Contents: Read and write"); without it the
-#    site picks the change up at its nightly run.
+#    it compiles the way the site builds it.
+# 2. logbook-site, on main only, starts the logbook site's workflow
+#    (NB-TUDelft/EI_Logbooks, "build and publish") for this exact commit and
+#    waits for its result, so a new entry is on the site before the book's menu
+#    links to it, and a failure there turns this run red too. It needs the
+#    repository secret LOGBOOKS_DISPATCH_TOKEN: a fine-grained token with access
+#    to EI_Logbooks only, "Actions: Read and write". Without it this step is
+#    skipped and the site picks the change up at its nightly run.
 # 3. call-workflow builds and publishes the book, as before.
 #
-# It runs on all branches to include development versions too.
+# Nothing after a failed step runs. It runs on all branches to include
+# development versions too (step 2 only on main).
 on:
   push:
     branches:
@@ -46,31 +47,42 @@ jobs:
             -o "$RUNNER_TEMP/sync_templates.py"
           python3 "$RUNNER_TEMP/sync_templates.py" --check --compile .
 
-  notify-logbooks:
-    name: Tell the logbook site
+  logbook-site:
+    name: Build the logbook site and wait for it
     needs: logbook-check
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions: {}
     steps:
-      - name: Ask EI_Logbooks to copy the entries
+      - name: Is the token there?
+        id: token
         env:
-          GH_TOKEN: ${{ secrets.LOGBOOKS_DISPATCH_TOKEN }}
+          TOKEN: ${{ secrets.LOGBOOKS_DISPATCH_TOKEN }}
         run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its nightly run."
-            exit 0
-          fi
-          gh api repos/NB-TUDelft/EI_Logbooks/dispatches \
-            -f event_type=book-logbooks-changed \
-            -f "client_payload[commit]=$GITHUB_SHA"
+          if [ -n "$TOKEN" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"
+          else echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its nightly run."; fi
+      - name: Start the logbook site's workflow and wait for its result
+        if: steps.token.outputs.ok == 'true'
+        uses: the-actions-org/workflow-dispatch@v4
+        env:
+          RUN_NAME: book ${{ github.sha }} (run ${{ github.run_id }})
+        with:
+          workflow: build and publish
+          repo: NB-TUDelft/EI_Logbooks
+          ref: main
+          token: ${{ secrets.LOGBOOKS_DISPATCH_TOKEN }}
+          run-name: ${{ env.RUN_NAME }}
+          inputs: >-
+            { "book-ref": "${{ github.sha }}", "run-name": "${{ env.RUN_NAME }}" }
+          wait-for-completion-timeout: 30m
 
   call-workflow:
-    needs: [logbook-check, notify-logbooks]
-    # notify-logbooks is skipped on other branches; build anyway once the check passed.
+    needs: [logbook-check, logbook-site]
+    # logbook-site is skipped on other branches; build once the check passed and,
+    # on main, the logbook site built.
     if: >-
       always() && needs.logbook-check.result == 'success' &&
-      (needs.notify-logbooks.result == 'success' || needs.notify-logbooks.result == 'skipped')
+      (needs.logbook-site.result == 'success' || needs.logbook-site.result == 'skipped')
     # Reuse the standard TeachBooks deploy workflow to build and publish the book
     uses: TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@main
     # Pass repository secrets through to the called workflow
