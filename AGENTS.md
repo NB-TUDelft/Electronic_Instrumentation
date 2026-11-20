@@ -323,8 +323,9 @@ typst_render_link_source: true           # also offer the .typ source
 
 Students fill in the entries on the logbook site
 (<https://nb-tudelft.github.io/EI_Logbooks/>), which copies every entry from
-this repository at least once an hour. So an entry has two readers, this book's
-build and the site's build, and both must work.
+this repository when the "log book entries" workflow tells it one changed, and
+otherwise every night. So an entry has two readers, this book's build and the
+site's build, and both must work.
 
 1. **Read that manual's Compare and Conclude section first.** The middle of the
    entry must mirror its tables, because those tables are what the entry exists
