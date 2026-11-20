@@ -1,6 +1,6 @@
 # Checks the log book entries the way the logbook site (NB-TUDelft/EI_Logbooks)
 # will use them, and on main tells the site that an entry changed, so it copies
-# the entries within minutes instead of at its next hourly check. It changes
+# the entries within minutes instead of at its nightly check. It changes
 # nothing in this repository and does not touch the book.
 #
 # The check runs the site's own script (tools/sync_templates.py --check
@@ -11,7 +11,7 @@
 # The signal needs one repository secret, LOGBOOKS_DISPATCH_TOKEN: a
 # fine-grained token for NB-TUDelft with access to EI_Logbooks only, permission
 # "Contents: Read and write". Without the secret only the signal is skipped,
-# and the site still picks up the change at its next hourly check.
+# and the site still picks up the change at its nightly check.
 name: log book entries
 on:
   push:
@@ -53,7 +53,7 @@ jobs:
           GH_TOKEN: ${{ secrets.LOGBOOKS_DISPATCH_TOKEN }}
         run: |
           if [ -z "$GH_TOKEN" ]; then
-            echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its next hourly check."
+            echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its nightly check."
             exit 0
           fi
           gh api repos/NB-TUDelft/EI_Logbooks/dispatches \
