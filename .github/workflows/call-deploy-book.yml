@@ -13,7 +13,26 @@ on:
   workflow_dispatch:
 
 jobs: 
+  # The Log book menu links every entry to the logbook site, which refuses an
+  # entry with a wrong name, folder, import or a doubled number. Run the site's
+  # own check first, so the book is not published with links that lead nowhere.
+  logbook-check:
+    name: Check the log book entries
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: book/manuals
+      - name: Run the logbook site's own check
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/NB-TUDelft/EI_Logbooks/main/tools/sync_templates.py \
+            -o "$RUNNER_TEMP/sync_templates.py"
+          python3 "$RUNNER_TEMP/sync_templates.py" --check .
+
   call-workflow:
+    needs: logbook-check
     # Reuse the standard TeachBooks deploy workflow to build and publish the book
     uses: TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@main
     # Pass repository secrets through to the called workflow
