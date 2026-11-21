@@ -474,7 +474,7 @@ requires-dist = [
     { name = "sphinx-iframes", specifier = ">=1.2.0" },
     { name = "sphinx-image-inverter", specifier = ">=1.1.11" },
     { name = "sphinx-thebe", git = "https://github.com/TeachBooks/Sphinx-Thebe" },
-    { name = "sphinx-typst-render", specifier = ">=0.2.5" },
+    { name = "sphinx-typst-render", specifier = ">=1.0.0" },
     { name = "teachbooks", specifier = ">=0.2.4" },
     { name = "teachbooks-sphinx-tippy", specifier = ">=1.0.15" },
     { name = "watchdog", extras = ["watchmedo"], specifier = ">=6.0.0" },
@@ -2072,16 +2072,16 @@ wheels = [
 
 [[package]]
 name = "sphinx-typst-render"
-version = "0.2.5"
+version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "sphinx" },
     { name = "typst" },
     { name = "typst-fillable" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2d/c1/46cdb460cbb1225357f747373497231a36888d21564990fc9f490aa06abe/sphinx_typst_render-0.2.5.tar.gz", hash = "sha256:e0560d79843d38515d4f6382b81c92e78d8a871e73f2a1bd94a11f2a71cd5991", size = 14626, upload-time = "2026-11-07T22:53:18.173Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b7/7a/eb4d3fb940da258bfdb3939d6ee9c07171fdf41925db1d003072be7e65aa/sphinx_typst_render-1.0.0.tar.gz", hash = "sha256:75e6f33a03217d45cc870e4d698870ea3b803e6356ed8ef607c77afc557089f0", size = 3171284, upload-time = "2026-11-21T17:56:31.85Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/38/79616ec66c7e7630590017f62f3fee510fe07a7a9902001545a26174a862/sphinx_typst_render-0.2.5-py3-none-any.whl", hash = "sha256:b443ce4c1bdb7ac7741eb4e79c5a2db8c5fa7f9a3e07ad66aa63368314ddfe0c", size = 16661, upload-time = "2026-11-07T22:53:17.102Z" },
+    { url = "https://files.pythonhosted.org/packages/c3/ec/1119d98f45511c0676cbecab6635e36cd5ce60a7a8f6b17fe05118a4b764/sphinx_typst_render-1.0.0-py3-none-any.whl", hash = "sha256:fd3a5264fe8cb44ace6de65c21b47fb545c5a95312e80702de21b0aba72d1ee9", size = 3243692, upload-time = "2026-11-21T17:56:30.328Z" },
 ]
 
 [[package]]
