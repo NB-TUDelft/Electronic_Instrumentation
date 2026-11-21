@@ -287,7 +287,7 @@ bench (IC), matching the split in section 2.
 
 | Path | What it is |
 | --- | --- |
-| `book/manuals/logbook_common.typ` | Shared scaffolding: field helpers, the Preparation block, the closing block. |
+| `book/manuals/logbook_common.typ` | Shared scaffolding: field helpers, image boxes, the Preparation block, the closing block. |
 | `book/manuals/weekX/<week>.<manual>_<snake>_logbook.typ` | One entry. Holds only the manual-specific middle. |
 | `book/_build/typst-build/` | Compiled output and its cache. Never in the source tree, never committed. |
 
@@ -307,16 +307,19 @@ The block renders **nothing** into the page:
 ```
 ````
 
-It adds the PDF to the download menu in the article header, under a **Log book**
-heading, beside the page's own `.ipynb` and `.pdf`. Put the block in the same
-cell as the **How To Work** admonition, and reference the entry from inside that
-admonition rather than adding a second admonition for it. Three config values in
-`book/_config.yml` control the menu:
+It adds the entry to the download menu in the article header, under a **Log
+book** heading, beside the page's own `.ipynb` and `.pdf`: one link opens it in
+the in-browser editor, the other downloads its `.typ` source. Put the block in
+the same cell as the **How To Work** admonition, and reference the entry from
+inside that admonition rather than adding a second admonition for it. These
+config values in `book/_config.yml` control the menu:
 
 ```yaml
 typst_render_source_label: Manual        # heading above the page's own downloads
 typst_render_downloads_label: Log book   # heading above the entries
-typst_render_link_source: true           # also offer the .typ source
+typst_render_open: [editor, raw]         # the editor and the .typ source, no plain PDF
+typst_render_editor:                     # the editor's saves and wording
+  storage: nb2420-logbooks               # the logbook site's, so saved work carries over
 ```
 
 ### Writing a new entry
@@ -373,9 +376,11 @@ site's build, and both must work.
   `i4_meas`, `mat0`. Renaming one breaks any later attempt to read submissions
   back programmatically.
 * **PDF forms have no image field.** AcroForm defines only text, button, choice
-  and signature, so a photo cannot be pasted into a field. Use `sketchbox()`,
-  which pairs a blank drawing area with a "Photo or file reference" line, and
-  let the photo be handed in beside the entry.
+  and signature, so a photo cannot be pasted into a field. Use `sketchbox()`
+  (or `image_slot()`), which reserves a fixed-height box with a hidden text
+  field `img_<name>` on top. The editor reads that field's position and draws
+  the chosen photo or screenshot into the box; students can also draw in it.
+  Keep the `img_` prefix: it is how the editor finds the box.
 
 ### Verifying a change
 
@@ -398,9 +403,10 @@ python sync_templates.py --check .
 It checks every entry's name, week folder and imports, and that no two share a
 number. The "log book entries" workflow
 (`.github/workflows/notify-logbooks.yml`) runs the same check on every pull
-request that touches an entry. The site builds entries with its own copy of `logbook_common.typ`,
-which has everything this one has plus image boxes, so an entry that builds
-here builds there too. If something is wrong after a push anyway, the site's
+request that touches an entry. The site builds entries with its own copy of `logbook_common.typ`
+(`templates/logbook_common.typ` in EI_Logbooks). This one is kept identical
+to it, image boxes and bookmarked headings included, so an entry that builds
+here builds there too. When you change one, change the other. If something is wrong after a push anyway, the site's
 run fails, keeps its last good version, and says on its summary page what to
 fix.
 

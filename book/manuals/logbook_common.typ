@@ -34,18 +34,44 @@
   [#text(weight: "bold", size: 10.5pt, title) #h(1fr) #text(size: 8pt, note)],
 )
 
-// A blank area to draw in, with a line naming a photo handed in beside the
-// entry. PDF forms have no image field, so a reference is the robust route.
-#let sketchbox(name, height: 150pt) = block(breakable: false, {
-  rect(width: 100%, height: height, stroke: 0.5pt + rgb("#888888"), radius: 2pt)
-  v(3pt)
-  grid(
-    columns: (auto, 1fr), column-gutter: 6pt, align: horizon,
-    hint[Photo or file reference:], line_field(name + "_ref", height: 14pt),
-  )
-})
+// Each section also emits a hidden, bookmarked heading. The PDF outline then
+// lists the exercises with their page, which the logbook editor reads to tag
+// inserted images with the exercise they belong to.
+#let section(title, note: "") = {
+  v(6pt)
+  place(hide(heading(level: 1, outlined: true, bookmarked: true,
+    if note == "" { title } else { title + " (" + note + ")" })))
+  band(title, note: note)
+  v(4pt)
+}
 
-#let section(title, note: "") = { v(6pt); band(title, note: note); v(4pt) }
+// A sub-heading inside a section, e.g. #subsection([Square wave harmonics],
+// note: [Tasks A2 and I2]). It looks like a bold line with a small note, and
+// adds a bookmark under its section, which the logbook editor offers as a
+// sub-part when students add an image or text page. Put the rest of the
+// heading line (a prompt, say) right after it.
+#let subsection(title, note: none) = {
+  place(hide(heading(level: 2, outlined: true, bookmarked: true, title)))
+  [*#title*]
+  if note != none [#h(6pt) #hint(note)]
+}
+
+// Reserved image slot for the logbook editor. It is a named text field
+// `img_<name>` sized to the box, so the editor can read its position from the
+// PDF widget and place a chosen image there. The height is fixed, so the text
+// below never reflows when an image is added.
+#let image_slot(name, height: 150pt) = capture_field(
+  field_name: "img_" + name,
+  field_type: "text",
+  fill_cell: true,
+  min_height: height,
+)[
+  #box(width: 100%, height: height, stroke: 0.5pt + gray, fill: rgb("#f7f9fb"), inset: 2pt)
+]
+
+// A sketch / photo area: an image slot, so students can insert a photo of
+// their setup or draw in it with the editor's Draw tool.
+#let sketchbox(name, height: 150pt) = block(breakable: false, image_slot(name, height: height))
 
 #let field_row(..pairs) = block(breakable: false, grid(
   columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 5pt, align: horizon,
@@ -113,7 +139,7 @@
       #v(6pt)
       *Graph* #h(6pt) #prompt[#graph_prompt]
       #v(3pt)
-      #sketchbox("graph", height: graph_height)
+      #image_slot("graph", height: graph_height)
     ]
   }
 

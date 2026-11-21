@@ -174,7 +174,8 @@ Each manual has a log book entry, `book/manuals/weekN/<n.m>_<Title>_logbook.typ`
 Students fill it in on the logbook site, <https://nb-tudelft.github.io/EI_Logbooks/>,
 where they can type, draw and add photos, and then export the PDF they hand in.
 The site copies the entries from this repository, so this is the one place to
-write them, and the Log book menu on each manual page links there.
+write them. The Log book menu on each manual page opens the entry in an editor
+built into the book, which shares saved work with the site in the same browser.
 
 How to write one, and how to check it, is in [AGENTS.md](AGENTS.md), section 12.
 The "log book entries" workflow runs the same check on every pull request that
