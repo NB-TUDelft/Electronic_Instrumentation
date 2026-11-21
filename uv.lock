@@ -474,7 +474,7 @@ requires-dist = [
     { name = "sphinx-iframes", specifier = ">=1.2.0" },
     { name = "sphinx-image-inverter", specifier = ">=1.1.11" },
     { name = "sphinx-thebe", git = "https://github.com/TeachBooks/Sphinx-Thebe" },
-    { name = "sphinx-typst-render", specifier = ">=1.0.1" },
+    { name = "sphinx-typst-render", specifier = ">=1.1.1" },
     { name = "teachbooks", specifier = ">=0.2.4" },
     { name = "teachbooks-sphinx-tippy", specifier = ">=1.0.15" },
     { name = "watchdog", extras = ["watchmedo"], specifier = ">=6.0.0" },
@@ -2072,16 +2072,16 @@ wheels = [
 
 [[package]]
 name = "sphinx-typst-render"
-version = "1.0.1"
+version = "1.1.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "sphinx" },
     { name = "typst" },
     { name = "typst-fillable" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/62/b0/2fe0cf9b9d5e16342f8658a1563b939b8c21f9bb1847c970588e6c2305f9/sphinx_typst_render-1.0.1.tar.gz", hash = "sha256:aadb372b62d2dda1c036f73d94c3a5099fa14f10e592c66c9bb87f1b8e7d3807", size = 3171647, upload-time = "2026-11-21T20:16:52.255Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/28/0a/105d1341ac44c3b131b1ddcc3d58e7dea8c777dfbdf99c18977db75ed407/sphinx_typst_render-1.1.1.tar.gz", hash = "sha256:67869e9b360c5d35a4bc47450a95825b2b97d5864fcd497361b8f0fcae7de5c3", size = 3553418, upload-time = "2026-11-21T23:56:34.322Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c0/6e/5403aa19325ff8ad3a32e8c62ad58fbe2ed782e2d8236c114e8ba2dc1deb/sphinx_typst_render-1.0.1-py3-none-any.whl", hash = "sha256:99c6d336daedf3d3d598bc2052f9d2504d8b90a947f7f98f2850f75609015767", size = 3244098, upload-time = "2026-11-21T20:16:50.489Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/94/ca053719bbd5cacc32639ca3f768686e81413e209092273ecd4c7dd58273/sphinx_typst_render-1.1.1-py3-none-any.whl", hash = "sha256:9e2e029a63fbca320e538b6fbe45ff322ce99e5da362f16f1ea8d179d12ea97f", size = 3631408, upload-time = "2026-11-21T23:56:32.108Z" },
 ]
 
 [[package]]

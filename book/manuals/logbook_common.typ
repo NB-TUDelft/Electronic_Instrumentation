@@ -6,7 +6,7 @@
 // point of a log book. logbook adds Preparation below the identity fields;
 // each entry calls closing after its manual-specific tasks.
 
-#import "/_typst_lib/capture_field.typ": capture_field, text_field, textarea_field, checkbox_field
+#import "/_typst_lib/capture_field.typ": capture_field, checkbox_field, text_field, textarea_field
 
 // capture_field's text_field sizes its widget with measure(), which cannot
 // resolve a relative width, so a "width: 100%" box yields a 20pt interactive
@@ -29,8 +29,12 @@
 #let rule = line(length: 100%, stroke: 0.6pt + rgb("#333333"))
 
 #let band(title, note: "") = block(
-  width: 100%, fill: rgb("#e8eef4"), inset: (x: 6pt, y: 4pt), radius: 2pt,
-  above: 0pt, below: 0pt,
+  width: 100%,
+  fill: rgb("#e8eef4"),
+  inset: (x: 6pt, y: 4pt),
+  radius: 2pt,
+  above: 0pt,
+  below: 0pt,
   [#text(weight: "bold", size: 10.5pt, title) #h(1fr) #text(size: 8pt, note)],
 )
 
@@ -39,8 +43,9 @@
 // inserted images with the exercise they belong to.
 #let section(title, note: "") = {
   v(6pt)
-  place(hide(heading(level: 1, outlined: true, bookmarked: true,
-    if note == "" { title } else { title + " (" + note + ")" })))
+  place(hide(heading(level: 1, outlined: true, bookmarked: true, if note == "" { title } else {
+    title + " (" + note + ")"
+  })))
   band(title, note: note)
   v(4pt)
 }
@@ -103,22 +108,26 @@
   set table(stroke: 0.4pt + rgb("#888888"), inset: 4pt)
 
   grid(
-    columns: (1fr, auto), align: (left + horizon, right + horizon),
+    columns: (1fr, auto),
+    align: (left + horizon, right + horizon),
     [
       #text(size: 13pt, weight: "bold")[#title] \
       #text(size: 10pt)[#subtitle]
     ],
-    hint[Hand in via BrightSpace],
+
+    text(font: ("Maple Mono", "DejaVu Sans Mono"), style: "italic", hint[Hand in via BrightSpace]),
   )
-  v(2pt); rule; v(4pt)
+  v(2pt)
+  rule
+  v(4pt)
 
   grid(
     columns: (auto, 1fr, auto, 1fr),
-    column-gutter: 6pt, row-gutter: 5pt, align: horizon,
-    [Name(s):], line_field("name", height: 15pt),
-    [Partner:], line_field("partner", height: 15pt),
-    [Date:], line_field("date", height: 15pt),
-    [Group:], line_field("group", height: 15pt),
+    column-gutter: 6pt,
+    row-gutter: 5pt,
+    align: horizon,
+    [Name(s):], line_field("name", height: 15pt), [Partner:], line_field("partner", height: 15pt),
+    [Date:], line_field("date", height: 15pt), [Group:], line_field("group", height: 15pt),
   )
   preparation()
   body
@@ -156,9 +165,13 @@
     #rule
     #v(3pt)
     #grid(
-      columns: (auto, 1fr, auto, 1fr), column-gutter: 6pt, align: horizon,
-      [#text(size: 8pt)[TA check-off:]], line_field("ta_sign", height: 14pt),
-      [#text(size: 8pt)[Date:]], line_field("ta_date", height: 14pt),
+      columns: (auto, 1fr, auto, 1fr),
+      column-gutter: 6pt,
+      align: horizon,
+      [#text(size: 8pt)[TA check-off:]],
+      line_field("ta_sign", height: 14pt),
+      [#text(size: 8pt)[Date:]],
+      line_field("ta_date", height: 14pt),
     )
   ]
 }

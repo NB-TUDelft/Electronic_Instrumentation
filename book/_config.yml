@@ -149,6 +149,10 @@ sphinx:
       noun: logbook
       brand: NB2420
       export_message: "Exported. Hand in this PDF on Brightspace. You can come back to change it and export again."
+      # No Print or Back item in the editor menu (Ctrl+P and the browser's
+      # back button still work). Needs sphinx-typst-render 1.1.1 or newer.
+      show_print: false
+      show_back: false
     # Characters a log book field accepts. Raise or lower freely; 0 strips
     # the limit, which some PDF readers mis-handle as zero.
     typst_render_field_max_length: 10000

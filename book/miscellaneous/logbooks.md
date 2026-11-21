@@ -3,6 +3,8 @@
 Every manual comes with a log book entry. Fill it in here, in the browser: type your answers, add your graphs and photos, and export the PDF you hand in on Brightspace.
 
 ```{typst-overview}
+:highlight-title: This week
+:highlight-weekly: Week 1, 2026-11-09
 ```
 
 ## How it works

@@ -58,6 +58,36 @@ Every entry also appears on the **Log books** page
 entries by week, and each card opens one in the editor. A new entry shows up
 there by itself.
 
+## Highlighting the current week
+
+The overview uses `sphinx-typst-render` 1.1.0's `:highlight-weekly:` option,
+anchored to `Week 1, 2026-11-09`, with the heading `This week`. The browser
+selects the current week's entries from its local date without a rebuild.
+Each highlighted group lasts from Monday through Sunday.
+
+The maintainer's `NB2420 EI block1 schedule.pdf`, `NB2420 EI block2 schedule.pdf`,
+and `NB2420 EI block3 schedule.pdf` give this 2026/27 calendar:
+
+| Course week | Monday |
+| --- | --- |
+| 1 | 2026-11-09 |
+| 2 | 2026-11-16 |
+| 3 | 2026-11-23 |
+| 4 | 2026-11-30 |
+| 5 | 2026-12-07 |
+| 6 | 2026-12-14 |
+| 7 | 2027-01-04 |
+| 8 | 2027-01-11 |
+| 9, repair session | 2027-01-18 |
+| 10, case study | 2027-01-25 |
+
+Currently only Weeks 1 through 6 have log book entries. The highlight therefore
+ends on 2026-12-21, when the winter break starts. Weeks 7 and 8 have no entries
+to highlight yet. Before adding their entries, replace the single weekly
+sequence with scheduling that preserves the winter break and uses their
+January dates. The package's weekly option advances through available groups
+every seven days; it does not account for holidays or weeks without entries.
+
 ## Writing a new entry
 
 Students fill in the entries in the editor built into this book. They open
