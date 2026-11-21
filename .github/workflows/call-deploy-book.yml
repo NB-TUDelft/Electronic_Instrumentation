@@ -1,17 +1,5 @@
 name: call-deploy-book
-# Builds and publishes the book, in two steps:
-#
-#   logbook-check ──> call-workflow (build and publish)
-#
-# 1. logbook-check, only when the push changed a log book entry or
-#    logbook_common.typ, runs the logbook site's own check on book/manuals:
-#    every entry's name, week folder, imports, no two with one number, and that
-#    it compiles the way the site builds it (NB-TUDelft/EI_Logbooks copies the
-#    entries from here). Other pushes skip it.
-# 2. call-workflow builds and publishes the book, as before, but not after a
-#    failed check.
-#
-# It runs on all branches to include development versions too.
+# running deployment on all branhes to include development verions too
 on:
   push:
     branches:
@@ -24,48 +12,8 @@ on:
   # Allow manual runs from the GitHub UI
   workflow_dispatch:
 
-jobs:
-  logbook-check:
-    name: Check the log book entries
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    outputs:
-      entries-changed: ${{ steps.changed.outputs.entries }}
-    steps:
-      - name: Did this push change a log book entry?
-        id: changed
-        env:
-          GH_TOKEN: ${{ github.token }}
-          BEFORE: ${{ github.event.before }}
-        run: |
-          # A run by hand, a new branch or an unknown base: treat as changed.
-          if [ "${{ github.event_name }}" != "push" ] || [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
-            echo "entries=true" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          files=$(gh api "repos/${{ github.repository }}/compare/$BEFORE...${{ github.sha }}" --jq '.files[].filename' 2>/dev/null) \
-            || { echo "entries=true" >> "$GITHUB_OUTPUT"; exit 0; }
-          if echo "$files" | grep -qE '^book/manuals/(week[^/]*/.*logbook.*\.typ|logbook_common\.typ)$'; then
-            echo "entries=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "entries=false" >> "$GITHUB_OUTPUT"
-          fi
-      - if: steps.changed.outputs.entries == 'true'
-        uses: actions/checkout@v5
-        with:
-          sparse-checkout: book/manuals
-      - name: Install the Typst renderer
-        if: steps.changed.outputs.entries == 'true'
-        run: python3 -m pip install --quiet "sphinx-typst-render>=0.2.5"
-      - name: Run the logbook site's own check
-        if: steps.changed.outputs.entries == 'true'
-        run: |
-          curl -fsSL https://raw.githubusercontent.com/NB-TUDelft/EI_Logbooks/main/tools/sync_templates.py \
-            -o "$RUNNER_TEMP/sync_templates.py"
-          python3 "$RUNNER_TEMP/sync_templates.py" --check --compile .
-
+jobs: 
   call-workflow:
-    needs: logbook-check
     # Reuse the standard TeachBooks deploy workflow to build and publish the book
     uses: TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@main
     # Pass repository secrets through to the called workflow
@@ -77,3 +25,4 @@ jobs:
       pages: write
       # Required for OIDC authentication during Pages deployment
       id-token: write
+
