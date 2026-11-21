@@ -136,3 +136,12 @@
     )
   ]
 }
+
+// A sub-heading inside a section, e.g. #subsection([Square wave harmonics],
+// note: [Tasks A2 and I2]): a bold line with a small note. On the logbook site
+// it also becomes a sub-part students can pick when they add an image or text
+// page. Put the rest of the heading line (a prompt, say) right after it.
+#let subsection(title, note: none) = {
+  [*#title*]
+  if note != none [#h(6pt) #hint(note)]
+}
