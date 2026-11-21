@@ -357,6 +357,14 @@ site's build, and both must work.
 
    Import nothing else and read no other files (no `image("...")`): the site
    only has `logbook_common.typ`.
+7. Inside a section, write each sub-heading with `subsection`, not as plain
+   bold text. It looks the same, and on the logbook site it becomes a sub-part
+   students can pick when they add an image or text page:
+
+```typ
+#subsection([Square wave harmonics], note: [Tasks A2 and I2])
+#subsection([C1 Aliasing]) #h(6pt) #prompt[What is aliasing and when does it occur?]
+```
 
 ### Rules that are easy to get wrong
 

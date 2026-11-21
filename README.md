@@ -177,6 +177,8 @@ The site copies the entries from this repository, so this is the one place to
 write them, and the Log book menu on each manual page links there.
 
 How to write one, and how to check it, is in [AGENTS.md](AGENTS.md), section 12.
+Sub-headings inside a section use `subsection()`, so students can pick them as
+sub-parts on the site.
 The "log book entries" workflow runs the same check on every pull request that
 touches an entry, and tells the site when one changes on `main`.
 
