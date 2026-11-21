@@ -323,9 +323,8 @@ typst_render_link_source: true           # also offer the .typ source
 
 Students fill in the entries on the logbook site
 (<https://nb-tudelft.github.io/EI_Logbooks/>), which copies every entry from
-this repository when the "log book entries" workflow tells it one changed, and
-otherwise every night. So an entry has two readers, this book's build and the
-site's build, and both must work.
+this repository each time the site's own workflow runs. So an entry has two
+readers, this book's build and the site's build, and both must work.
 
 1. **Read that manual's Compare and Conclude section first.** The middle of the
    entry must mirror its tables, because those tables are what the entry exists
@@ -396,13 +395,14 @@ python sync_templates.py --check .
 ```
 
 It checks every entry's name, week folder and imports, and that no two share a
-number. The "log book entries" workflow
-(`.github/workflows/notify-logbooks.yml`) runs the same check on every pull
-request that touches an entry. The site builds entries with its own copy of `logbook_common.typ`,
-which has everything this one has plus image boxes, so an entry that builds
-here builds there too. If something is wrong after a push anyway, the site's
-run fails, keeps its last good version, and says on its summary page what to
-fix.
+number. The book's deploy workflow (`.github/workflows/call-deploy-book.yml`)
+runs the same check, with `--compile`, as its first step, on any branch,
+whenever a push changes an entry or `logbook_common.typ`. The book is built
+and published only when it passes; otherwise the run turns red and says why.
+The site builds entries with its own copy of `logbook_common.typ`, which has
+everything this one has plus image boxes, so an entry that builds here builds
+there too. If something is wrong after a push anyway, the site's run fails,
+keeps its last good version, and says on its summary page what to fix.
 
 ## 13. Scope
 
