@@ -141,6 +141,9 @@ sphinx:
     # existing saves unreachable.
     typst_render_editor:
       storage: nb2420-logbooks
+      # Saves made under the old entry 2.3 open under 2.2.
+      aliases:
+        keys: {"2.3": "2.2"}
       key_pattern: '^(\d+\.\d+)(?=[_ ]|$)'
       label_prefix: NB2420
       noun: logbook
