@@ -474,7 +474,7 @@ requires-dist = [
     { name = "sphinx-iframes", specifier = ">=1.2.0" },
     { name = "sphinx-image-inverter", specifier = ">=1.1.11" },
     { name = "sphinx-thebe", git = "https://github.com/TeachBooks/Sphinx-Thebe" },
-    { name = "sphinx-typst-render", specifier = ">=0.2.5" },
+    { name = "sphinx-typst-render", specifier = "<1.0.0" },
     { name = "teachbooks", specifier = ">=0.2.4" },
     { name = "teachbooks-sphinx-tippy", specifier = ">=1.0.15" },
     { name = "watchdog", extras = ["watchmedo"], specifier = ">=6.0.0" },
