@@ -177,7 +177,7 @@ The site copies the entries from this repository, so this is the one place to
 write them. The Log book menu on each manual page opens the entry in an editor
 built into the book, which shares saved work with the site in the same browser.
 
-How to write one, and how to check it, is in [AGENTS.md](AGENTS.md), section 12.
+How to write one, and how to check it, is in [Log book entries](docs/kb/050-logbooks/010-log-book-entries.md) in the knowledge base ([docs/kb/README.md](docs/kb/README.md)).
 The "log book entries" workflow runs the same check on every pull request that
 touches an entry, and tells the site when one changes on `main`.
 

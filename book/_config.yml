@@ -30,6 +30,9 @@ exclude_patterns:
   - "../old/**"
   - "../AGENTS.md"
   - "../CLAUDE.md"
+  - "../CODEX.md"
+  - "../agents.md"
+  - "../docs/**"
   - "../README.md"
 
 # Only build files in the ToC to avoid building README, etc.
@@ -177,6 +180,9 @@ sphinx:
       - "../old/**"
       - "../AGENTS.md"
       - "../CLAUDE.md"
+      - "../CODEX.md"
+      - "../agents.md"
+      - "../docs/**"
       - "../README.md"
     html_extra_path: []
     language: en  # To identify the language.
