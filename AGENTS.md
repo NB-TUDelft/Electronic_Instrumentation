@@ -323,8 +323,8 @@ typst_render_link_source: true           # also offer the .typ source
 
 Students fill in the entries on the logbook site
 (<https://nb-tudelft.github.io/EI_Logbooks/>), which copies every entry from
-this repository when the book's deploy workflow starts it, and otherwise every
-night. So an entry has two readers, this book's build and the
+this repository whenever the book's deploy workflow starts it, which it does
+when a push to `main` changes an entry. So an entry has two readers, this book's build and the
 site's build, and both must work.
 
 1. **Read that manual's Compare and Conclude section first.** The middle of the
@@ -398,8 +398,8 @@ python sync_templates.py --check .
 It checks every entry's name, week folder and imports, and that no two share a
 number. The book's deploy workflow (`.github/workflows/call-deploy-book.yml`)
 runs the same check, with `--compile`, as its first step on every branch. Only
-when it passes does it (on `main`) start the logbook site's build for that
-commit and wait for it, and only when that succeeds does it build and publish
+when it passes does it (on `main`, when an entry changed) start the logbook
+site's build for that commit and wait for it, and only when that succeeds does it build and publish
 the book. A failure anywhere turns the run red and says why. The site builds entries with its own copy of `logbook_common.typ`,
 which has everything this one has plus image boxes, so an entry that builds
 here builds there too. If something is wrong after a push anyway, the site's

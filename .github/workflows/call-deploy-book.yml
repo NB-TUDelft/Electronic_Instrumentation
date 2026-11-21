@@ -6,13 +6,15 @@ name: call-deploy-book
 # 1. logbook-check runs the logbook site's own check on book/manuals: every log
 #    book entry's name, week folder, imports, no two with one number, and that
 #    it compiles the way the site builds it.
-# 2. logbook-site, on main only, starts the logbook site's workflow
+# 2. logbook-site, on main and only when the push changed a log book entry or
+#    logbook_common.typ (the same rule the site uses to rebuild), starts the
+#    logbook site's workflow
 #    (NB-TUDelft/EI_Logbooks, "build and publish") for this exact commit and
 #    waits for its result, so a new entry is on the site before the book's menu
 #    links to it, and a failure there turns this run red too. It needs the
 #    repository secret LOGBOOKS_DISPATCH_TOKEN: a fine-grained token with access
 #    to EI_Logbooks only, "Actions: Read and write". Without it this step is
-#    skipped and the site picks the change up at its nightly run.
+#    skipped, and the site needs a manual Run workflow to pick the change up.
 # 3. call-workflow builds and publishes the book, as before.
 #
 # Nothing after a failed step runs. It runs on all branches to include
@@ -35,7 +37,26 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    outputs:
+      entries-changed: ${{ steps.changed.outputs.entries }}
     steps:
+      - name: Did this push change a log book entry?
+        id: changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          # A run by hand, a new branch or an unknown base: treat as changed.
+          if [ "${{ github.event_name }}" != "push" ] || [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "entries=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          files=$(gh api "repos/${{ github.repository }}/compare/$BEFORE...${{ github.sha }}" --jq '.files[].filename' 2>/dev/null) \
+            || { echo "entries=true" >> "$GITHUB_OUTPUT"; exit 0; }
+          if echo "$files" | grep -qE '^book/manuals/(week[^/]*/.*logbook.*\.typ|logbook_common\.typ)$'; then
+            echo "entries=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "entries=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v5
         with:
           sparse-checkout: book/manuals
@@ -50,7 +71,7 @@ jobs:
   logbook-site:
     name: Build the logbook site and wait for it
     needs: logbook-check
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && needs.logbook-check.outputs.entries-changed == 'true'
     runs-on: ubuntu-latest
     permissions: {}
     steps:
@@ -60,7 +81,7 @@ jobs:
           TOKEN: ${{ secrets.LOGBOOKS_DISPATCH_TOKEN }}
         run: |
           if [ -n "$TOKEN" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"
-          else echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; the logbook site picks this up at its nightly run."; fi
+          else echo "::notice::No LOGBOOKS_DISPATCH_TOKEN secret; start the logbook site's Run workflow by hand to pick this up."; fi
       - name: Start the logbook site's workflow and wait for its result
         if: steps.token.outputs.ok == 'true'
         uses: the-actions-org/workflow-dispatch@v4
