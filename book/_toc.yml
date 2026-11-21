@@ -6,6 +6,7 @@ parts:
     chapters:
     - file: miscellaneous/intro.md
       title: Welcome!
+    - file: miscellaneous/logbooks.md
   - caption: Instrument introductions
     chapters:
 #      - file: manuals/intros/testboards.ipynb

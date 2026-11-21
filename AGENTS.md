@@ -322,6 +322,11 @@ typst_render_editor:                     # the editor's saves and wording
   storage: nb2420-logbooks               # the logbook site's, so saved work carries over
 ```
 
+Every entry also appears on the **Log books** page
+(`book/miscellaneous/logbooks.md`): its `{typst-overview}` directive lists all
+entries by week, and each card opens one in the editor. A new entry shows up
+there by itself.
+
 ### Writing a new entry
 
 Students fill in the entries on the logbook site
