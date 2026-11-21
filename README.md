@@ -177,8 +177,9 @@ The site copies the entries from this repository, so this is the one place to
 write them, and the Log book menu on each manual page links there.
 
 How to write one, and how to check it, is in [AGENTS.md](AGENTS.md), section 12.
-The "log book entries" workflow runs the same check on every pull request that
-touches an entry, and tells the site when one changes on `main`.
+The book's deploy workflow runs that check first, on every branch. Only when
+it passes does it (on `main`, when an entry changed) build the logbook site for
+that commit and wait for it, and only then build and publish the book.
 
 ## Build and development
 
