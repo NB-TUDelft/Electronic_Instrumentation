@@ -132,13 +132,13 @@ sphinx:
     # this key from the parse section.
     myst_heading_anchors: 6
     typst_render_source_label: Manual
-    # Each log book entry opens in the editor or downloads as its Typst
-    # source; the plain PDF is not offered. These two settings need a
-    # sphinx-typst-render release newer than 0.2.5.
+    # Each log book entry opens in the integrated editor or downloads as its
+    # Typst source; the plain PDF is not offered. These settings need
+    # sphinx-typst-render 1.0.0 or newer.
     typst_render_open: [editor, raw]
-    # The book and the logbook site share an origin (nb-tudelft.github.io),
-    # so with the site's storage name and keys a student's saved work
-    # carries over between the two.
+    # Keep the storage name and key pattern stable. They identify each
+    # student's saved work in the browser, so changing either one would make
+    # existing saves unreachable.
     typst_render_editor:
       storage: nb2420-logbooks
       key_pattern: '^(\d+\.\d+)(?=[_ ]|$)'

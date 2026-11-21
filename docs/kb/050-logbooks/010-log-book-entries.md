@@ -1,10 +1,10 @@
 ---
 summary: >-
   One fillable log book entry per manual: where they live, how the typst
-  block puts one in the download menu and editor, how to write a new entry
-  from the manual Compare and Conclude tasks, the field and image rules that
-  are easy to get wrong, and clean-build verification. AGENTS.md section 12
-  before the split.
+  block puts one in the download menu and integrated editor, how to write a
+  new entry from the manual Compare and Conclude tasks, the field and image
+  rules that are easy to get wrong, and clean-build plus CI artifact
+  verification. AGENTS.md section 12 before the split.
 ---
 
 # Log book entries
@@ -50,7 +50,7 @@ typst_render_source_label: Manual        # heading above the page's own download
 typst_render_downloads_label: Log book   # heading above the entries
 typst_render_open: [editor, raw]         # the editor and the .typ source, no plain PDF
 typst_render_editor:                     # the editor's saves and wording
-  storage: nb2420-logbooks               # the logbook site's, so saved work carries over
+  storage: nb2420-logbooks               # stable browser-storage name for student saves
 ```
 
 Every entry also appears on the **Log books** page
@@ -60,11 +60,12 @@ there by itself.
 
 ## Writing a new entry
 
-Students fill in the entries on the logbook site
-(<https://nb-tudelft.github.io/EI_Logbooks/>), which copies every entry from
-this repository when the "log book entries" workflow tells it one changed, and
-otherwise every night. So an entry has two readers, this book's build and the
-site's build, and both must work.
+Students fill in the entries in the editor built into this book. They open
+an entry from its manual page or from the **Log books** page, and the editor
+saves their work in the browser under the storage name and key pattern in
+`book/_config.yml`. The same book build compiles every entry, generates the
+overview, and copies the editor bundle into the HTML, so an entry only has
+to work in this build.
 
 1. **Read that manual's Compare and Conclude section first.** The middle of the
    entry must mirror its tables, because those tables are what the entry exists
@@ -79,9 +80,11 @@ site's build, and both must work.
 5. **Name and place the file exactly.** It is
    `book/manuals/weekN/<n.m>_<Title_with_underscores>_logbook.typ`, directly in
    the week folder of its number (3.2 goes in `week3/`), with no spaces, and
-   one file per number. The logbook site refuses anything else, and it finds
-   students' saved work by that number. To renumber an entry that students
-   have already started, ask the EI_Logbooks maintainers to add an alias first.
+   one file per number. The integrated editor takes its save key from that
+   number with `typst_render_editor.key_pattern`, and the build check refuses
+   anything else. To renumber an entry that students have already started,
+   add an old-to-new mapping under `typst_render_editor.aliases` first, so
+   their saved work follows the entry.
 6. Import the shared scaffolding and supply only the middle. The `logbook`
    wrapper adds the standard Preparation questions and one shared response box
    below the identity fields. Call `closing` for the standard Reflection
@@ -94,8 +97,9 @@ site's build, and both must work.
 #closing()
 ```
 
-   Import nothing else and read no other files (no `image("...")`): the site
-   only has `logbook_common.typ`.
+   Import nothing else and read no other files (no `image("...")`): each
+   entry must stay complete with only `logbook_common.typ`, and student
+   images belong in the editor image boxes.
 
 ## Rules that are easy to get wrong
 
@@ -129,19 +133,24 @@ Always verify with a clean build:
 rm -rf book/_build && jupyter-book build book/
 ```
 
-Then check the entries the way the logbook site will, from the repository root:
+Then check the sources and the generated editor output from the repository
+root:
 
 ```bash
-curl -fsSLO https://raw.githubusercontent.com/NB-TUDelft/EI_Logbooks/main/tools/sync_templates.py
-python sync_templates.py --check .
+python .github/scripts/check_logbook_build.py --source-only
+python .github/scripts/check_logbook_build.py
 ```
 
-It checks every entry's name, week folder and imports, and that no two share a
-number. The "log book entries" workflow
-(`.github/workflows/notify-logbooks.yml`) runs the same check on every pull
-request that touches an entry. The site builds entries with its own copy of `logbook_common.typ`
-(`templates/logbook_common.typ` in EI_Logbooks). This one is kept identical
-to it, image boxes and bookmarked headings included, so an entry that builds
-here builds there too. When you change one, change the other. If something is wrong after a push anyway, the site's
-run fails, keeps its last good version, and says on its summary page what to
-fix.
+The checker requires `sphinx-typst-render` 1.0.0 or newer with its editor
+bundle. It checks every entry's name, week folder, shared import, and
+notebook block, and that no two entries share a number. After a build it
+also checks the editor assets and settings, one compiled PDF and Typst
+source per entry, and an editor link for every entry on both its manual page
+and the **Log books** overview.
+
+The book workflow (`.github/workflows/call-deploy-book.yml`) runs that
+source check, builds the book with TeachBooks, and then runs the full
+checker on pull requests and pushes that touch the book, its dependencies,
+the checker, or the workflow. Its deployment job needs the build job and is
+skipped for pull requests. There is no separate log book publication step:
+the entries, overview, and editor all ship in the same book HTML.

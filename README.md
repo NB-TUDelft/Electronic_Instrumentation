@@ -170,16 +170,16 @@ Recommended workflow:
 
 ## Log book entries
 
-Each manual has a log book entry, `book/manuals/weekN/<n.m>_<Title>_logbook.typ`.
-Students fill it in on the logbook site, <https://nb-tudelft.github.io/EI_Logbooks/>,
-where they can type, draw and add photos, and then export the PDF they hand in.
-The site copies the entries from this repository, so this is the one place to
-write them. The Log book menu on each manual page opens the entry in an editor
-built into the book, which shares saved work with the site in the same browser.
+Log book entries live at `book/manuals/weekN/<n.m>_<Title>_logbook.typ`.
+Students open each entry in the editor built into this book, either from the
+**Log book** download menu on its manual page or from the **Log books** page.
+They can type, draw, and add photos there. Their work is saved in the browser,
+and they export the PDF they hand in on BrightSpace from the editor. The
+Typst source also remains available from the download menu.
 
 How to write one, and how to check it, is in [Log book entries](docs/kb/050-logbooks/010-log-book-entries.md) in the knowledge base ([docs/kb/README.md](docs/kb/README.md)).
-The "log book entries" workflow runs the same check on every pull request that
-touches an entry, and tells the site when one changes on `main`.
+The book workflow builds the entries and editor on pull requests and pushes,
+checks the generated output, and publishes only after that build passes.
 
 ## Build and development
 

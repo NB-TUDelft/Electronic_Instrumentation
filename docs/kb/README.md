@@ -64,7 +64,7 @@ ends with that number, so resolve such a reference from the summaries.
 
 **Log books**: the fillable log book entry that ships with every manual, how it reaches students, and how to write and check one.
 
-- [Log book entries](050-logbooks/010-log-book-entries.md): One fillable log book entry per manual: where they live, how the typst block puts one in the download menu and editor, how to write a new entry from the manual Compare and Conclude tasks, the field and image rules that are easy to get wrong, and clean-build verification. AGENTS.md section 12 before the split.
+- [Log book entries](050-logbooks/010-log-book-entries.md): One fillable log book entry per manual: where they live, how the typst block puts one in the download menu and integrated editor, how to write a new entry from the manual Compare and Conclude tasks, the field and image rules that are easy to get wrong, and clean-build plus CI artifact verification. AGENTS.md section 12 before the split.
 
 **Reference**: where things live in the repository, how to build and preview the book, and the cross-cutting files every manual touches.
 
