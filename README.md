@@ -24,6 +24,7 @@ Use this repository to:
 │   ├── static/                     # Global static assets (CSS, JS, icons, downloads)
 │   ├── images/                     # Book-level shared images
 │   └── manuals/
+│       ├── logbook_common.typ      # Shared parts of every log book entry
 │       ├── intros/                 # Introductory equipment and tooling manuals
 │       │   ├── EI_manual_intros.md
 │       │   ├── *.ipynb
@@ -32,6 +33,7 @@ Use this repository to:
 │           ├── _summary.ipynb
 │           ├── 1.1_voltage_divider.ipynb
 │           ├── 1.2_intro_to_oscilloscope_and_filters.ipynb
+│           ├── 1.1_voltage_divider_logbook.typ   # Log book entry for manual 1.1
 │           └── images/
 ├── old/                            # Legacy material kept for reference/migration
 ├── pyproject.toml                  # Python project metadata and dependencies
@@ -56,6 +58,7 @@ Create one folder per teaching week or module. Each week folder should contain:
 
 - a `_summary.ipynb` page that introduces the week;
 - the numbered manuals for that week, for example `1.1_voltage_divider.ipynb`;
+- one log book entry per manual, for example `1.1_voltage_divider_logbook.typ`;
 - an `images/` folder for assets that are only used by that week.
 
 ### `book/static/`
@@ -162,7 +165,20 @@ Recommended workflow:
 2. Create or update the notebook in the correct folder.
 3. Add only the assets that notebook needs, ideally in the nearest scoped `images/` folder.
 4. Update `book/_toc.yml` so the manual appears in the published book.
-5. Build the book locally before merging.
+5. Write or update its log book entry (see below).
+6. Build the book locally before merging.
+
+## Log book entries
+
+Each manual has a log book entry, `book/manuals/weekN/<n.m>_<Title>_logbook.typ`.
+Students fill it in on the logbook site, <https://nb-tudelft.github.io/EI_Logbooks/>,
+where they can type, draw and add photos, and then export the PDF they hand in.
+The site copies the entries from this repository, so this is the one place to
+write them, and the Log book menu on each manual page links there.
+
+How to write one, and how to check it, is in [AGENTS.md](AGENTS.md), section 12.
+When a push changes an entry, the book's deploy workflow runs that check
+first, on any branch, and builds the book only when it passes.
 
 ## Build and development
 
