@@ -60,10 +60,10 @@ there by itself.
 
 ## Highlighting the current week
 
-The overview uses `sphinx-typst-render` 1.1.0's `:highlight-weekly:` option,
-anchored to `Week 1, 2026-11-09`, with the heading `This week`. The browser
-selects the current week's entries from its local date without a rebuild.
-Each highlighted group lasts from Monday through Sunday.
+The overview uses `sphinx-typst-render` 1.1.2's `:highlight-weekly:` option,
+currently anchored to `Week 3, 2026-11-16`, with the heading `This week`. The
+browser selects the current week's entries from its local date without a
+rebuild. Each highlighted group lasts seven days.
 
 The maintainer's `NB2420 EI block1 schedule.pdf`, `NB2420 EI block2 schedule.pdf`,
 and `NB2420 EI block3 schedule.pdf` give this 2026/27 calendar:
