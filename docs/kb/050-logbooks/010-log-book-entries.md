@@ -18,7 +18,7 @@ bench (IC), matching the split in section 2.
 
 | Path | What it is |
 | --- | --- |
-| `book/manuals/logbook_common.typ` | Shared scaffolding: field helpers, image boxes, the Preparation block, the closing block. |
+| `book/manuals/tpl/logbook_common.typ` | Shared scaffolding: field helpers, image boxes, the Preparation block, the closing block. It sits with the other shared templates (see Shared templates under Authoring). |
 | `book/manuals/weekX/<week>.<manual>_<snake>_logbook.typ` | One entry. Holds only the manual-specific middle. |
 | `book/_build/typst-build/` | Compiled output and its cache. Never in the source tree, never committed. |
 
@@ -121,15 +121,15 @@ to work in this build.
    questions and one shared response box:
 
 ```typ
-#import "../logbook_common.typ": *
+#import "../tpl/logbook_common.typ": *
 #show: logbook.with(title: "Log Book Entry X.Y", subtitle: "...")
 // manual-specific tables here
 #closing()
 ```
 
-   Import nothing else and read no other files (no `image("...")`): each
-   entry must stay complete with only `logbook_common.typ`, and student
-   images belong in the editor image boxes.
+   Import only shared templates from `book/manuals/tpl/` and read no other
+   files (no `image("...")`): each entry must stay complete with those
+   templates, and student images belong in the editor image boxes.
 
 ## Rules that are easy to get wrong
 
@@ -155,8 +155,9 @@ to work in this build.
 ## Verifying a change
 
 Incremental builds do not re-read a notebook that has not changed, so an edited
-`.typ` or an extension change can show **stale results** in the download menu.
-Always verify with a clean build:
+`.typ` (an entry, or a shared template in `book/manuals/tpl/`) or an extension
+change can show **stale results** in the download menu and the editor. Always
+verify with a clean build:
 
 ```bash
 ./run_book_server.sh            # full clean rebuild + serve

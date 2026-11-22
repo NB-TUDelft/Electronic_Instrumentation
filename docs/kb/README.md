@@ -55,12 +55,13 @@ ends with that number, so resolve such a reference from the summaries.
 - [Hardware platform](030-manuals/020-hardware-platform.md): The ALPACA board and bench instruments; legacy test boards are phased out; schematics, not breadboard layouts; MicroPython, Belay, and LTspice; extra components go in a plan Bill of Materials. AGENTS.md section 4 before the split.
 - [When the textbook covers a concept](030-manuals/030-when-the-textbook-covers-a-concept.md): The textbook under helpers/theory_part/ carries theory; a manual re-explains only what students trip on or the textbook does not cover, and always links to it. AGENTS.md section 7 before the split.
 
-**Authoring**: naming, style, and the strict prose rules for everything written in this repository.
+**Authoring**: naming, style, and the strict prose rules for everything written in this repository, and the shared templates that keep repeated content in one place.
 
 - [Naming conventions](040-authoring/010-naming-conventions.md): Notebook file names, internal working files (_*.md) and plan documents, manual titles, task labels and cross-references, and figure names. AGENTS.md section 5 before the split.
 - [Style conventions](040-authoring/020-style-conventions.md) (*always read*): Voice and tone, math and units, figures, the admonitions used in this book, and the vibrant magenta inline TODO flag. AGENTS.md section 6 before the split.
 - [Punctuation: no em or en dashes](040-authoring/030-punctuation-no-em-or-en-dashes.md) (*always read*): Do not use em or en dashes in prose, and do not substitute a hyphen; what to use instead, replacements for common dash idioms, and the self-check before saving. AGENTS.md section 10 before the split.
 - [Other writing conventions](040-authoring/040-other-writing-conventions.md): Straight quotes, e.g. and i.e. with a comma, short sentences, and the instructional second-person voice in notebooks. AGENTS.md section 11 before the split.
+- [Shared templates](040-authoring/050-shared-templates.md): Shared templates live in book/manuals/tpl/: Markdown blocks pulled into manuals with the include directive, MyST substitutions for short repeated values, and Typst files imported by log book entries; the naming, label, and rebuild rules that keep them working.
 
 **Log books**: the fillable log book entry that ships with every manual, how it reaches students, and how to write and check one.
 

@@ -16,6 +16,7 @@ book/                              # Jupyter Book source; this is what gets publ
   static/                          # global CSS, JS, icons, downloads
     global.css                     # custom admonition colours and other overrides
   manuals/
+    tpl/                           # shared templates: Markdown blocks and Typst log book scaffolding
     intros/                        # equipment and tooling intros (alpaca, breadboard, scope, ...)
     week1/                         # week-specific manuals + local images/
       _summary.ipynb               # short landing page for the week
@@ -40,6 +41,7 @@ AGENTS.md                          # this file
 
 * **`book/`** is the only directory that ships. Anything outside `book/` is either author-facing reference (`helpers/`, `old/`) or build infrastructure.
 * **`book/manuals/intros/`** is for tooling and equipment intros that are reused across weeks (DMM, scope, ALPACA, breadboard, LTspice, ...). Reference these from week manuals via the "Preparation" admonition, do not re-explain the equipment in every week.
+* **`book/manuals/tpl/`** holds shared templates: Markdown blocks that manuals pull in with `{include}`, and the Typst files that log book entries import, `logbook_common.typ` among them. Templates are never listed in the TOC; see Shared templates under Authoring.
 * **`book/manuals/weekX/`** holds one folder per teaching week. Each week folder contains a `_summary.ipynb`, the numbered manuals (`X.1_*.ipynb`, `X.2_*.ipynb`), and an `images/` subfolder for assets that belong to that week only.
 * **`helpers/theory_part/`** is the **textbook source**. Treat it as the canonical theory reference. Lab manuals should refer the student back to it for derivations and proofs, and should not duplicate them. When the textbook covers a concept that students nevertheless trip on (virtual ground, the "+1" in non-inverting gain, dB and decade, BW = GBW / (1 + closed-loop gain) for non-inverting amps), re-explain it briefly in the manual where it is used, and link to the textbook for the full version. Three chapters are still **stubs** (`6_transistor.md`, `9_sensors.md`, `11_noise_interference.md`); if a manual depends on those topics, the manual itself has to carry the theory until the textbook catches up.
 * **`helpers/ei_helpers/`** is legacy bench-side reference: vendor textbooks, schematics for the old test boards, Multisim files, scanned photographs. Use it to understand what the legacy lab looked like; **do not** copy testboard schematics directly into a new manual since the test boards are being phased out.

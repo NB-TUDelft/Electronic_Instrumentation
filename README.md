@@ -24,7 +24,9 @@ Use this repository to:
 │   ├── static/                     # Global static assets (CSS, JS, icons, downloads)
 │   ├── images/                     # Book-level shared images
 │   └── manuals/
-│       ├── logbook_common.typ      # Shared parts of every log book entry
+│       ├── tpl/                    # Shared templates, never listed in the TOC
+│       │   ├── how_to_work.md      # How To Work admonition, pulled in with {include}
+│       │   └── logbook_common.typ  # Shared parts of every log book entry
 │       ├── intros/                 # Introductory equipment and tooling manuals
 │       │   ├── EI_manual_intros.md
 │       │   ├── *.ipynb
@@ -51,6 +53,10 @@ This is the only directory that should contain publishable book content and asse
 ### `book/manuals/intros/`
 
 Place introductory manuals here when they teach equipment, software, or workflows that will be reused across multiple weeks. Examples in this repository include the DMM, scope, LTspice, ALPACA, breadboard, and test-board introductions.
+
+### `book/manuals/tpl/`
+
+Put content here that repeats on several pages, so it is written once. A manual pulls in a Markdown template with an `{include}` directive, and a log book entry imports a Typst template with `#import`. How to write and use them is in [Shared templates](docs/kb/040-authoring/050-shared-templates.md) in the knowledge base.
 
 ### `book/manuals/weekX/`
 

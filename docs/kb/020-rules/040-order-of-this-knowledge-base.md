@@ -20,7 +20,8 @@ directory of the same name holding its sections:
    and this order.
 3. **Manuals** (`030-manuals`): the BASIC format, the hardware platform, and
    the boundary with the textbook.
-4. **Authoring** (`040-authoring`): naming, style, and the prose rules.
+4. **Authoring** (`040-authoring`): naming, style, the prose rules, and
+   shared templates.
 5. **Log books** (`050-logbooks`): the log book entry that ships with every
    manual.
 6. **Reference** (`060-reference`): the repository layout, build and preview,

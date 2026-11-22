@@ -25,7 +25,7 @@ A teaching week typically has **two manuals** (`X.1` and `X.2`), one per practic
 
 ## Pair work and group work
 
-* The "How To Work" admonition at the top of every manual states that BAS is individual and IC is in pairs.
+* The "How To Work" admonition at the top of every manual states that BAS is individual and IC is in pairs. It is one shared template, `book/manuals/tpl/how_to_work.md`, which every manual pulls in with `{include}` (see Shared templates under Authoring). Change its wording there, never in a single notebook.
 * When you write the IC tasks, suggest a concrete way to share the load between the two students: "one student builds, the other configures the scope, then swap roles for the next task". Do not just say "work together".
 * Compare and Conclude is reviewed at the table (groups of four) before a TA check-off.
 
