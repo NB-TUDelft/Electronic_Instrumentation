@@ -4,7 +4,7 @@ Every manual comes with a log book entry. Fill it in here, in the browser: type 
 
 ```{typst-overview}
 :highlight-title: This week
-:highlight-weekly: Week 3, 2026-11-16
+:highlight-weekly: Week 1, 2026-11-09
 ```
 
 ## How it works
