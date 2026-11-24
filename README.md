@@ -24,6 +24,9 @@ Use this repository to:
 │   ├── static/                     # Global static assets (CSS, JS, icons, downloads)
 │   ├── images/                     # Book-level shared images
 │   └── manuals/
+│       ├── tpl/                    # Shared templates, never listed in the TOC
+│       │   ├── how_to_work.md      # How To Work admonition, pulled in with {include}
+│       │   └── logbook_common.typ  # Shared parts of every log book entry
 │       ├── intros/                 # Introductory equipment and tooling manuals
 │       │   ├── EI_manual_intros.md
 │       │   ├── *.ipynb
@@ -32,6 +35,7 @@ Use this repository to:
 │           ├── _summary.ipynb
 │           ├── 1.1_voltage_divider.ipynb
 │           ├── 1.2_intro_to_oscilloscope_and_filters.ipynb
+│           ├── 1.1_voltage_divider_logbook.typ   # Log book entry for manual 1.1
 │           └── images/
 ├── old/                            # Legacy material kept for reference/migration
 ├── pyproject.toml                  # Python project metadata and dependencies
@@ -50,12 +54,17 @@ This is the only directory that should contain publishable book content and asse
 
 Place introductory manuals here when they teach equipment, software, or workflows that will be reused across multiple weeks. Examples in this repository include the DMM, scope, LTspice, ALPACA, breadboard, and test-board introductions.
 
+### `book/manuals/tpl/`
+
+Put content here that repeats on several pages, so it is written once. A manual pulls in a Markdown template with an `{include}` directive, and a log book entry imports a Typst template with `#import`. How to write and use them is in [Shared templates](docs/kb/040-authoring/050-shared-templates.md) in the knowledge base.
+
 ### `book/manuals/weekX/`
 
 Create one folder per teaching week or module. Each week folder should contain:
 
 - a `_summary.ipynb` page that introduces the week;
 - the numbered manuals for that week, for example `1.1_voltage_divider.ipynb`;
+- one log book entry per manual, for example `1.1_voltage_divider_logbook.typ`;
 - an `images/` folder for assets that are only used by that week.
 
 ### `book/static/`
@@ -162,7 +171,21 @@ Recommended workflow:
 2. Create or update the notebook in the correct folder.
 3. Add only the assets that notebook needs, ideally in the nearest scoped `images/` folder.
 4. Update `book/_toc.yml` so the manual appears in the published book.
-5. Build the book locally before merging.
+5. Write or update its log book entry (see below).
+6. Build the book locally before merging.
+
+## Log book entries
+
+Log book entries live at `book/manuals/weekN/<n.m>_<Title>_logbook.typ`.
+Students open each entry in the editor built into this book, either from the
+**Log book** download menu on its manual page or from the **Log books** page.
+They can type, draw, and add photos there. Their work is saved in the browser,
+and they export the PDF they hand in on BrightSpace from the editor. The
+Typst source also remains available from the download menu.
+
+How to write one, and how to check it, is in [Log book entries](docs/kb/050-logbooks/010-log-book-entries.md) in the knowledge base ([docs/kb/README.md](docs/kb/README.md)).
+The book workflow builds the entries and editor on pull requests and pushes,
+checks the generated output, and publishes only after that build passes.
 
 ## Build and development
 

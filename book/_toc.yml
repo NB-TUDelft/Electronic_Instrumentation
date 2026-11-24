@@ -6,9 +6,9 @@ parts:
     chapters:
     - file: miscellaneous/intro.md
       title: Welcome!
+    - file: miscellaneous/logbooks.md
   - caption: Instrument introductions
     chapters:
-#      - file: manuals/intros/testboards.ipynb
       - file: manuals/intros/power_supply.ipynb
       - file: manuals/intros/digital_multimeter.ipynb
       - file: manuals/intros/function_generator.ipynb
@@ -64,5 +64,5 @@ parts:
           - file: miscellaneous/appendix/resistance.ipynb
           - file: miscellaneous/appendix/ground_loops.ipynb
       - file: miscellaneous/credits.md
-      - file: miscellaneous/admonitions.md
+      # - file: miscellaneous/admonitions.md
       

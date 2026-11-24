@@ -1,4 +1,4 @@
-#import "../logbook_common.typ": *
+#import "../tpl/logbook_common.typ": *
 
 #show: logbook.with(
   title: "Log Book Entry 2.2",
@@ -52,18 +52,18 @@
 #pagebreak()
 #section("SWEEP AND CONCLUSIONS", note: "Tasks A4, I3, I4, C3")
 
-*Frequency sweep* #h(6pt) #hint[10 Hz to 300 Hz, 1000 samples per point at a 0.2 ms target interval]
+#subsection([Frequency sweep], note: [10 Hz to 300 Hz, 1000 samples per point at a 0.2 ms target interval])
 #v(3pt)
 #field_row(
   [Helper amplitude setting [Vpp]:], line_field("i3_helper_vpp"),
-  [Scope screenshot file (Task I3):], line_field("i3_scope_capture"),
+  [Scope picture (Task I3):], line_field("i3_scope_capture"),
 )
 #v(3pt)
-#prompt[For each setting, record the scope frequency, voltage range and peak-to-peak voltage. Add the ADC positive peak from Task I4:]
+#prompt[For each setting, record the scope frequency, voltage range and peak-to-peak voltage. Do the same for signal measured by the ADC from Task I4:]
 #area("i3_scope_range", height: 62pt)
 #v(3pt)
 #field_row(
-  [Do the ADC and scope peaks agree?], line_field("sweep_const"),
+  [Do the ADC and scope voltages agree?], line_field("sweep_const"),
   [Frequency with the largest ADC/scope difference:], line_field("sweep_dev"),
   [How would you check the settling time?], line_field("sweep_settle"),
 )
