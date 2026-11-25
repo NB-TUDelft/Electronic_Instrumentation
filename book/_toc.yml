@@ -51,6 +51,8 @@ parts:
         sections:
           - file: manuals/week6/6.1_oscillators.ipynb
       - file: manuals/week7/_summary.ipynb
+        sections:
+          - file: manuals/week7/7.1_Magnet_stirrer.ipynb
       - file: manuals/week8/_summary.ipynb
         sections:
           - file: manuals/week8/8.1_Voltametry_testing.ipynb
