@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390" role="img" aria-labelledby="title desc">
 <title id="title">Inverting integrator</title>
-<desc id="desc">An inverting integrator with input resistor Rc, feedback capacitor C, and grounded positive input.</desc>
+<desc id="desc">An inverting integrator with input resistor Rc, feedback capacitor C, grounded positive input, and a dashed temporary resistor Rt in parallel with C.</desc>
 <rect width="680" height="390" fill="#fff"/>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#000"/></marker></defs>
 <g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -28,5 +28,13 @@
 <polyline points="279,320 311,320"/>
 <polyline points="285,327 305,327"/>
 <polyline points="291,334 299,334"/>
+<g stroke-dasharray="6 5">
+<polyline points="295,95 295,35 385,35"/>
+<rect x="385" y="25" width="70" height="20"/>
+<polyline points="455,35 575,35 575,95"/>
+</g>
+<text x="420" y="19" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" text-anchor="middle" fill="#000" stroke="none">Rt (temporary)</text>
+<circle cx="295" cy="95" r="3.5" fill="#000" stroke="none"/>
+<circle cx="575" cy="95" r="3.5" fill="#000" stroke="none"/>
 </g>
 </svg>
